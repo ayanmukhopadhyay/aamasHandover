@@ -1,0 +1,257 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c28b9f601f.js"></script>
+{% endblock %}
+
+{% block content %}
+    {% load staticfiles %}
+{#    <img id="aamasMainPoster" src="{% static "images/aamas_poster.png" %}">#}
+{#    <img id="aamasMainPoster" src="{% static "images/aamasBlue.jpg" %}">#}
+
+{#    <div class = "row">#}
+{#        <img id="aamasBanner" src="{% static "images/aamasBanner.png" %}">#}
+{#    </div>#}
+{#        <div class="container">#}
+
+{#        <div class="row">#}
+{#            &nbsp#}
+{#        </div>#}
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <div class="row">
+
+                    <p align="justify">
+                        <b>Welcome to the AAMAS 2018!</b>
+                    </p>
+
+                    <p align="justify">
+                        AAMAS (International Conference on Autonomous Agents and Multiagent Systems) is the largest and most influential conference in the area of agents and multiagent systems. The aim of the conference is to bring together researchers and practitioners in all areas of agent technology and to provide a single, high-profile, internationally renowned forum for research in the theory and practice of autonomous agents and multiagent systems.
+                        AAMAS is the flagship conference of the non-profit International Foundation for Autonomous Agents and Multiagent Systems (IFAAMAS).
+                    </p>
+
+                    <p align="justify">
+                     AAMAS 2018, the 17th edition of the conference, will be held on July 10-15, in Stockholm, Sweden and is part of the Federated AI Meeting (FAIM), with the other
+                     conferences being <a href="http://ijcai-18.org">IJCAI</a>, ICML, ICCBR and SoCS. Please see
+                     <a href={% static "files/FAIM18ScheduleDraft3.pdf" %}> the preliminary schedule </a> for more information.
+                    </p>
+
+                    <p align="justify">
+                        The AAMAS conference series was initiated in 2002 in Bologna, Italy as a joint event comprising the 6th International Conference on Autonomous Agents (AA), the 5th International Conference on Multiagent Systems (ICMAS), and the 9th International Workshop on Agent Theories, Architectures, and Languages (ATAL).
+                        <br> <br>
+                        Subsequent AAMAS conferences have been held in Melbourne, Australia (July 2003), New York City, NY, USA (July 2004), Utrecht, The Netherlands (July 2005), Hakodate, Japan (May 2006), Honolulu, Hawaii, USA (May 2007), Estoril, Portugal (May 2008), Budapest, Hungary (May 2009), Toronto, Canada (May 2010), Taipei, Taiwan (May 2011), Valencia, Spain (June 2012), Minnesota, USA (May 2013), Paris, France (May 2014), Istanbul, Turkey (May 2015), Singapore (May 2016) and São Paulo (2017).
+                    </p>
+{#                    <p align="justify">#}
+{#                        <b>**</b>All delegates have access to a WHOVA app containing the complete and updated conference#}
+{#                        program. The mobile conference app can be installed via the usual mobile app stores and then#}
+{#                        accessed with the email address you used for registration.<b>**</b>#}
+{#                    </p>#}
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img id="ifaamas" src="{% static "images/ifaamas.png" %}" height="120">
+                    </div>
+                    <div class="col-sm-4">
+                        <img id="ifaamas" src="{% static "images/NSF.png" %}" height="160" width="120">
+
+                    </div>
+                        <img id="aij" src="{% static "images/aij.png" %}" height="100" width="150">
+                    <div class="col-sm-4">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img id="aij" src="{% static "images/riken.png" %}" height="120" width="150">
+                    </div>
+                    <div class="col-sm-4">
+                        <img id="aij" src="{% static "images/Nissan-logo.png" %}" height="120">
+                    </div>
+                    <div class="col-sm-4">
+                        <img id="aij" src="{% static "images/google.jpg" %}" height="120">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img id="elsevier" src="{% static "images/elsevier.gif" %}" height="120">
+                    </div>
+                    <div class="col-sm-4">
+                        <img id="aij" src="{% static "images/sigai.jpeg" %}" height="120">
+                    </div>
+                    <div class="col-sm-4">
+                        <br>
+                        <img id="aij" src="{% static "images/springer-logo.jpg" %}" height="100" width="170">
+                    </div>
+                </div>
+                <br><br>
+            </div>
+
+
+{#            <div id="NewsBarContent" class="col-sm-5">#}
+            <div class="col-sm-5">
+{#                <div class="well">#}
+                <div>
+                <h3>
+                    <center>
+                        NEWS
+                    </center>
+                </h3>
+                    <div style="border:1px solid black;">
+                        <p>
+    {#                        <b><center>Important Dates: <span class="glyphicon glyphicon-calendar"></span></center></b>#}
+                            <center><a href="http://celweb.vuse.vanderbilt.edu/aamas18/infoLast" style="color:black">***<b><u>Last Minute Venue and Travel Information Added</u></b>***</a></center>
+                            <br>
+                            <b><u><center>Important Dates</center></u></b>
+                                <center>
+                                    Abstract Submission: 10th November 2017 (23:59 UTC-12)
+                                    <br>
+                                    Full Paper Submission: 14th November 2017 (23:59 UTC-12)
+                                    <br>
+                                    Rebuttal Phase: 9th-10th January 2018 (23:59 UTC-12)
+                                    <br>
+                                    Author Notification: 24th January 2018 (23:59 UTC-12)
+                                    <br>
+                                    JAAMAS Submission: 26th January 2018 (23:59 UTC-12)
+                                    <br>
+                                    <b>Early Registration: 16th April 2018 - 31st May 2018</b>
+                                    <br>
+                                    <b>Late Registration: 1st June 2018 - 25th June 2018</b>
+                                    <br> <br>
+                                    <b><u> Conference Schedule </u></b>
+                                    <br>
+                                    Tutorials/DC: 10th July, 2018
+                                    <br>
+                                    Main Conference: 11th-13th July, 2018
+                                    <br>
+                                    Workshops: 14th-15th of July, 2018
+                                    <br>
+                                    AAMAS 2018 Conference : July 10-15, 2018
+                                </center>
+                        </p>
+                    </div>
+                <br>
+                <center>
+                    <div class="ssk-center">
+    {#                     Generate using: https://developers.facebook.com/docs/plugins/share-button#configurator#}
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcelweb.vuse.vanderbilt.edu/aamas18/%2F&amp" class="ssk ssk-facebook"></a>
+                            <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcelweb.vuse.vanderbilt.edu/aamas18/%2F&amp" class="ssk ssk-twitter"></a>
+                            <a href="https://plus.google.com/share?url=http%3A%2F%2Fcelweb.vuse.vanderbilt.edu/aamas18/%2F&amp" class="ssk ssk-google-plus"></a>
+                            <a href="mailto:someone@example.com?Subject=AAMAS 2018!!" class="ssk ssk-email"></a>
+                            <a href="https://www.tumblr.com/widgets/share/tool/preview?shareSource=legacy&canonicalUrl=&url=http%3A%2F%2Fcelweb.vuse.vanderbilt.edu/aamas18/%2F&amp" class="ssk ssk-tumblr"></a>
+                    </div>
+                </center>
+
+                </div>
+
+{#                <div class="panel panel-default">#}
+{#                    <div class="panel-heading">#}
+{#                        <center text-align="center">#}
+{#                            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>#}
+{#                            <!--TWITTER-->#}
+{#                        </center>#}
+{#                    </div>#}
+{#                    <div class="panel-body">#}
+{#                        <a class="panel-body twitter-timeline" href="https://twitter.com/search?q=%23AAMAS2018%20" width="100%" data-chrome="noheader nofooter" data-height="250" data-widget-id="921413291079012353">Tweets about #AAMAS2018 </a>#}
+{#                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <br>#}
+{#                <br>#}
+                <br>
+                <div>
+                        <center text-align="center">
+                                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        </center>
+                        <br>
+                        <center>
+                            <a class="panel-body twitter-timeline" href="https://twitter.com/search?q=%23AAMAS2018%20" width="80%" data-chrome="noheader nofooter" data-height="200" data-widget-id="921413291079012353">Tweets about #AAMAS2018 </a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </center>
+                </div>
+                <div class="col-sm-1"></div>
+
+                <br>
+                <br>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{#          *****************************  DEV AMOGH 2 CODE#}
+{#            <div id="NewsBarContent" class="col-sm-5 well well-lg">#}
+{#                <center>#}
+{#                    <div class="ssk-center">#}
+                    {# Generate using: https://developers.facebook.com/docs/plugins/share-button#configurator#}
+{#                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.aamas2017.org%2F&amp" class="ssk ssk-facebook"></a>#}
+{#                        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.aamas2017.org%2F&amp" class="ssk ssk-twitter"></a>#}
+{#                        <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.aamas2017.org%2F&amp" class="ssk ssk-google-plus"></a>#}
+{#                        <a href="mailto:someone@example.com?Subject=AAMAS 2017!!" class="ssk ssk-email"></a>#}
+{#                        <a href="https://www.tumblr.com/widgets/share/tool/preview?shareSource=legacy&canonicalUrl=&url=http%3A%2F%2Fwww.aamas2017.org%2F&amp" class="ssk ssk-tumblr"></a>#}
+{#                    </div>#}
+{#                </center>#}
+{#                <br>#}
+{#                <div class="panel panel-default">#}
+{#                    <div class="panel-heading">#}
+{#                        <center><h3 class="panel-title">NEWS</h3></center>#}
+{#                    </div>#}
+{#                    <div class="panel-body">#}
+{#                        <h4><center>Important Dates: <span class="glyphicon glyphicon-calendar"></span></center></h4>#}
+{#                        <center>#}
+{#                            Abstract Submission: 10th of November 2017 (23:59 UTC-12)#}
+{#                            <br>#}
+{#                            Full Paper Submission: 14th of November 2017 (23:59 UTC-12)#}
+{#                            <br>#}
+{#                            Rebuttal Phase: 9th-10th of January 2018 (23:59 UTC-12)#}
+{#                            <br>#}
+{#                            Author Notification: 24th of January 2018 (23:59 UTC-12)#}
+{#                            <br> <br>#}
+{#                            <b> Conference Schedule </b>#}
+{#                            <br>#}
+{#                            Tutorials/DC: 10th of July, 2018#}
+{#                            <br>#}
+{#                            Main Conference: 11th-13th of July, 2018#}
+{#                            <br>#}
+{#                            Workshops: 14th-15th of July, 2018#}
+{#                            <br>#}
+{#                            AAMAS 2018 Conference : July 10-15, 2018#}
+{#                        </center>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="panel panel-default">#}
+{#                    <div class="panel-heading">#}
+{#                        <center text-align="center">#}
+{#                            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>#}
+{#                            <!--TWITTER-->#}
+{#                        </center>#}
+{#                    </div>#}
+{#                    <!--<div class="panel-body">-->#}
+{#                    <a class="panel-body twitter-timeline" href="https://twitter.com/search?q=%23AAMAS2018%20" width="100%" data-chrome="noheader nofooter" data-height="250" data-widget-id="921413291079012353">Tweets about #AAMAS2018 </a>#}
+{#                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>#}
+{#                    <!--</div>-->#}
+{#                </div>#}
+{#            </div>#}
+        </div>
+
+{% endblock %}
+
+
+

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+
+        <u><b>Important Dates</b></u>
+            <ul>
+                <li>Abstract Submission: 10th of November 2017 (23:59 UTC-12)
+                <li>Full Paper Submission: 14th of November 2017 (23:59 UTC-12)
+                <li>Rebuttal Phase: 9th-10th of January 2018 (23:59 UTC-12)
+                <li>Author Notification: 24th of January 2018 (23:59 UTC-12)
+            </ul>
+        <br>
+        <u><b> Conference Schedule </b></u>
+            <ul>
+                <li>Tutorials/DC: 10th of July, 2018
+                <li>Main Conference: 11th-13th of July, 2018
+                <li>Workshops: 14th-15th of July, 2018
+                <li>AAMAS 2018 Conference : July 10-15, 2018
+            </ul>
+    </div>
+{% endblock %}

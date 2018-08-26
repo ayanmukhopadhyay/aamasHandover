@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+        <div class="row">
+            <hr>
+            <div align="center">
+                <u><b>Platinum Sponsors</b></u>
+            </div>
+
+            <br>
+            <div align="center" >
+                <img id="ifaamas" src="{% static "images/ifaamas.png" %}" height="100" width="100">
+            </div>
+            <div align="center">
+                <img id="aij" src="{% static "images/NSF.png" %}" height="130" width="100">
+            </div>
+        </div>
+
+        <div class="row">
+            <hr>
+            <div align="center">
+                <u><b>Gold Sponsors</b></u>
+            </div>
+            <br>
+            <div align="center">
+                <img id="aij" src="{% static "images/aij.png" %}" height="100" width="100">
+            </div>
+        </div>
+
+        <div class="row">
+            <hr>
+            <div align="center">
+                <u><b>Bronze Sponsors</b></u>
+            </div>
+            <br>
+            <div align="center">
+                <img id="aij" src="{% static "images/riken.png" %}" height="100" width="150">
+            </div>
+            <br>
+            <div align="center">
+                <img id="aij" src="{% static "images/Nissan-logo.png" %}" height="120" width="150">
+            </div>
+            <div align="center">
+                <img id="aij" src="{% static "images/google.jpg" %}" height="120">
+            </div>
+            <div align="center">
+                <img id="elsevier" src="{% static "images/elsevier.gif" %}" height="120">
+            </div>
+
+        </div>
+
+        <div class="row">
+            <hr>
+            <div align="center">
+                <u><b>Iron Sponsors</b></u>
+            </div>
+            <br>
+            <div align="center">
+                <img id="aij" src="{% static "images/sigai.jpeg" %}" height="100" width="100">
+            </div>
+        </div>
+
+        <div class="row">
+            <hr>
+            <div align="center">
+                <u><b>Sponsors of Specific Events</b></u>
+            </div>
+            <div align="center">
+                <u><b>Best Student Paper Award</b></u>
+            </div>
+            <br>
+            <div align="center">
+                <img id="aij" src="{% static "images/springer-logo.jpg" %}" height="150" width="250">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+    </div>
+{% endblock %}

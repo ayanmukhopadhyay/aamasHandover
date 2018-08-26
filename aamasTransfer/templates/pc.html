@@ -1,0 +1,463 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+        <u><b>Program Committee</b></u>
+        <br>
+        <h5 dir="ltr" ><u>Main Track</u></h5>
+        <ul>
+            <li> Azizi Ab Aziz, Universiti Utara Malaysia, MY
+            <li> Andres Abeliuk, MIT, US
+            <li> Carole Adam, University of Grenoble - UJF - LIG, FR
+            <li> Diana Adamatti, Universidade Federal do Rio Grande, BR
+            <li> Adrian Agogino, UCSC, NASA Ames Research Center, US
+            <li> Aamir Ahmad, Max Planck Institute, DE
+            <li> Reza Ahmadzadeh, Georgia Institute of Technology, US
+            <li> Stephane Airiau, Universite Paris-Dauphine, FR
+            <li> Charilaos Akasiadis, Technical University of Crete, GR
+            <li> Mohammad Al-Zinati, Jordan University of Science and Technology, JO
+{#            <li> Muddasser Alam, University of Oxford, GB#}
+            <li> Georgios Amanatidis, Centrum Wiskunde and Informatica (CWI), NL
+            <li> Leila Amgoud, University of Toulouse - CNRS - IRIT, FR
+            <li> Ofra Amir, Technion, IL
+            <li> Luis Antunes, Universidade de Lisboa, PT
+            <li> Alexander Artikis, University of Piraeus, GR
+            <li> Amos Azaria, Carnegie Mellon University (CMU), US
+            <li> Quan Bai, Auckland University of Technology, NZ
+            <li> Bikramjit Banerjee, University of Southern Mississippi, US
+            <li> Lina Barakat, King's College London, GB
+            <li> Enda Barrett, National University of Ireland Galway, IE
+            <li> Nathanael Barrot, Riken, Japan, FR
+            <li> Johan Barthelemy, University of Wollongong - SMART, AU
+            <li> Rahmatollah Beheshti, Johns Hopkins University, US
+            <li> Jamal Bentahar, Concordia University, CA
+            <li> Gerardo Berbeglia, Melbourne Business School, AU
+            <li> Sara Bernardini, Royal Holloway University of London, GB
+            <li> Floris Bex, Utrecht University, NL
+            <li> Aurelie Beynier, LIP6, University Pierre Marie Curie, FR
+            <li> Satyanath Bhat, Institute of Operations Research and Analytics, SG
+            <li> Peter Biro, Institute of Economics, Hungarian Academy of Sciences, HU
+            <li> Sebastien Blandin, IBM Research, SG
+            <li> Konstantinos Blekas, University of Ioannina, GR
+            <li> Daan Bloembergen, Centrum Wiskunde and Informatica (CWI), NL
+            <li> Liad Blumrosen, School of Business Administration, IL
+            <li> Thomas Bolander, Technical University of Denemark, DK
+            <li> Ladislau Bölöni, University of Central Florida, US
+            <li> Gregory Bonnet, Normandie University, FR
+            <li> Elise Bonzon, Paris Descartes University, FR
+            <li> Branislav Bosansky, Czech Technical University, CZ
+            <li> Ioana Boureanu, University of Surrey, GB
+            <li> Sylvain Bouveret, Grenoble INP - Univ. Grenoble-Alpes, FR
+            <li> Simina Branzei, Aarhus University, DK
+            <li> Lars Braubach, University of Hamburg, DE
+            <li> Robert Bredereck, TU Berlin, DE
+            <li> Daniela Briola, University of Milan Bicocca, IT
+            <li> Jean-Pierre Briot, Laboratoire d'Informatique de Paris 6 (LIP6), FR
+            <li> Merijn Bruijnes, University of Twente, NL
+            <li> Cassio P. De Campos, Utrecht University, The Netherlands
+            <li> Sofia Ceppi, PROWLER.io, GB
+            <li> Federico Cerutti, Cardiff University, GB
+            <li> Michal Chalamish, Ashkelon Academic College, IL
+            <li> Hau Chan, Harvard University, US
+            <li> Martin Chapman, King's College London, GB
+            <li> Federico Chesani, University of Bologna, IT
+            <li> Jen Jen Chung, Oregon State University, US
+            <li> Siobhan Clarke, Trinity College Dublin, IE
+            <li> Rem Collier, University College Dublin, IE
+            <li> Cristina Cornelio, IBM Research AI, US
+            <li> Flavio Soares Correa da Silva, University of Sao Paulo, BR
+            <li> Massimo Cossentino, ICAR - CNR, IT
+            <li> Marcos Cramer, Universiy of Luxembourg, LU
+            <li> Natalia Criado Pacheco, King's College London, GB
+            <li> Madalina Croitoru, University of Montpellier, FR
+            <li> Cosmina Croitoru, Saarland University, DE
+            <li> Ágnes Cseh, Hungarian Academy of Sciences, HU
+            <li> Celia da Costa Pereira, Univ. Nice Sophia Antipolis, FR
+            <li> Bruno da Silva, UFRGS, BR
+            <li> Fabiano Dalpiaz, Utrecht University, NL
+            <li> Prithviraj Dasgupta, University of Nebraska, Omaha, US
+            <li> James Davidson, Google Research, US
+            <li> Ronald de Haan, University of Amsterdam, NL
+            <li> Dave de Jonge, Western Sydney University, AU
+            <li> Bart de Keijzer, Sapienza University of Rome, IT
+            <li> Rogério de Lemos, University of Kent, GB
+            <li> Mathijs de Weerdt, Delft University of Technology, NL
+            <li> Keith Decker, University of Delaware, US
+            <li> Argyrios Deligkas, Technion -- Israel Institute of Technology, GR
+            <li> Farnaz Derakhshan, University of Tabriz, IR
+            <li> Sam Devlin, York Centre for Complex Systems Analysis, GB
+            <li> John P. Dickerson, University of Maryland, US
+            <li> Catalin Dima, LACL, Université Paris-Est Créteil, FR
+            <li> Dragan Doder, IRIT, Université Paul Sabatier, FR
+            <li> John Doucette, New College of Florida, US
+            <li> Sylvie Doutre, Universite Toulouse 1 Capitole - IRIT , FR
+            <li> Alexis Drogoul, French National Research Institute for Sustainable Development, VN
+            <li> Florence Dupin de Saint-Cyr, University of Toulouse, FR
+            <li> Ivana Dusparic, Trinity College Dublin, IE
+            <li> Adam Eck, Oberlin College, US
+            <li> James Edmondson, Carnegie Mellon University, US
+            <li> Kyriakos Efthymiadis, AI Lab, Vrije Universiteit Brussel, BE
+            <li> Corinna Elsenbroich, University of Surrey, GB
+            <li> Gabor Erdelyi, University of Siegen, DE
+            <li> Soheil Eshghi, Yale University, US
+            <li> Rino Falcone, ISTC-CNR, IT
+            <li> Piotr Faliszewski, AGH University of Science and Technology, PL
+            <li> Fei Fang, Carnegie Mellon University, US
+            <li> Shaheen Fatima, Loughborough University, GB
+            <li> John Fearnley, University of Liverpool, GB
+            <li> Susel Fernandez, University of Alcala, ES
+            <li> Aris Filos-Ratsikas, University of Oxford, GB
+            <li> Ferdinando Fioretto, University of Michigan, US
+            <li> Nicoletta Fornara, Universit&agrave; della Svizzera Italiana, CH
+            <li> Hu Fu, University of British Columbia, CA
+            <li> Katsuhide Fujita, Tokyo University of Agriculture and Technology, JP
+            <li> Naoki Fukuta, Shizuoka University, JP
+            <li> Dinesh Garg, IIT Gandhinagar, IN
+            <li> Ivan Garibay, University of Central Florida, US
+            <li> Maíra Gatti de Bayser, IBM Research, BR
+            <li> Benoit Gaudou, University Toulouse 1 Capitole, FR
+            <li> Charlotte Gerritsen, Netherlands Institute for the Study of Crime and Law Enforcement, NL
+            <li> Amineh Ghorbani, Faculty of Technology, Policy and Management, NL
+            <li> Aditya Ghose, Wollongong U, AF
+            <li> Massimiliano Giacomin, University of Brescia, IT
+            <li> Joseph Giampapa, Carnegie Mellon University, US
+            <li> Yiannis Giannakopoulos, TU Munich, DE
+            <li> Nina Gierasimczuk, Technical University of Denmark, DK
+            <li> Judy Goldsmith, University of Kentucky, US
+            <li> Jorge Gomez-Sanz, Universidad Complutense de Madrid, ES
+            <li> Guido Governatori, Data61, CSIRO, AU
+            <li> Umberto Grandi, University of Toulouse, FR
+            <li> Nathan Griffiths, University of Warwick, GB
+            <li> Tal Grinshpoun, Ariel University, IL
+            <li> Marek Grzes, University of Kent, GB
+            <li> Sujit Gujar, International Institute of Information Technology, Hyderabad, IN
+            <li> Akin Gunay, Lancaster University, GB
+            <li> Christian Guttmann, Nordic AI Institute and Karolinska Institute, SE
+            <li> Rafik Hadfi, Monash University, AU
+            <li> Yusuke Hara, University of Tokyo, JP
+            <li> Maaike Harbers, Rotterdam University of Applied Sciences, NL
+            <li> Salima Hassas, University Claude Bernard - Lyon 1, FR
+            <li> avinatan hassidim, Bar Ilan University (BIU), IL
+            <li> Daniel Hennes, University of Stuttgart, DE
+            <li> Todd Hester, Google DeepMind, US
+            <li> Koen Hindriks, Delft University of Technology, NL
+            <li> Trong Nghia Hoang, MIT, US
+            <li> Tom Holvoet, Katholieke Universiteit Leuven, BE
+            <li> Hadi Hosseini, Rochester Institute of Technology, US
+            <li> Hung-Hsuan Huang, College of Information Science and Engineering, JP
+            <li> Joris Hulstijn, Tilburg University, NL
+            <li> Guillaume Hutzler, Evry-Val d'Essonne University, FR
+            <li> Trung Dong Huynh, King's College London, GB
+            <li> Athirai Irissappane, University of Washington, US
+            <li> atil iscen, Google Research, US
+            <li> Yichuan Jiang, Southeast University, CN
+            <li> Chen Jie, Singapore-MIT Alliance for Research and Technology, SG
+            <li> Kristiina Jokinen, University of Helsinki, FI
+            <li> Brendan Juba, Washington University in St. Louis, US
+            <li> Vicente Julian, Universitat Politecnica de Valencia, ES
+            <li> Ozgur Kafali, Department of Computer Science, US
+            <li> Michael Kaisers, Centrum Wiskunde and Informatica (CWI), NL
+            <li> Ryo Kanamori, Nagoya University, JP
+            <li> Kamalakar Karlapalem, IIIT-Hyderabad, IN
+            <li> Yasushi Kawase, Tokyo Institute of Technology, JP
+            <li> William Kennedy, George Mason University, US
+            <li> Michel Klein, Vrije Universiteit Amsterdam, NL
+            <li> Matt Knudson, NASA Ames Research Center, US
+            <li> Martin Kollingbaum, University of Aberdeen, GB
+            <li> Sebastien Konieczny, CRIL-CNRS, FR
+            <li> Andrew Koster, IIIA-CSIC, ES
+            <li> Panagiotis Kouvaros, University of Cyprus, CY
+            <li> Georg Krempl, University of Utrecht, NL
+            <li> Louwe B. Kuijer, University of Liverpool, GB
+            <li> Orna Kupferman, The Hebrew University, IL
+            <li> Bruno Lacerda, University of Oxford, UK, GB
+            <li> Martin Lackner, TU Wien, AT
+            <li> Aron Laszka, University of Houston, US
+            <li> Ron Lavi, Technion -- Israel Institute if Technology, IL
+            <li> Joao Leite, Universidade Nova de Lisboa, PT
+            <li> Julien Lesca, Paris Dauphine University, FR
+            <li> Yves Lesperance, York University, CA
+            <li> Joshua Letchford, Sandia National Laboratories, US
+            <li> Omer Lev, Ben Gurion University of the Negev, IL
+            <li> Tingting Li, Imperial College London, GB
+            <li> Minming Li, City University of Hong Kong, HK
+            <li> Beishui Liao, Zhejiang University, CN
+            <li> Somchaya Liemhetcharat, Uber Advanced Technologies Group, US
+            <li> Raz Lin, Bar-Ilan University, IL
+            <li> Viliam Lisý, Czech Technical University in Prague, CZ
+            <li> Michael Luck, King's College London, GB
+            <li> Simone Ludwig, North Dakota State University, US
+            <li> Marco Lutzenberger, Technische Universitat Berlin, DE
+            <li> Patrick Mannion, Galway-Mayo Institute of Technology, IE
+            <li> Enrico Marchioni, University of Southampton, GB
+            <li> Elisa Marengo, Free University of Bozen-Bolzano, Italy, IT
+            <li> Ivan Marsa Maestre, University of Alcala, ES
+            <li> philippe mathieu, CRISTAL UMR 9189 CNRS, FR
+            <li> Shigeo Matsubara, Kyoto University, JP
+{#            <li> Tokuro Matsuo, Advanced Institute of Industrial Technology, JP#}
+            <li> Robert Mattmüller, University of Freiburg, DE
+            <li> Amnon Meisels, Ben-Gurion University, IL
+            <li> Felipe Meneguzzi, PUCRS, BR
+            <li> Ruth Meyer, Manchester Metropolitan University, GB
+{#            <li> Loizos Michael, Open University of Cyprus, CY#}
+            <li> Neeldhara Misra, Indian Institute of Technology Gandhinagar, IN
+            <li> Martin Mladenov, unaffiliated, DE
+            <li> Javier Morales, University of Oxford, GB
+            <li> Aniello Murano, University of Napoli Federico II, IT
+            <li> Pradeep Murukannaiah, Rochester Institute of Technology, US
+            <li> Lihi Naamani-Dery, Ariel University, IL
+            <li> Ramasuri Narayanam, IBM Research - India, IN
+            <li> Asmeret Naugle, Sandia National Labs, US
+            <li> Ilan Nehama, Department of Informatics, Kyushu University, JP
+            <li> Thanh Nguyen, University of Southern California, US
+            <li> Timothy Norman, University of Southampton, GB
+            <li> Peter Novak, Science &amp; Technology B.V. / Delft University of Technology, NL
+            <li> Matias Nunez, Paris Dauphine University and CNRS, FR
+            <li> Jean Oh, Carnegie Mellon University, US
+            <li> Tenda Okimoto, Kobe University, JP
+            <li> Andrea Omicini, Universit&amp;agrave; di Bologna, IT
+{#            <li> Mark Orr, Biocomplexity Institute of Virginia Tech, US#}
+            <li> Hirotaka Osawa, University of Tsukuba, JP
+            <li> Nardine Osman, IIIA-CSIC, ES
+            <li> Youssouf Oualhadj, LACL, FR
+            <li> Renato Paes Leme, Google Research, US
+            <li> Petros Papapanagiotou, School of Informatics, The University of Edinburgh, GB
+            <li> Michael Papasimeon, Defence Science and Technology, AU
+            <li> Praveen Paruchuri, IIIT Hyderabad, IN
+            <li> Juan Pavón, Universidad Complutense de Madrid, ES
+            <li> Terry Payne, U of Liverpool, GB
+            <li> Adrian Pearce, University of Melbourne, AU
+            <li> Marieke Peeters, TNO, NL
+            <li> Giuseppe Perelli, University of Oxford, GB
+            <li> Laurent Perrussel, IRIT - Universite de Toulouse, FR
+            <li> Steve Phelps, King's College London, GB
+            <li> Gauthier Picard, MINES Saint-Etienne, FR
+            <li> Sophie Pinchinat, Universitée de Rennes 1, FR
+            <li> Maria Silvia Pini, University of Padova, IT
+            <li> Alexander Pokahr, University of Hamburg, DE
+            <li> Sylwia Polberg, University College London, GB
+            <li> Enrico Pontelli, New Mexico State University, US
+            <li> Daniele Porello, LOA, ISTC-CNR (Italy), IT
+            <li> Evangelos Pournaras, ETH Zurich, CH
+            <li> Carlo Proietti, Lund University, IT
+            <li> Goran Radanovic, Harvard University, US
+            <li> Subramanian Ramamoorthy, School of Informatics, The University of Edinburgh, GB
+            <li> Fenghui Ren, University of Wollongong, AU
+            <li> Valerio Restocchi, University of Southampton, UK, GB
+            <li> Anja Rey, TU Dortmund University, DE
+            <li> Lev Reyzin, University of Illinois at Chicago, US
+            <li> Alessandro Ricci, University of Bologna, IT
+            <li> Ariella Richardson, Lev Academic Center, IL
+            <li> Regis Riveret, Data61, CSIRO, AU
+            <li> Diederik Roijers, Vrije Universiteit Brussel, BE
+            <li> Joerg Rothe, Heinrich-Heine-Universitaet Duesseldorf, DE
+            <li> Jean-Claude Royer, Institut Mines-Télécom Atlantique, FR
+            <li> Sasha Rubin, University of Naples "Federico II", IT
+            <li> Abdallah Saffidine, UNSW Australia, AU
+            <li> Yuko Sakurai, Kyushu University, JP
+            <li> Amirali Salehi-Abari, UOIT, CA
+            <li> Victor Sanchez-Anguix, Coventry University (UK), GB
+            <li> Francesco Santini, University of Perugia, IT
+            <li> Giovanni Sartor, University of Bologna, IT
+            <li> Grant Schoenebeck, University of Michigan, US
+            <li> Claudia Schulz, TU Darmstadt, DE
+            <li> Francois Schwarzentruber, ENS Rennes, FR
+            <li> Christoph Schwering, The University of New South Wales, AU
+            <li> Murat Sensoy, Ozyegin University, TR
+            <li> Pedro Sequeira, Northeastern University, US
+            <li> Paolo Serafino, University of Southampton, GB
+            <li> Zohreh Shams, University of Cambridge, GB
+            <li> Alexei Sharpanskykh, Delft University of Technology, NL
+            <li> Or Sheffet, University of Alberta, CA
+            <li> Zhiqi Shen, Nanyang Technological University, SG
+            <li> Bing Shi, Wuhan University of Technology, CN
+            <li> Arunesh Sinha, University of Michigan, US
+            <li> Balu Sivan, Google Research, US
+            <li> Marija Slavkovik, University of Bergen, NO
+            <li> Eric Sodomka, Facebook, US
+            <li> Leen-Kiat Soh, Department of Computer Science and Engineering, US
+            <li> Tran Cao Son, New Mexico State University, US
+            <li> Hyun Oh Song, Seoul National University, KR
+            <li> Nikolaos Spanoudakis, Technical University of Crete, GR
+            <li> Mohan Sridharan, The University of Auckland, NZ
+            <li> Roni Stern, Ben Gurion University of the Negev, IL
+            <li> Jose M. Such, King's College London, GB
+            <li> Toshiharu Sugawara, Waseda University, JP
+            <li> Nimrod Talmon, Weizmann Institute of Science, IL
+            <li> Yuqing Tang, Microsoft, US
+            <li> Robert Tanton, University of Canberra, AU
+            <li> Jason Thompson, Senior Lecturer, The University of Melbourne, AU
+            <li> Christos Tjortjis, International Hellenic University, GR
+            <li> Taiki Todo, Department of Informatics, Kyushu University, JP
+            <li> Alice Toniolo, University of St Andrews, GB
+            <li> Alejandro Torreño, Universitat Politècnica de València, ES
+            <li> Viviane Torres da Silva, IBM Research - Brazil, BR
+            <li> Long Tran-Thanh, University of Southampton, UK, GB
+            <li> Tomas Trescak, Western Sydney University, AU
+            <li> Konstantina Valogianni, IE University - IE Business School, ES
+            <li> Peter Vamplew, Federation University Australia, AU
+            <li> Koen Van Dam, Imperial College London, GB
+            <li> Natalie van der Wal, Vrije Universiteit Amsterdam, NL
+            <li> Leo van Moergestel, HU University of applied sciences Utrecht, NL
+            <li> Brent Venable, Tulane University and IHMC, US
+            <li> Carmine Ventre, University of Essex, GB
+            <li> Harko Verhagen, Stockholm University, SE
+            <li> Stephen Verzi, Sandia National Laboratories, US
+            <li> Ioannis Vetsikas, American College of Greece, GR
+            <li> Angelina Vidali, De Montfort University, GB
+            <li> Serena Villata, Université Côte d’Azur, CNRS, FR
+            <li> Meritxell Vinyals, CEA-LIST, FR
+            <li> Giuseppe Vizzari, University of Milan Bicocca, IT
+            <li> George Vouros, University of Piraeus, GR
+            <li> Toby Walsh, UNSW Sydney, AU
+            <li> Feng Wu, University of Science and Technology of China, CN
+            <li> Annie Wu, University of Central Florida, US
+            <li> Lirong Xia, RPI, US
+            <li> Yang Xu, University of Electronic Science and Technology, CN
+            <li> Logan Yliniemi, University of Nevada, Reno, US
+            <li> Chao Yu, Dalian University of Technology, CN
+{#            <li> Franco Zambonelli, Università di Modena e Reggio Emilia, IT#}
+            <li> Yifeng Zeng, University of Teesside, GB
+            <li> Jie Zhang, Nanyang Technological University, SG
+            <li> Yingqian Zhang, Erasmus University Rotterdam, NL
+            <li> Dongmo Zhang, School of Computing, Engineering and Mathematics, AU
+            <li> Minjie Zhang, University of Wollongong, AU
+            <li> Dengji Zhao, ShanghaiTech University, CN
+            <li> Yair Zick, Carnegie Mellon University, US
+        </ul>
+        <br>
+        <h5 dir="ltr" ><u>Blue Sky Ideas Track</u></h5>
+        <ul>
+            <li>  Bo An,Nanyang Technological University
+            <li>  Katie Atkinson,University of Liverpool
+            <li>  Ana Bazzan,UFRGS
+            <li>  Rafael Bordini,PUCRS
+            <li>  Virginia Dignum,Delft University of Technology
+            <li>  Jérôme Euzenat,INRIA & Univ. Grenoble Alpes
+            <li>  Nicola Gatti,Politecnico di Milano
+            <li>  Enrico Gerding,University of Southampton
+            <li>  Alessio Lomuscio,Imperial College London
+            <li>  Nicolas Maudet,LIP6, Univ. Pierre et Marie Curie
+            <li>  Peter McBurney,King's College London
+            <li>  Loizos Michael,Open University of Cyprus
+            <li>  Joerg Mueller,TU Clausthal
+            <li>  Yukiko Nakano,Seikei University
+            <li>  Andrea Omicini,Università di Bologna
+            <li>  Eva Onaindia,Universitat Politecnica de Valencia
+            <li>  Nir Oren,University of Aberdeen
+            <li>  Sascha Ossowski,University Rey Juan Carlos,sascha.ossowski@urjc.es
+            <li>  Ana Paiva,Instituto Superior Técnico
+            <li>  Maria Polukarov,King's College London
+            <li>  Alessandro Ricci,University of Bologna
+            <li>  Sandip Sen,The University of Tulsa
+            <li>  Munindar Singh,NCSU
+            <li>  Liz Sonenberg,University of Melbourne
+            <li>  Paolo Turrini,University of Warwick
+            <li>  Karl Tuyls,Google DeepMind
+            <li>  Michael Winikoff,University of Otago
+            <li>  PInar Yolum,Bogazici University
+            <li>  Franco Zambonelli,Università di Modena e Reggio Emilia
+        </ul>
+        <br>
+        <h5 dir="ltr" ><u>Robotics Track</u></h5>
+        <ul>
+            <li> Henny Admoni, Carnegie Mellon University
+            <li> Monica Anderson, The University of Alabama
+            <li> Nicola Basilico, University of Milan
+            <li> Joydeep Biswas, University of Massachusetts Amherst
+            <li> Zachary Butler, Rochester Inst of Tech
+            <li> Nilanjan Chakraborty, Stony Brook University
+            <li> Emel Demircan, California State University Long Beach
+            <li> Jan Faigl, Czech Technical University
+            <li> Alessandro Farinelli, University of Verona
+            <li> Aleksandra Faust, Google Brain
+            <li> Stephanie Gil, Arizona State University
+            <li> Giuseppina Gini, Politecnico di Milano
+            <li> Julio Godoy, Universidad de Concepción
+            <li> Matthew Gombolay, Georgia Institute of Technology
+            <li> Michael Goodrich, Brigham Young University
+            <li> Heiko Hamann, University of Luebeck
+            <li> Tariq Iqbal, Massachusetts Institute of Technology
+            <li> Ioannis Karamouzas, Clemson University
+            <li> David Kent, Georgia Institute of Technology
+            <li> Konrad Kulakowski, AGH University of Science and Technology
+            <li> Pedro Lima, University of Lisboa
+            <li> Damian Lyons, Fordham University
+            <li> Lino Marques, University of Coimbra
+            <li> Dale McConachie, University of Michigan
+            <li> Lakshmi Nair, Georgia Institute of Technology
+            <li> Ernesto Nunes, Vecna Robotics
+            <li> Justus Piater, Universität Innsbruck
+            <li> Alberto Quattrini Li, University of South Carolina
+            <li> Andreagiovanni Reina, University of Sheffield
+            <li> Stephanie Rosenthal, Chatham University
+            <li> Erol Sahin, Middle East Technical University
+            <li> Dylan Shell, Texas A&M
+            <li> Jivko Sinapov, Tufts University
+            <li> Leandro Soriano Marcolino, Lancaster University
+            <li> Gerald Steinbauer, Graz University of Technology
+            <li> Vito Trianni, Institute of Cognitive Sciences and Technology
+            <li> Roi Yehoshua, Bar Ilan University
+            <li> Jingjin Yu, Rutgers University at New Brunswich
+        </ul>
+        <br>
+        <h5 dir="ltr" ><u>Socially Interactive Agents Track</u></h5>
+        <ul>
+            <li> Ron Artstein, University of Southern California
+            <li> Ruth Aylett, Heriot-Watt University
+            <li> Jonas Beskow, KTH Speech Music and Hearing
+            <li> Elisabetta Bevacqua, National Engineering School of Brest (ENIB)
+            <li> Anton Bogdanovych, Western Sydney University
+            <li> Joost Broekens, TU Delft Intelligent Systems
+            <li> Hendrik Buschmeier, Bielefeld University
+            <li> Mathieu Chollet, University of Southern California
+            <li> Chloé Clavel, LTCI, Telecom-paristech
+            <li> Iwan de Kok, Bielefeld University
+            <li> Etienne de Sevin, University of Bordeaux
+            <li> Jens Edlund, KTH Speech, Music and Hearing
+            <li> Andrew Feng, Institute for Creative Technologies, University of Southern California
+            <li> Dan Feng, Northeastern University
+            <li> Patrick Gebhard, German Research Center for Artificial Intelligence
+            <li> Helen Hastie, Heriot-Watt University
+            <li> Koen Hindriks, Delft University of Technology
+            <li> Thomas Janssoone, Université Pierre et Marie Curie, Paris
+            <li> Lewis Johnson, Alelo Inc.
+            <li> Peter Khooshabeh, US Army Research Laboratory
+            <li> Tomoko Koda, Osaka Institute of Technology
+            <li> Nicole Krämer, University of Duisburg-Essen
+            <li> Brigitte Krenn, Austrian Research Institute for Artificial Intelligence
+            <li> James Lester, North Carolina State University
+            <li> Gale Lucas, Institute for Creative Technologies, University of Southern California
+            <li> Birgit Lugrin, University of Wuerzburg
+            <li> Emily Mower Provost, University of Michigan
+            <li> Soraia Musse, Pontifical Chatolic University of Rio Grande do Sul
+            <li> David Novick, The University of Texas at El Paso
+            <li> Fabrizio Nunnari, German Research Center for Artificial Intelligence (DFKI)
+            <li> Magalie Ochs Aix, Marseille Université LSIS
+            <li> Florian Pecune, Carnegie Mellon University
+{#            <li> Thomas Preuss, GMBH#}
+            <li> David Pynadath, University of Southern California
+            <li> Brian Ravenet, CNRS-LTCI - Telecom-ParisTech
+            <li> Astrid Rosenthal-von der Pütten, University of Duisburg-Essen
+            <li> Nicolas Sabouret, University Paris-Sud
+            <li> Stefan Scherer, USC Institute for Creative Technologies
+            <li> Pedro Sequeira, Northeastern University
+            <li> Ari Shapiro, University of Southern California, Institute for Creative Technology
+            <li> Mei Si, RPI
+            <li> Khiet Truong, University of Twente
+            <li> Volkan Ustun, USC Institute for Creative Technologies
+            <li> Giovanna Varni, LTCI
+            <li> Leo Wanner, Catalan Institute for Research and Advanced Studies
+            <li> Jelte van Waterschoot, University of Twente
+            <li> Yuyu Xu, Northeastern University
+            <li> Ran Zhao, Carnegie Mellon University
+
+        </ul>
+    </div>
+{% endblock %}

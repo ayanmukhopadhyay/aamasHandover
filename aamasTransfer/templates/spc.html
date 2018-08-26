@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+        <u><b>Senior Program Committee</b></u>
+        <br>
+    <h5 dir="ltr" ><u>Main Track</u></h5>
+    <ul>
+        <li>Thomas Agotnes, University of Bergen, Norway
+        <li>Frederic Amblard, Université Toulouse 1 Capitole, France
+        <li>Cristina Baroglio, Università degli Studi di Torino, Italy
+        <li>Francesco Belardinelli, Université d'Evry, France
+        <li>Vaishak Belle, University of Edinburgh, UK
+        <li>Elizabeth Black, King's College, UK
+        <li>Rafael Bordini, FACIN-PUCRS, Brazil
+        <li>Tibor Bosse, VU University, Netherlands
+        <li>Cristiano Castelfranchi, Institute of Cognitive Sciences and Technologies, Italy
+        <li>Jesus Cerquides, IIIA-CSIC, Spain
+        <li>Georgios Chalkiadakis, Technical University of Crete, Greece
+        <li>Shih-Fen Cheng, Singapore Management University, Singapore
+        <li>Amit Chopra, Lancaster University, UK
+{#        <li>Helder Coelho, University of Lisbon, Portugal#}
+        <li>Sanmay Das, Washington University in St. Louis, USA
+        <li>Virginia Dignum, TU Delft, Netherlands
+        <li>Eric Eaton, University of Pennsylvania, USA
+        <li>Bruce Edmonds, Manchester Metropolitan University, UK
+        <li>Edith Elkind, University of Oxford, UK
+        <li>Kobi Gal, Ben-Gurion University, Israel
+        <li>Serge Gaspers, UNSW, Australia
+        <li>Enrico Gerding, University of Southampton, UK
+        <li>Valentin Goranko, Stockholm University, Sweden
+        <li>Davide Grossi, University of Liverpool, UK
+        <li>Mingyu Guo, The University of Adelaide, Australia
+        <li>Paul Harrenstein, University of oxford, UK
+        <li>Andreas Herzig, Université Paul Sabatier, France
+        <li>Enda Howley, National University of Ireland, Galway, Ireland
+        <li>Takayuki Ito, Nagoya Institute of Technology, Japan
+        <li>Atsushi Iwasaki, University of Electro-Communications, Japan
+        <li>Ian Kash, Microsoft Research, Cambridge, UK
+        <li>Chris Kiekintveld, University of Texas at El Paso, USA
+        <li>Daniel Kudenko, University of York, UK
+        <li>Akshat Kumar, Singapore Management University, Singapore
+        <li>Han la Poutre, TU Delft, Netherlands
+        <li>Kiran Lakkaraju, Sandia National Laboratories, USA
+        <li>Kate Larson, University of Waterloo, Canada
+        <li>Maite Lopez-Sanchez, Universitat de Barcelona, Spain
+        <li>Bryan Low, National University of Singapore, Singapore
+        <li>Viviana Mascardi, University of Genova, Italy
+        <li>Nicholas Mattei, IBM TJ Watson Research Laboratory, USA
+        <li>Nicolas Maudet, Univ. Pierre et Marie Curie, France
+        <li>Reshef Meir, Technion-Israel Institute of Technology, Israel
+        <li>Marco Montali, Free University of Bozen-Bolzano, Italy
+        <li>Emma Norling, Manchester Metropolitan University, Manchester
+        <li>Ingrid Nunes, Federal University of Rio Grande do Sul (UFRGS), Brazil.
+        <li>Svetlana Obraztsova, Nanyang Technological University, Singapore
+        <li>Nir Oren, University of Aberdeen, UK
+        <li>Daniel Paulusma, Durham University, UK
+{#        <li>Pascal Perez, University of Wollongong, Australia#}
+        <li>Henry Prakken, Utrecht University, Netherlands, and the University of Groningen
+        <li>Zinovi Rabinovich, Nanyang Technological University, Singapore
+        <li>Avi Rosenfeld, Jerusalem College of Technology, Israel
+        <li>Francesca Rossi, University of Padova, Italy
+        <li>Rahul Savani, University of Liverpool, UK
+        <li>Sandip Sen, University of Tulsa, USA
+        <li>Paulo Shakarian, Arizona State University, US
+        <li>Munindar Singh, North Carolina State University, USA
+        <li>Matthijs Spaan, Delft University of Technology, Netherlands
+        <li>Sebastian Stein, University of Glasgow, UK
+        <li>John Thangarajah, RMIT University, Australia
+        <li>Michael Thielscher, University of Western Sydney, Australia
+        <li>Paolo Torroni, Università di Bologna, Italy
+        <li>Karl Tuyls, University of Liverpool, UK
+        <li>Leon van der Torre, University of Luxembourg, Netherlands
+        <li>Birna van Riemsdijk, Delft University of Technology, Netherlands
+        <li>Wamberto Vasconcelos, University of Aberdeen, Scotland
+        <li>Rineke Verbrugge, University of Groningen, Netherlands
+        <li>Shimon Whiteson, University of Oxford, UK
+        <li>Michael Winikoff, University of Technology, Sydney, Australia
+        <li>Frank Wolter, University of Liverpool, UK
+        <li>Rym Zalila-Wenkstern, The University of Texas at Dallas, USA
+        <li>Aviv Zohar, The Hebrew University, Israel
+    </ul>
+    <br>
+    <h5 dir="ltr" ><u>Robotics Track</u></h5>
+    <ul>
+        <li>Noa Agmon, Bar-Ilan University, Israel
+        <li>Julie Adams, Oregon State University, USA
+        <li>Francesco Amigoni, Politecnico of Milan, Italy
+        <li>Roderik Gross, University of Sheffield, UK
+        <li>Stephen Guy, University of Minnesota, USA
+        <li>Katia Sycara, Carnegie Mellon University, USA
+    </ul>
+    <br>
+    <h5 dir="ltr" ><u>Socially Interactive Agents Track</u></h5>
+    <ul>
+        <li>Stefan Kopp, Uni Bielefeld, Germany
+        <li>Timothy Bickmore, Northeastern University, USA
+        <li>David Traum, USC, ICT, USA
+        <li>Jonathan Gratch, University of Southern California, Institute for Creative Technologies, USA
+        <li>Hannes Vilhjalmsson, Reykjavik University, Iceland
+        <li>Michael Neff, University of California, Davis, USA
+        <li>Catherine Pelachaud, CNRS - ISIR, University Pierre and Marie Curie, France
+        <li>Michael Young, University of Utah, USA
+    </ul>
+    <br>
+    <h5 dir="ltr" ><u>Industrial Applications Track</u></h5>
+    <ul>
+        <li>Lars Braubach, University of Applied Sciences Bremen, Germany
+        <li>Peter Novak, Science &amp; Technology B.V. / Delft University of Technology, Netherlands
+        <li>Yoram Bachrach, DigitalGenius Ltd., UK
+        <li>Klaus Fischer, DFKI GmbH, Germany
+        <li>Patrick Doherty, Linköping University, Sweden
+        <li>Stefan Witwicki, Nissan Research Center -- Silicon Valley, USA
+        <li>Tim Baarslag, CWI, Netherlands
+        <li>Joerg Mueller, TU Clausthal, Germany
+        <li>Max Knobbout, Triple, Netherlands
+        <li>Somchaya Liemhetcharat, Uber Advanced Technologies Group, USA
+        <li>Marek Grzes, University of Kent, UK
+        <li>Fernando Koch, The University of Melbourne, Australia
+        <li>Ivan Razo-Zapata, Luxembourg Institute of Science and Technology, Luxembourg
+        <li>Tom Holvoet, KU Leuven, Belgium
+        <li>Mathijs de Weerdt, Delft University of Technology, Netherlands
+        <li>Koen Hindriks, Delft University of Technology, Netherlands
+    </ul>
+
+    </div>
+{% endblock %}

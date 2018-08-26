@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div>
+        For safety and functionality of your browser, keep it updated.
+        <br>
+        Therefore, periodically check the latest version of it. There are periodic updates that manufacturers of browsers publish, aimed primarily ensure safety.
+        <br>
+        If the version of your browser not be the last, we recommend that you upgrade as soon as possible.
+        <br><br>
+        In case, you find as issue with the website, we request that you kindly raise it <a href="https://github.com/ayanmukhopadhyay/aamas18IssueTracker.git">here</a>, and we will try to fix it.
+    </div>
+{% endblock %}

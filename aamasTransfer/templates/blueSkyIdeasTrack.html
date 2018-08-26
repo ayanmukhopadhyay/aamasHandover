@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+        <u><b>Blue Sky Ideas (Chairs: Michael Rovatsos and Carles Sierra)</b></u>
+        <br>
+        The emphasis of this track is on visionary ideas, long-term challenges, new research opportunities, and controversial debate.
+        It serves as an incubator for innovative, risky, and provocative ideas, and aims to provide a forum for publishing and
+        presenting these without being constrained by the result-oriented standards followed in the review process of other tracks
+        of the conference. We encourage papers to reflect on: the use of agents and multiagent systems in emergent computing technologies;
+        novel, overlooked, or underrepresented methodologies and application areas; their potential promises and risks; and on the future
+        of the research area and its community within the broader AI and computing landscape. Importantly, this track is not the right
+        place for preliminary work, or for papers reporting on existing approaches. Reviewers will assess papers based on the novelty
+        of the ideas presented, the rigor with which they are developed, and the level of critical reflection applied in the exploration
+        of these ideas.
+    </div>
+{% endblock %}

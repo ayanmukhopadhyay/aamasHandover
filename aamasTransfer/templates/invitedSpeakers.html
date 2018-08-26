@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h3><u>AAMAS 2018 : Invited Speakers</u></h3>
+    <br>
+
+
+    <div class="row">
+        <img id="aij" src="{% static "images/thomas.jpg" %}" height="250" width="180">
+    </div>
+
+    <div class="row">
+        <h5><u>Thomas A. Henzinger (Keynote Speaker)</u></h5>
+        <br>
+        <b>Short Bio</b><br>
+        Tom Henzinger is president of IST Austria (Institute of Science and Technology Austria). He holds a PhD degree from Stanford University (1991), and honorary doctorates from Fourier University in Grenoble and from Masaryk University in Brno. He was professor at Cornell University (1992-95), the University of California, Berkeley (1996-2004) and EPFL (2004-09). He was also director at the Max-Planck Institute for Computer Science in Saarbruecken. His research focuses on modern systems theory, especially models, algorithms, and tools for the design and verification of reliable software, hardware, and embedded systems. His HyTech tool was the first model checker for mixed discrete-continuous systems. He is an ISI highly cited researcher, a member of Academia Europaea and of the German and Austrian Academies of Sciences, and a fellow of the AAAS, ACM, and IEEE. He received the Milner Award of the Royal Society, the Wittgenstein Award of the Austrian Science Fund, and an Advanced Investigator Grant of the European Research Council.
+
+        <br><br>
+        <b>Talk Title: Temporal Logics for Multi-Agent Systems</b><br>
+        Temporal logic formalizes reasoning about the possible behaviors of a system over time. For example, a temporal formula may stipulate that an occurrence of event A may be, or must be, followed by an occurrence of event B. Traditional temporal logics, however, are insufficient for reasoning about multi-agent systems. In order to stipulate, for example, that a specific agent can ensure that A is followed by B, references to agents, their capabilities, and their intentions must be added to the logic, yielding Alternating-time Temporal Logic (ATL) [1]. ATL is a temporal logic that is interpreted over multi-player games, whose players correspond to agents that pursue temporal objectives. The hardness of the model-checking problem -whether a given formula is true for a given multi-agent system- depends on how the players decide on the next move in the game (for example, whether they take turns, or make independent concurrent decisions, or bid for the next move), how the outcome of a move is computed (deterministically or stochastically), how much memory the players have available for making decisions, and which kind of objectives they pursue (qualitative or quantitative). The expressiveness of ATL is still insufficient for reasoning about equilibria and related phenomena in non-zero-sum games, where the players may have interfering but not necessarily complementary objectives. For this purpose, the behavioral strategies (a.k.a. policies) of individual players can been added to the logic as quantifiable first-order entities, yielding Strategy Logic [2]. We survey several known results about these multi-player game logics and point out some open problems.
+        <br><br>
+        [1] R. Alur, T.A. Henzinger, O. Kupferman, Alternating-time temporal logic. JACM 49:672-713, 2002.<br>
+        [2] K. Chatterjee, T.A. Henzinger, N. Piterman, Strategy logic. Info. and Comp. 208:677-693, 2010.
+
+        <br><br>
+
+    </div>
+
+    <hr>
+
+    <div class = "row">
+        <img id="aij" src="{% static "images/craig2.jpg" %}" height="200" width="150">
+    </div>
+
+    <div class="row">
+        <h5><u>Craig Boutilier (ACM SIGAI Autonomous Agents Research Awardee)</u></h5>
+        <br>
+        <b>Short Bio</b><br>
+        Dr. Craig Boutilier, Principal Research Scientist at Google, has made seminal contributions to research on decision-making
+        under uncertainty, game theory, and computational social choice. He is a pioneer in applying decision-theoretic
+        concepts in novel ways in a variety of domains including (single- and multi-agent) planning and reinforcement learning,
+        preference elicitation, voting, matching, facility location, and recommender systems. His recent research
+        continues to significantly influence the field of computational social choice through the novel computational
+        and methodological tools he introduced and his focus on modeling realistic preferences. In addition to his
+        reputation for outstanding research, Dr. Boutilier is also recognized as an exceptional teacher and mentor.
+        <br><br>
+        <b>Toward User-centric Recommender Systems</b><br>
+        Artificial intelligence and machine learning technologies continue to broaden and influence our access to information, entertainment, products and services---and each other---through data-driven recommendations. While the increased access afforded by AI has undoubtedly improved certain aspects of social welfare, the ability of recommenders to generate genuinely personalized recommendations and engage users in meaningful ways remains limited. Furthermore, our understanding of how AI recommenders shape long-term user behavior is poorly understood. In this talk, I will discuss the role that various AI techniques have to play in next-generation, user-centric recommender systems. Among these are preference modeling and preference elicitation; reinforcement learning and latent state models; behavioral decision theory and economics; and modeling of user behavioral preferences. I will also highlight challenges that emerge when putting these methods into practice.
+        <br><br>
+    </div>
+
+
+    <hr>
+
+
+
+    <div class="row">
+        <img id="aij" src="{% static "images/Anna.jpg" %}" height="200" width="270">
+    </div>
+
+    <div class="row">
+        <h5><u>Ana Maria Paiva (Keynote Speaker)</u></h5>
+        <br>
+        <b>Short Bio</b><br>
+        Ana Paiva is a Full Professor in the Department of Computer Engineering at Instituto Superior Técnico (IST) from the University of Lisbon and is also the Coordinator of GAIPS – “Intelligent Agents and Synthetic Characters Group” at INESC-ID (see http://gaips.inesc-id.pt/gaips/). Her group investigates the creation of complex systems using an agent-based approach, with a special focus on social agents. Prof. Paiva’s main research focuses on the problems and techniques for creating social agents that can simulate human-like behaviours, be transparent, natural and eventually, give the illusion of life. Over the years she has addressed this problem by engineering agents that exhibit specific social capabilities, including emotions, personality, culture, non-verbal behaviour, empathy, collaboration, and others.  Her main contributions in the area of social agents have been in the field of embodied conversational agents, multi-agent systems, affective computing and social robotics.
+
+        <br><br>
+        <b>Talk Title: Ready Team Player One: Social Robots in Teams</b><br>
+        Robots will become part of our daily lives. As they do, they should not just be able to carry out specific tasks but also to partner with us socially and collaboratively. In addition, groups of robots could be interacting with groups of humans in joint activities.
+        Yet, research related to groups of humans and robots is very limited. To make this happen we need a deeper understanding of how robots can interact socially in groups, how to identify and characterize other group members, evaluate the dependencies between the behaviors of different members; understand and consider different roles, and infer how the dynamics of group interactions led to a common past or build an anticipated future.
+        In this talk I will discuss how to engineer social behaviors for robots that autonomously act as members of a group in multi-player games, played by both humans and social robots. I will start by providing an overview of recent work in social human-robot teams, and will present different scenarios to illustrate the work. I will address the issue of how humans respond to such social features in robots that convey different roles, such as partners, opponents, tutors or peers.  Motivated by psychological research I will describe some studies conducted with our autonomous social robots and discuss results associated with trust, engagement, emotions and roles.
+        I believe that by studying and engineering social interactions “for” and “with” robots in group settings, we will be building a new generation of natural, engaging, effective and, most importantly, “humane” AI.
+
+        <br><br>
+    </div>
+
+
+    <hr>
+
+    <div class="row">
+        <img id="aij" src="{% static "images/josh.png" %}" height="200" width="200">
+    </div>
+    <div class="row">
+        <h5><u>Josh Tenenbaum (FAIM Invited Speaker)</u></h5>
+        <br>
+        <b>Short Bio</b><br>
+        Joshua Brett Tenenbaum is Professor of Cognitive Science and Computation at the Massachusetts Institute of Technology.
+        He is known for contributions to mathematical psychology and Bayesian cognitive science. He previously taught at
+        Stanford University, where he was the Wasow Visiting Fellow from October 2010 to January 2011.
+        Tenenbaum received his undergraduate degree in physics from Yale University in 1993, and his Ph.D. from MIT in 1999.
+        His work primarily focuses on analyzing probabilistic inference as the engine of human cognition and as a means
+        to develop machine learning.
+        <br><br>
+        <b>Talk Title</b><br>
+        Building Machines that Learn and Think Like People
+        <br>
+    </div>
+
+
+    <hr>
+
+    <div class="row">
+            <img id="aij" src="{% static "images/joyce.jpg" %}" height="200" width="200">
+    </div>
+    <div class="row">
+        <h5><u>Joyce Chai (FAIM Invited Speaker)</u></h5>
+        <br>
+        <b>Short Bio</b><br>
+        Joyce Chai is a Professor in the
+Department of Computer Science
+and Engineering at Michigan
+State University, where she
+was awarded the William Beal
+Outstanding Faculty Award in
+2018. She holds a Ph.D. in Computer
+Science from Duke University.
+Prior to joining MSU in 2003,
+she was a Research Staff Member
+at IBM T. J. Watson Research
+Center. Her research interests include
+natural language processing,
+situated dialogue agents, human-robot communication, artificial
+intelligence, and intelligent user interfaces. Her recent work is
+focused on situated language processing to facilitate natural communication
+with robots and other artificial agents. She served as
+Program Co-chair for the Annual Meeting of the Special Interest
+Group in Dialogue and Discourse (SIGDIAL) in 2011, the ACM International
+Conference on Intelligent User Interfaces (IUI) in 2014,
+and the Annual Meeting of the North America Chapter of Association
+of Computational Linguistics (NAACL) in 2015. She received
+a National Science Foundation CAREER Award in 2004 and the
+Best Long Paper Award from the Annual Meeting of Association of
+Computational Linguistics (ACL) in 2010.
+        <br><br>
+        <b>Talk Title : Language to Action: towards Interactive Task Learning with Physical Agents</b><br>
+
+        Language communication plays an important role in human learning
+        and skill acquisition. With the emergence of a new generation
+        of cognitive robots, empowering these physical agents to learn
+        directly from human partners about the world and joint tasks becomes
+        increasingly important. In this talk, I will share some recent
+        work on interactive task learning where humans can teach physical
+        agents new tasks through natural language communication
+        and demonstration. I will give examples of language use in interactive
+        task learning and discuss multiple levels of grounding that
+        are critical in this process. I will demonstrate the importance of
+        common-sense knowledge, particularly the acquisition of very basic
+        physical causality knowledge, in grounding human language
+        to actions not only perceived but also performed by the agent. As
+        humans and agents often have mismatched capabilities and knowledge,
+        I will highlight the role of collaboration in communicative
+        grounding to mediate differences and strive for a common ground
+        of joint representations.
+        <br>
+    </div>
+
+
+    <br>
+    </div>
+{% endblock %}

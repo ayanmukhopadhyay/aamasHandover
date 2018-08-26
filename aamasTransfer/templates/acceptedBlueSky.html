@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h3><u>Accepted Papers : Blue Sky Track</u></h3>
+        <br>
+        <h4><u>Full Papers</u></h4>
+            <b>Interactive Democracy</b> <br>
+            Markus Brill<br>
+            <hr>
+            <b>Incorporating Reality into Social Choice</b> <br>
+            Ehud Shapiro, Nimrod Talmon<br>
+            <hr>
+            <b>Autonomous fishing vessels roving the seas: what multiagent systems have got to do with it</b> <br>
+            Loïs Vanhée, Melania Borit, Jorge Santos<br>
+            <hr>
+            <b>Agents for Social (Media) Change</b> <br>
+            Sandip Sen, Zenefa Rahaman, Chad Crawford, Osman Yucel<br>
+            <hr>
+            <b>Agent Strategy Summarization</b> <br>
+            Ofra Amir, Finale Doshi-Velez, David Sarne<br>
+            <hr>
+            <b>Social Machines For All</b> <br>
+            Petros Papapanagiotou, Alan Davoust, Dave Murray-Rust, Areti Manataki, Max Van Kleek, Nigel Shadbolt, David Robertson<br>
+            <hr>
+    </div>
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+    <h4><u>Registration Information</u></h4>
+    <br>
+    As we expect high participation numbers (and tickets might sell out early),we recommend to register as early as possible,
+    if you want to participate. AAMAS registration opens on April 16. Early registration rates apply until May 31.
+    The late registration starts on June 1 and ends on June 25. On-site registration is possible with partially increased fees.
+    You should however be aware that some benefits like travel cards or dinner tickets might be not be available any more.
+    <br><br>
+    As the conference is organized and accounts are handled in Sweden, Swedish tax legislation applies. According to these rules,
+    persons who register for the conference privately have to pay 25% tax on top of the registration fees.
+    ALL persons sent by an organization (such as a university, research institute, agency) or a company do not have to pay
+    this tax, no matter whether they pay on their own or their affiliation pays directly. During the registration process,
+    you have to provide the VAT or organization number of your organization (such a number exists for every organization and company. Note that
+    this is just for identification purposes and not for payment).
+     <font color="red">You will receive a
+    link for payment after this number has been verified. This may take some time after receiving your registration as it is –
+    due to the high variety of numbers – a semi-manual process. </font> There is more information on
+    the registration system website on VAT / organization numbers (extra tab on the very top). We apologize for the additional bureaucratic effort, but it is required.
+
+
+    Registration can be done via: <a href="http://www.delegia.com/aamas2018/Start-your-registration-here">http://www.delegia.com/aamas2018/Start-your-registration-here</a>
+    <br><br>The registration fees are:<br>
+    <br>
+
+    <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-baqh">Category</th>
+    <th class="tg-baqh">Early Registration </th>
+    <th class="tg-baqh">Late Registration</th>
+    <th class="tg-baqh">On-site Registration</th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Tutorial / Doctoral<br>Mentoring Day (July 10) <br><br>includes access to AAMAS and ICML tutorials (subject to space constraints), <br>coffee breaks , conference material including an SL transportation card. <br>(Mentors in the Doctoral Mentoring program receive free access.)</td>
+    <td class="tg-baqh">Regular: 1300 SEK <br>Student: 650 SEK</td>
+    <td class="tg-baqh">Regular: 1700 SEK <br>Student: 850 SEK</td>
+    <td class="tg-baqh">Regular: 1700 SEK <br>Student: 850 SEK</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Workshops<br></td>
+    <td class="tg-baqh">Regular: 3000 SEK <br>Student: 1500 SEK</td>
+    <td class="tg-baqh">Regular: 3900 SEK <br>Student: 1950 SEK</td>
+    <td class="tg-baqh">Regular: 5100 SEK <br>Student: 2550 SEK</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Main Conference (July 11-13)<br><br>(includes access to AAMAS sessions, ICML sessions and FAIM workshops on<br> Friday (subject to space constraints), coffee breaks, conference dinner on July 12 <br>(only regular registration, students can buy a ticket at a reduced price), <br>conference material including an SL transportation card.)</td>
+    <td class="tg-baqh">Regular: 4300 SEK<br>Student: 2150 SEK</td>
+    <td class="tg-baqh">Regular: 5600 SEK <br>Student: 2800 SEK</td>
+    <td class="tg-baqh">Regular: 5600 SEK <br>Student: 2800 SEK</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Tutorial, Main Conference and Workshop Program<br><br>(includes access to all items described above, <br>including an SL transportation card covering the<br>complete conference period.)<br><br></td>
+    <td class="tg-baqh">Regular: 7800 SEK <br>Student: 3900 SEK</td>
+    <td class="tg-baqh">Regular: 10000 SEK <br>Student: 5000 SEK</td>
+    <td class="tg-baqh">Regular: 11200 SEK <br>Student: 5600 SEK</td>
+  </tr>
+</table>
+    <br>
+    If you have to cancel your participation, the following reimbursement policy applies:
+    <ul>
+        <li> 0% cancellation fee is applicable to cancellations received before May 31.
+        <li> 50% cancellation fee is applicable to cancellations received before June 21.
+        <li> After this date, the registration fee, including dinner tickets, is non-refundable.
+        <li> <font color="red">An amendment fee of SEK 500 is applicable for all changes,
+in regards to VAT number and Tax Registration Number, made after the registration.</font>
+    </ul>
+
+
+<br><br>
+
+
+
+    </div>
+{% endblock %}

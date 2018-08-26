@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AAMAS 2018</title>
+        <meta charset="utf-8">
+
+{#        <meta name="viewport" content="width=device-width, user-scalable=no">#}
+        <meta name="viewport" content="width=1024">
+
+
+        {% load staticfiles %}
+        <!-- JS -->
+        <script src="{% static "js/jquery.js" %}"> var version = "{{ 1.0 }}"</script>
+{#        <script src="{% static "js/collapsible_navbar.js"%}"></script>#}
+        <script src="{% static "js/bootstrap.min.js" %}"></script>
+
+        <!-- CSS -->
+        <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+        <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+{#        <link href="{% static "css/collapsible_navbar.css" %}" rel="stylesheet">#}
+        <!-- Social Share Kit CSS -->
+        <link href="{% static "css/social-share-kit.css" %}" rel="stylesheet">
+
+        {% block includes %}
+        {% endblock %}
+    </head>
+
+    <body style="margin-left:10px;">
+
+{#        <div class="navbar-wrapper">#}
+        <nav class="navbar navbar-inverse", data-spy="affix", role="navigation">
+            <div class="container-fluid">
+                <div id="navbar", class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/aamas18/home">Home</a></li>
+                        <li><a href="/aamas18/callForPapers">Call for Papers</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tracks<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/aamas18/callForPapers#jaamas">JAAMAS Track</a></li>
+                                <li><a href="/aamas18/callForPapers#robotics">Robotics Track</a></li>
+                                <li><a href="/aamas18/callForPapers#sociallyInteractiveAgents">Socially Interactive Agents Track</a></li>
+                                <li><a href="/aamas18/callForPapers#blueSkyIdeas">Blue Sky Ideas Track</a></li>
+                                <li><a href="/aamas18/callForPapers#industrialApplications">Industrial Applications Track</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Program<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/aamas18/schedule">Program at a Glance</a></li>
+{#                                <li><a href="/aamas18/jul11">July 11</a></li>#}
+{#                                <li><a href="/aamas18/jul12">July 12</a></li>#}
+{#                                <li><a href="/aamas18/jul13">July 13</a></li>#}
+                                <li><a href="/aamas18/detailedProgram">Detailed Program</a></li>
+                                <li><a href="/aamas18/posterSchedule">Poster Schedule</a></li>
+                                <li><a href="/aamas18/demoSchedule">Demo Schedule</a></li>
+                                <li><a href="/aamas18/socialEvents">Social Events</a></li>
+
+{#                                <li><a href="/aamas18/detailedProgram">Detailed Program</a></li>#}
+                                </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/aamas18/callForTutorials">Call for Tutorials</a></li>
+                                <li><a href="/aamas18/tutorialsList">List of Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Demos<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/aamas18/callForDemos">Call for Demos</a></li>
+                                <li><a href="https://aamas-demos.confmaster.net ">Submit a Demo</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Workshops<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/aamas18/workshops/">Call for Workshops</a></li>
+                                <li><a href="https://www.ijcai-18.org/workshops/">List of Workshops</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Exhibits<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/aamas18/exhibits/">Call for Exhibits</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://ifaamas.org/Proceedings/aamas2018/">Proceedings</a></li>
+                        <li><a href="/aamas18/registration">Registration</a></li>
+                        <li><a href="/aamas18/invitedSpeakers">Invited Speakers</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Accepted Papers<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/aamas18/acceptedPapers">Main Track</a></li>
+                                <li><a href="/aamas18/acceptedRobotics">Robotics Track</a></li>
+                                <li><a href="/aamas18/acceptedSIA">Socially Interactive Agents Track</a></li>
+                                <li><a href="/aamas18/acceptedBlueSky">Blue Sky Ideas Track</a></li>
+                                <li><a href="/aamas18/acceptedIndustrial">Industrial Applications Track</a></li>
+                                <li><a href="/aamas18/acceptedDoctoral">Doctoral Consortium</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/aamas18/callForPapers#importantDates">Important Dates</a></li>
+                        <li><a href="/aamas18/submissions">Submissions</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Committees<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/aamas18/committees">Organizing Committee</a></li>
+                                <li><a href="/aamas18/areaChairs">Area Chairs</a></li>
+                                <li><a href="/aamas18/spc">Senior Program Committee</a></li>
+                                <li><a href="/aamas18/pc">Program Committee</a></li>
+                                <li><a href="/aamas18/localOrganization">Local Organization Committee</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/aamas18/doctorMentor">Doctoral Consortium</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Venue and Travel<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/aamas18/venue">Venue</a></li>
+                                <li><a href="/aamas18/stockholm">Stockholm</a></li>
+                                <li><a href="/aamas18/accommodation">Accommodation</a></li>
+                                <li><a href="/aamas18/traveling">Traveling</a></li>
+                                <li><a href="/aamas18/tourism">Tourism</a></li>
+                                <li><a href="/aamas18/additionalInfo">Additional Information</a></li>
+                                <li><a href="/aamas18/infoLast"><b>Last Minute Information</b></a></li>
+{#                                <li><a href="/aamas18/map">Map</a></li>#}
+                            </ul>
+                        </li>
+                        <li><a href="/aamas18/studentTravel">Student Travel Support</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sponsorship<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/aamas18/sponsors">Sponsors</a></li>
+                                <li><a href="/aamas18/sponsorshipLevels">Sponsorship Levels</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Awards<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/aamas18/acmSigai">ACM SIGAI Autonomous Agents Research Award</a></li>
+                                    <li><a href="/aamas18/victorLesser">Victor Lesser Distinguished Dissertation Award</a></li>
+                                    <li><a href="/aamas18/ifaamasBestPaper">IFAAMAS Influential Paper Award</a></li>
+                                    <li><a href="/aamas18/paperAward">Best Paper Award Nominations</a></li>
+                                    <li><a href="/aamas18/awardWinners">Award Winners</a></li>
+                                </ul>
+                        </li>
+{#                        <li><a href="/aamas18/awards">Awards</a></li>#}
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--container fluid -->
+            </nav><!--wrapper inverse-->
+{#        </div>#}
+
+        <!-- Main Poster -->
+        <div class="row">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+{#            <br>#}
+{#            <br>#}
+        </div>
+        <div class="row">
+            <img id="aamasBanner" src="{% static "images/aamasBanner.png" %}">
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="page-content">
+                <div class="container-fluid" >
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+{#        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584c4435afd886de"></script>#}
+
+    </body>
+</html>

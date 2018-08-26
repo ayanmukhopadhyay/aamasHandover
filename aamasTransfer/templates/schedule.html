@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:12px;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:initial;border-color:black;white-space: nowrap}
+    .tg th{font-family:Arial, sans-serif;font-size:12px;font-weight:normal;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:initial;border-color:black;white-space: nowrap}
+    .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+    .tg .tg-uys7{border-color:inherit;text-align:center}
+    .tg .tg-us36{border-color:inherit;vertical-align:top}
+    .tg .tg-y2k2{font-weight:bold;text-decoration:underline;border-color:inherit;text-align:center}
+    .tg .tg-yw4l{vertical-align:top}
+    .tg .tg-9353{font-weight:bold;text-decoration:underline;border-color:inherit;text-align:center;vertical-align:top}
+</style>
+
+<div>
+    Papers will be presented orally in 20 minute slots (15 minutes presentation + 5 minutes questions). All extended
+    abstracts and, optionally, full papers will be presented as posters during the conference. Posters of the full papers
+    will be presented on the same day that they are orally presented. The size of posters should be DinA0 (either poster
+    or landscape). All poster sessions are scheduled at 15:30-17:00 hours.
+    <br><br>
+    <table class="tg">
+      <tr>
+        <td class="tg-9353" colspan="9"><font color="red"><H5><b>11 July 2018</b></H5></font></td>
+      </tr>
+      <tr bgcolor="#0099ff">
+        <td class="tg-uys7">08:30-09:00</td>
+        <td class="tg-uys7" colspan="8">Opening Session</td>
+      </tr>
+      <tr bgcolor="#ff9900">
+        <td class="tg-uys7"><b>09:00-10:00</b></td>
+        <td class="tg-uys7" colspan="8"><b>Keynote : Thomas Henzinger</b></td>
+      </tr>
+      <tr>
+        <td class="tg-uys7">10:00-10:30</td>
+        <td class="tg-uys7" colspan="8">Coffee Break</td>
+      </tr>
+      <tr>
+        <td class="tg-uys7">10:30-11:50</td>
+        <td class="tg-uys7">Session 1<br>Social Choice Theory 1</td>
+        <td class="tg-c3ow">Session 2<br>Auctions and Mechanism Design 1</td>
+        <td class="tg-c3ow">Session 3<br>Game Theory 1</td>
+        <td class="tg-c3ow">Session 4<br>Learning and Adaptation 1</td>
+        <td class="tg-c3ow">Session 5<br>Logic for Multiagent Systems 1</td>
+        <td class="tg-c3ow">Session 6<br>Social Networks</td>
+        <td class="tg-c3ow">Session 7<br>Robotics: Planning</td>
+        <td class="tg-yw4l"></td>
+      </tr>
+      <tr>
+        <td class="tg-uys7">11:50-13:30</td>
+        <td class="tg-uys7" colspan="8">Lunch</td>
+      </tr>
+      <tr>
+        <td class="tg-uys7">13:30-15:30</td>
+        <td class="tg-c3ow">Session 8<br>Social Choice on Networks</td>
+        <td class="tg-c3ow">Session 9<br>Auctions and Mechanism Design 2</td>
+        <td class="tg-c3ow">Session 10<br>Logic and Games</td>
+        <td class="tg-c3ow">Session 11<br>Learning and Adaptation 2</td>
+        <td class="tg-c3ow">Session 12<br>Socially Interactive Agents 1</td>
+        <td class="tg-c3ow">Session 13<br>Robotics: Multi-Robot Coordination</td>
+        <td class="tg-c3ow">Session 14<br>Industrial Applications</td>
+        <td class="tg-yw4l"></td>
+      </tr>
+      <tr  bgcolor="#ffff99">
+        <td class="tg-uys7">15:30-17:00</td>
+        <td class="tg-uys7" colspan="8">Coffee Break + Posters and Demos</td>
+      </tr>
+      <tr bgcolor="#ff9900">
+        <td class="tg-uys7"><b>17:00-18:00</b></td>
+        <td class="tg-uys7" colspan="8"><b>Keynote: Craig Boutilier (Autonomous Agents Award)</b></td>
+      </tr>
+      <tr>
+        <td class="tg-9353" colspan="9"><font color="red"><H5><b>12 July 2018</b></H5></font></td>
+      </tr>
+      <tr bgcolor="#ff9900">
+        <td class="tg-c3ow"><b>09:00-10:00</b></td>
+        <td class="tg-c3ow" colspan="8"><b>Keynote: Ana Paiva</b></td>
+      </tr>
+      <tr>
+        <td class="tg-c3ow">10:00-10:30</td>
+        <td class="tg-c3ow" colspan="8">Coffee Break</td>
+      </tr>
+      <tr>
+        <td class="tg-c3ow">10:30-11:50</td>
+        <td class="tg-c3ow">Session 15<br>Auctions and Mechanism Design 3</td>
+        <td class="tg-c3ow">Session 16<br>Economic Paradigms</td>
+        <td class="tg-c3ow">Session 17<br>Game Theory 2</td>
+        <td class="tg-c3ow">Session 18<br>Agent Cooperation 1</td>
+        <td class="tg-c3ow">Session 19<br>Scheduling and Planning</td>
+        <td class="tg-c3ow">Session 20<br>Agent-Based Simulation 1</td>
+        <td class="tg-c3ow">Session 21<br>Engineering Multiagent Systems 1</td>
+        <td class="tg-c3ow">Session 22<br>Robotics: Human-Robot Interaction</td>
+      </tr>
+      <tr>
+        <td class="tg-c3ow">11:50-13:30</td>
+        <td class="tg-c3ow" colspan="8">Lunch</td>
+      </tr>
+      <tr>
+        <td class="tg-c3ow">13:30-15:30</td>
+        <td class="tg-c3ow">Session 23<br>Applications of Game Theory<br></td>
+        <td class="tg-c3ow">Session 24<br>Social Choice Theory 2</td>
+        <td class="tg-c3ow">Session 25<br>Learning and Adaptation 3</td>
+        <td class="tg-c3ow">Session 26<br>Agent-Based Simulation 2</td>
+        <td class="tg-c3ow">Session 27<br>Argumentation</td>
+        <td class="tg-c3ow">Session 28<br>Communication</td>
+        <td class="tg-c3ow">Session 29<br>Blue Sky</td>
+        <td class="tg-c3ow">Session 30<br>Socially Interactive Agents 2</td>
+      </tr>
+      <tr  bgcolor="#ffff99">
+        <td class="tg-c3ow">15:30-17:00</td>
+        <td class="tg-c3ow" colspan="8">Coffee Break + Posters and Demos</td>
+      </tr>
+      <tr>
+        <td class="tg-c3ow">17:00-18:00</td>
+        <td class="tg-c3ow">Session 31<br>Noncooperative Game Theory</td>
+        <td class="tg-c3ow">Session 32<br>Norms and Trust</td>
+        <td class="tg-c3ow">Session 33<br>Planning</td>
+        <td class="tg-c3ow">Session 34<br>Engineering Multiagent Systems 2</td>
+        <td class="tg-c3ow">Session 35<br>Dissertation Award<br>Ariel Rosenfeld</td>
+        <td class="tg-c3ow"></td>
+        <td class="tg-c3ow"></td>
+        <td class="tg-c3ow"></td>
+      </tr>
+      <tr bgcolor="#ffff99">
+          <td class="tg-c3ow">19:30-24:00</td>
+          <td class="tg-c3ow" colspan="8">Conference Dinner and Awards at <a href="http://www.skansen.se/en/restaurang-solliden">Solliden Restaurant</a></td>
+      </tr>
+      <tr>
+        <td class="tg-9353" colspan="9"><font color="red"><H5><b>13 July 2018</b></H5></font></td>
+      </tr>
+      <tr>
+        <td class="tg-c3ow">09:00-10:00</td>
+        <td class="tg-c3ow">Session 36<br>Coalition Formation</td>
+        <td class="tg-c3ow">Session 37<br>Learning and Adaptation 4</td>
+        <td class="tg-c3ow">Session 38<br>Engineering and Applications of Multiagent Systems</td>
+        <td class="tg-c3ow">Session 39<br>Logic for Multiagent Systems 2</td>
+        <td class="tg-c3ow">Session 40<br>Human and Agent Interaction</td>
+        <td class="tg-c3ow">Session 41<br>Trust and Reputation</td>
+        <td class="tg-c3ow"></td>
+        <td class="tg-c3ow"></td>
+      </tr>
+      <tr>
+        <td class="tg-c3ow">10:00-10:30</td>
+        <td class="tg-c3ow" colspan="8">Coffee Break</td>
+      </tr>
+      <tr>
+        <td class="tg-c3ow">10:30-11:50</td>
+        <td class="tg-c3ow">Session 42<br>Auction and Mechanism Design 4</td>
+        <td class="tg-c3ow">Session 43<br>Social Choice Theory 3</td>
+        <td class="tg-c3ow">Session 44<br>Agent Cooperation 2</td>
+        <td class="tg-c3ow">Session 45<br>Agent-based Simulation 3</td>
+        <td class="tg-c3ow">Session 46<br>Socially Interactive Agents 3</td>
+        <td class="tg-c3ow">Session 47<br>Robotics: Planning</td>
+        <td class="tg-c3ow"></td>
+        <td class="tg-c3ow"></td>
+      </tr>
+      <tr>
+        <td class="tg-us36">11:50-13:30</td>
+        <td class="tg-c3ow" colspan="8">Lunch</td>
+      </tr>
+      <tr bgcolor="#ff9900">
+        <td class="tg-us36"><b>13:30-15:30</b></td>
+        <td class="tg-c3ow" colspan="8"><b>IJCAI/ICML Joint Keynote: Joyce Yue Chai + Josh Tenenbaum</b></td>
+      </tr>
+      <tr  bgcolor="#ffff99">
+        <td class="tg-us36">15:30-17:00</td>
+        <td class="tg-c3ow" colspan="8">Coffee Break + Posters</td>
+      </tr>
+      <tr bgcolor="#0099ff">
+        <td class="tg-us36">17:00-18:00</td>
+        <td class="tg-c3ow" colspan="8">Community Meeting Closing</td>
+      </tr>
+    </table>
+    <br>
+</div>
+
+{% endblock %}

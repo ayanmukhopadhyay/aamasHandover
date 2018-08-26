@@ -1,0 +1,345 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block content %}
+
+{#<style type="text/css">#}
+{#    .tg  {border-collapse:collapse;border-spacing:0;}#}
+{#    .tg td{font-family:Arial, sans-serif;font-size:12px;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:break-all;border-color:black;white-space: nowrap}#}
+{#    .tg th{font-family:Arial, sans-serif;font-size:12px;font-weight:normal;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:break-all;border-color:black;white-space: nowrap}#}
+{#    .tg .tg-s6z2{border-color:inherit;text-align:center;vertical-align:top}#}
+{#    .tg .tg-uys7{border-color:inherit;text-align:center}#}
+{#    .tg .tg-us36{border-color:inherit;vertical-align:top}#}
+{#    .tg .tg-y2k2{font-weight:bold;text-decoration:underline;border-color:inherit;text-align:center}#}
+{#    .tg .tg-yw4l{vertical-align:top}#}
+{#    .tg .tg-9353{font-weight:bold;text-decoration:underline;border-color:inherit;text-align:center;vertical-align:top}#}
+{#    .tg .tg-s6z2{text-align:center}#}
+{#    .tg .tg-hgcj{font-weight:bold;text-align:center}#}
+{#    .tg .tg-yw4l{vertical-align:top}#}
+{#    .tg .tg-031e{vertical-align:top}#}
+{#</style>#}
+
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:12px;padding:5px 5px;border-style:solid;border-width:1px;text-align:center}
+    .tg th{font-family:Arial, sans-serif;font-size:12px;font-weight:normal;padding:5px 5px;border-style:solid;border-width:1px;text-align:center}
+    .tg .tg-s6z2{border-color:inherit;text-align:center;vertical-align:middle}
+    .tg .tg-s6z2{text-align:center}
+    .tg .tg-031e{vertical-align:top}
+    .tg .tg-s6z3{vertical-align:middle;text-align:center;word-wrap:normal}
+</style>
+
+<div>
+    <table class="tg">
+        <tr>
+<td class="tg-s6z3">Session<br></td>
+{#<td class="tg-s6z2">Paper ID</td>#}
+<td class="tg-031e">Authors</td>
+<td class="tg-031e">Title</td>
+{#<td class="tg-031e"> Abstract</td>#}
+</tr>
+    <tr>
+<td class="tg-s6z3" rowspan="3" nowrap>Session 36 (09:00-10:00)<br>Coalition Formation</td>
+{#<td class="tg-s6z2">272</td>#}
+<td class="tg-031e">Gianpiero Monaco, Luca Moscardelli, Michele Flammini, Mordechai Shalom, Shmuel Zaks </td>
+<td class="tg-031e">Online Coalition Structure Generation in Graph Games</td>
+{#<td class="tg-031e"> We consider the online version of the coalition structure generation in graph games problem, where agents are vertices in a graph. After each step $t$, in which the $t$-th agent appears in an online fashion, agents are partitioned into $c$ coalitions $\clust=\{\C_1^t, \C_2^t, \ldots, \C_{c}^t \}$, such that every agent belongs to exactly one coalition $C_i^t$. When an agent appears, it may either join an existing coalition or form a new one having it as the only agent. The profit of a such a coalition structure $\clust$ is the sum of the profits of its coalitions. We consider two cases for the profit of a coalition:  the sum of the weights of its edges, and  the sum of the weights of its edges divided by its size . Such coalition structures appear in a variety of application in AI, multi-agent systems, networks, as well as in social networks, data analysis, computational biology, game theory, and scheduling.  For each of the profit functions we consider the bounded and unbounded cases depending on whether or not the size of a coalition can exceed a given value $\alpha$. Furthermore, we consider the case of limited number of coalitions and various weight functions for the edges, namely the cases of unrestricted, positive and constant weights. We show tight or nearly tight bounds for the competitive ratio in each case.  </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">408</td>#}
+<td class="tg-031e">Emir Demirovic, Nicolas Schwind, Tenda Okimoto, Katsumi Inoue </td>
+<td class="tg-031e">Recoverable Team Formation: Building Teams Resilient to Change</td>
+{#<td class="tg-031e"> Team formation consists in finding the least expensive team of agents such that a certain set of skills is covered. In this paper, we formally introduce recoverable team formation, a generalization of the above problem, by taking into account the dynamic nature of the environment, e.g. after a team has been formed, agents may unexpectedly become unavailable due to failure or illness. We analyze the computational complexity of RTF, provide both complete and heuristic algorithms, and empirically evaluate their performance. Furthermore, we demonstrate that RTF generalizes robust team formation, where the task is to build a team capable of covering all required skills even after any k agents are removed. Despite the high complexity of forming a recoverable team, we argue that recoverability is a crucial feature, and experimentally show that it is more appropriate for some applications than robustness.  </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">522</td>#}
+<td class="tg-031e">Fahad Panolan, Sushmita Gupta, Saket Saurabh, Meirav Zehavi </td>
+<td class="tg-031e">Stability in Barter Exchange Markets</td>
+{#<td class="tg-031e"> The notion of stability is the foundation of several classic problems in economics and computer science that arise in a wide-variety of real-world situations, including Stable Marriage, Stable Roommate, Hospital Resident and Group Activity Selection. We study this notion in the context of barter exchange markets. The input of our problem of interest consists of a set of people offering goods/services, with each person subjectively assigning values to a subset of goods/services offered by other people. The goal is to find a  stable transaction, a set of cycles that is  stable  in the following sense: there does not exist a cycle such that every person participating in that cycle prefers to his current “status”. For example, consider a market where families are seeking vacation rentals and offering their own homes for the same. Each family wishes to acquire a vacation home in exchange of its own home without any monetary exchange. We study such a market by analyzing a stable transaction of houses involving cycles of fixed length. The underlying rationale is that an entire trade/exchange fails if any of the participating agents cancels the agreement; as a result, shorter  cycles are desirable.  We show that given a transaction, it can be verified whether or not it is stable in polynomial time, and that the problem of finding a stable transaction is NP-hard even if each person desires only a small number of other goods/services. Having established these results, we study the problem of finding a stable transaction in the framework of parameterized algorithms. </td>#}
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="3" nowrap>Session 37 (09:00-10:00)<br>Learning And Adaptation 4</td>
+{#<td class="tg-s6z2">119</td>#}
+<td class="tg-031e">Xinlei pan, Yilin Shen </td>
+<td class="tg-031e">Human-Interactive Subgoal Supervision for Efficient Inverse Reinforcement Learning</td>
+{#<td class="tg-031e"> Humans are able to understand and perform complex tasks&nbsp;  by strategically structuring tasks into incremental steps  or sub-goals. For a robot attempting to learn to perform&nbsp;  a sequential task with critical subgoal states, these&nbsp;  subgoal states can provide a natural opportunity for&nbsp;  interaction with a human expert. This paper&nbsp;  analyzes the benefit of incorporating a notion of subgoals  into Inverse Reinforcement Learning  with&nbsp;  a Human-In-The-Loop  framework. The learning process&nbsp;  is interactive, with a human expert first providing input&nbsp;  in the form of full demonstrations along with subgoal states. These  subgoal states defines a set of sub-tasks for the learning&nbsp;  agent to complete in order to achieve the final goal. The learning agent&nbsp;  queries for partial demonstrations corresponding to each sub-task  as needed when the learning agent struggles with individual&nbsp;  sub-tasks. The proposed Human Interactive IRL  framework  is evaluated on several discrete path-planning tasks. We&nbsp;  demonstrate that subgoal-based interactive&nbsp;  structuring of the learning task results in significantly more&nbsp;  efficient learning, requiring only a fraction of the demonstration&nbsp;  data needed for learning the underlying reward function with a&nbsp;  baseline IRL model.&nbsp; </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">384</td>#}
+<td class="tg-031e">Zhang-Wei Hong, Shih-Yang Su, Tzu-Yun Shann, Yi-Hsiang Chang, Chun-Yi Lee </td>
+<td class="tg-031e">A Deep Policy Inference Q-Network for Multi-Agent Systems</td>
+{#<td class="tg-031e"> We present DPIQN, a deep policy inference Q-network that targets multi-agent systems composed of controllable agents, collaborators, and opponents that interact with each other. We focus on one challenging issue in such systems---modeling agents with varying strategies---and propose to employ "policy features" learned from raw observations  of collaborators and opponents by inferring their policies. DPIQN incorporates the learned policy features as a hidden vector into its own deep Q-network, such that it is able to predict better Q values for the controllable agents than the state-of-the-art deep reinforcement learning models. We further propose an enhanced version of DPIQN, called deep recurrent policy inference Q-network, for handling partial observability. Both DPIQN and DRPIQN are trained by an adaptive training procedure, which adjusts the network's attention to learn the policy features and its own Q-values at different phases of the training process. We present a comprehensive analysis of DPIQN and DRPIQN, and highlight their effectiveness and generalizability in various multi-agent settings. Our models are evaluated in a classic soccer game involving both competitive and collaborative scenarios. Experimental results performed on 1 vs. 1 and 2 vs. 2 games show that DPIQN and DRPIQN demonstrate superior performance to the baseline DQN and deep recurrent Q-network  models. We also explore scenarios in which collaborators or opponents dynamically change their policies, and show that DPIQN and DRPIQN do lead to better overall performance in terms of stability and mean scores.  </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">197</td>#}
+<td class="tg-031e">Pol Rosello, Mykel Kochenderfer </td>
+<td class="tg-031e">Multi-Agent Reinforcement Learning for Multi-Object Tracking</td>
+{#<td class="tg-031e"> We present a novel, multi-agent reinforcement learning formulation of multi-object tracking that treats creating, propagating, and terminating object tracks as actions in a sequential decision-making problem. In our formulation, each agent tracks a single object at a time by updating a Bayesian filter according to a discrete number of actions. At each timestep, the reward received is dependent on the joint actions taken by all agents and the ground truth object tracks. We optimize for different tracking metrics directly while propagating covariance information about each object's state. We use trust region policy optimization  to train a shared policy across all agents, parameterized by a multi-layer neural network. Our experiments show an improvement in tracking accuracy over similar state-of-the-art, rule-based approaches on a popular multi-object tracking dataset.  </td>#}
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="3" nowrap>Session 38 (09:00-10:00)<br>Engineering And Applications Of Multiagent Systems</td>
+{#<td class="tg-s6z2">286</td>#}
+<td class="tg-031e">Ferdinando Fioretto, Chansoo Lee, Pascal Van Hentenryck </td>
+<td class="tg-031e">Constrained-Based Differential Privacy for Mobility Services</td>
+{#<td class="tg-031e"> Ubiquitous mobile and wireless communication systems have the potential to revolutionize transportation systems, making accurate mobility traces and activity-based patterns available to optimize the design and operations of mobility systems. However, these rich data sets also pose significant privacy risks, potentially revealing highly sensitive information about individual agents.  This paper studies how to use  differential privacy  to release mobility data for transportation applications. It shows that existing approaches do not provide the desired fidelity for practical uses. To remedy this limitation, the paper proposes the idea of  Constraint-Based Differential Privacy   that casts the production of a private data set as an optimization problem that redistributes the noise introduced by a randomized mechanism to satisfy fundamental constraints of the original data set.  The CBDP has strong theoretical guarantees: It is a constant factor away from optimality and, when the constraints capture categorical features, it runs in polynomial time. Experimental results show that CBDP ensures that a city-level multi-modal transit system has similar performance measures when designed and optimized over the real and private data sets and improves state-of-art privacy methods by an order of magnitude. </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">381</td>#}
+<td class="tg-031e">Bryan Wilder, Laura Onasch-Vera,Juliana Hudson, Jose Luna, Nicole Wilson, Robin Petering, Darlene Woo, Milind Tambe, Eric Rice </td>
+<td class="tg-031e">End-to-End Influence Maximization in the Field</td>
+{#<td class="tg-031e"> This work is aims to overcome the challenges in deploying influence maximization to support community driven interventions. Influence maximization is a crucial technique used in preventative health interventions, such as HIV prevention amongst homeless youth. Drop-in centers for homeless youth train a subset of youth as peer leaders who will disseminate information about HIV through their social networks. The challenge is to find a small set of peer leaders who will have the greatest possible influence. While many algorithms have been proposed for influence maximization, none can be feasibly deployed by a service provider: existing algorithms require costly surveys of the entire social network of the youth to provide input data, and high performance computing resources to run the algorithm itself. Both requirements are crucial bottlenecks to widespread use of influence maximization in real world interventions.  To address the above challenges, this innovative applications paper introduces the CHANGE agent for influence maximization. CHANGE handles the end-to-end process of influence maximization, from data collection to peer leader selection. Crucially, CHANGE only surveys a fraction of the youth to gather network data and minimizes computational cost while providing comparable performance to previously proposed algorithms. We carried out a pilot study of CHANGE in collaboration with a drop-in center serving homeless youth in a major U.S. city. CHANGE surveyed only 18\% of the youth to construct its social network. However, the peer leaders it selected reached just as many youth as previously field-tested algorithms which surveyed the entire network. This is the first real-world study of a network sampling algorithm for influence maximization. Simulation results on real-world networks also support our claims. </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">388</td>#}
+<td class="tg-031e">Amulya Yadav, Ritesh Noothigattu, Eric Rice,Laura Onasch-Vera,Leandro Soriano Marcolino,Milind Tambe </td>
+<td class="tg-031e">Please be an Influencer? Contingency-Aware Influence Maximization</td>
+{#<td class="tg-031e"> Most previous work on influence maximization in social networks assumes that the chosen influencers  can be influenced with certainty . In this paper, we focus on using influence maximization in public health domains for assisting low-resource communities, where contingencies are common. It is very difficult in these domains to ensure that the seed nodes are influenced, as influencing them entails contacting/convincing them to attend training sessions, which may not always be possible.&nbsp; Unfortunately, previous state-of-the-art algorithms for influence maximization are unusable in this setting. This paper tackles this challenge via the following four contributions:  we propose the Contingency Aware Influence Maximization problem and analyze it theoretically;  we cast this problem as a Partially Observable Markov Decision Process and propose CAIMS  to solve it, which leverages a natural action space factorization associated with real-world social networks; and  we provide extensive simulation results to compare CAIMS with existing state-of-the-art influence maximization algorithms. Finally,  we provide results from a real-world feasibility trial conducted to evaluate CAIMS, in which key influencers in homeless youth social networks were influenced in order to spread awareness about HIV.              </td>#}
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="3" nowrap>Session 39 (09:00-10:00)<br>Logic For Multiagent Systems 2</td>
+{#<td class="tg-s6z2">291</td>#}
+<td class="tg-031e">Bita Banihashemi, Giuseppe De Giacomo, Yves Lesperance </td>
+<td class="tg-031e">Hierarchical Agent Supervision</td>
+{#<td class="tg-031e"> Agent supervision is a form of control/customization where  a supervisor restricts the behavior of an agent to enforce certain  requirements, while leaving the agent as much autonomy  as possible. To facilitate supervision, it is often of interest  to consider hierarchical models where a high level abstracts  over low-level behavior details. We study hierarchical agent  supervision in the context of the situation calculus and the  ConGolog agent programming language, where we have a  rich first-order representation of the agent state. We define  the constraints that ensure that the controllability of individual  actions at the high level in fact captures the controllability  of their implementation at the low level. On the basis of  this, we show that we can obtain the maximally permissive  supervisor by first considering only the high-level model and  obtaining a high-level supervisor and then refining its actions  locally, thus greatly simplifying the supervisor synthesis task. </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">655</td>#}
+<td class="tg-031e">Dario Della Monica, Aniello Murano </td>
+<td class="tg-031e">Parity-energy ATL for qualitative and quantitative reasoning in MAS</td>
+{#<td class="tg-031e"> In this paper, we introduce a new logic suitable to reason about strategic  abilities of multi-agent systems where  agents are subject to  qualitative  and quantitative  constraints and where goals are  represented, as usual, by means of temporal properties.  We formally define such a logic, named parity-energy-ATL,  and we study its model checking problem, which we prove to be decidable &nbsp;with   different complexity upper bounds, depending on different choices for the  energy range.    </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">318</td>#}
+<td class="tg-031e">Jieting Luo,Max Knobbout, John-Jules Meyer </td>
+<td class="tg-031e">Eliminating Opportunism using an Epistemic Mechanism</td>
+{#<td class="tg-031e"> Opportunism is a behavior that takes advantage of knowledge asymmetry and results in promoting agents' own value and demoting other agents' value. It is important to eliminate such a selfish behavior in multi-agent systems, as it has undesirable results for the participating agents. However, as the context we study here is multi-agent systems, system designers actually might not be aware of the value system for each agent thus they have no idea whether an agent will perform opportunistic behavior. Given this fact, this paper designs an epistemic mechanism to eliminate opportunism given a set of possible value systems for the participating agents: an agent's knowledge gets updated so that the other agent is not able to perform opportunistic behavior, and there exists a balance between eliminating opportunism and respecting agents' privacy.  </td>#}
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="3" nowrap>Session 40 (09:00-10:00)<br>Human And Agent Interaction</td>
+{#<td class="tg-s6z2">311</td>#}
+<td class="tg-031e">Tiep Le, Atena MTabakhi, Long Tran-Thanh, William Yeoh, Tran Cao Son </td>
+<td class="tg-031e">Preference Elicitation with Interdependency and User Bother Cost</td>
+{#<td class="tg-031e"> Agent-based scheduling systems, such as automated systems that schedule meetings for users and systems that schedule smart devices in smart homes, require the elicitation of user preferences in order to operate in a manner that is consistent with user expectations. Unfortunately, interactions between such systems and users can be limited as human users prefer to not be overly bothered by such systems. As such, a key challenge is for the system to efficiently elicit key preferences without bothering the users too much.&nbsp;  To tackle this problem, we propose a cost model that models the cognitive or bother cost associated with asking a question. We incorporate this model into our iPLEASE system, an interactive preference elicitation system. iPLEASE represents a user's preferences as a matrix, called preference matrix, and uses heuristics to select, from a given set of questions, an efficient sequence of questions to ask the user such that the total bother cost incurred to the user does not exceed a given bother cost budget. The user's response to those questions will partially populate the preference matrix. It then performs an exact matrix completion via convex optimization to approximate the remaining preferences that are not directly elicited. We empirically apply iPLEASE on randomly-generated problems as well as on a real-world dataset for the smart device scheduling problem to demonstrate that our approach outperforms other non-trivial benchmarks in eliciting user preferences.&nbsp; </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">407</td>#}
+<td class="tg-031e">David Sarne, Nadav Lisovtsev </td>
+<td class="tg-031e">Modeling Assistant's Autonomy Constraints as a Means for Improving Autonomous Assistant-Agent Design</td>
+{#<td class="tg-031e"> In this paper we introduce and experimentally evaluate a new&nbsp; sub-optimal decision-making design to be used by autonomous agents acting on behalf of a user in repeated tasks, whenever the agent's autonomy level is continuously controlled by the user. This mode of operation is common and can be found whenever user's perception of the agent's competence is affected by the nature of the outcomes resulting from the agent's decisions rather than the optimality of the decisions made, e.g., in spam filtering, CV filtering, poker agents, and robotic vacuum cleaners as well as in newly arriving systems such as autonomous cars. Our proposed design relies on choosing the action that offers the best tradeoff between decision optimality and the influence over future allowed autonomy, where the latter is predicted using standard machine learning techniques. The design is found to be highly effective compared to following the theoretic-optimal decision rule, over various measures, through extensive experimentation with a virtual investment agent, making virtual investments on behalf of 679 subjects using Amazon Mechanical Turk.  </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">767</td>#}
+<td class="tg-031e">Luisa Zintgraf, Diederik Roijers, Sjoerd Linders, Catholijn Jonker, Ann Nowe </td>
+<td class="tg-031e">Ordered Preference Elicitation Strategies for Supporting Multi-Objective Decision Making</td>
+{#<td class="tg-031e"> In multi-objective decision planning and learning, much attention is paid to producing optimal solution sets that contain an optimal policy for every possible user preference profile. We argue that the step that follows, i.e, determining which policy to execute by maximising the user's intrinsic utility function over this  set, is under-studied. This paper aims to fill this gap. We build on previous work on Gaussian processes and pairwise comparisons for preference modelling, extend it to the multi-objective decision support scenario, and propose new ordered preference elicitation strategies based on ranking and clustering. Our main contribution is an in-depth evaluation of these strategies using computer and human-based experiments. We show that our proposed elicitation strategies outperform the currently used pairwise methods, and found that users prefer ranking most. Our experiments further show that utilising monotonicity information in GPs by using a linear prior mean at the start and virtual comparisons to the nadir and ideal points, increases performance. We demonstrate our decision support framework in a real-world study on traffic regulation, conducted with the city of [blinded for review]. </td>#}
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="2" nowrap>Session 41 (09:00-10:00)<br>Trust And Reputation</td>
+{#<td class="tg-s6z2">573</td>#}
+{#    <td class="tg-s6z2">148</td>#}
+<td class="tg-031e">Dan Amir, Ofra Amir</td>
+<td class="tg-031e">HIGHLIGHTS: Summarizing Agent Behavior to People</td>
+{#    <td class="tg-031e">People increasingly interact with autonomous agents. This paper introduces and formalizes the problem of automatically generating a summary of an agent's behavior with the goal of increasing people's familiarity with the agent's capabilities and limitations. In contrast with prior approaches&nbsp; which developed methods for explaining a single decision made by an agent, our approach aims to provide users with a summary that describes the agent's behavior in different situations. We hypothesize that reviewing such summaries could help people in tasks such as choosing between agents or determining the level of autonomy to grant to an agent. We develop ``HIGHLIGHTS'', an algorithm that produces a summary of an agent's behavior by extracting important trajectories from simulations of the agent.&nbsp;   We conducted a human-subject experiment to evaluate whether HIGHLIGHTS summaries help people assess the capabilities of agents. Our results show that participants were more successful at evaluating the capabilities of agents when presented with HIGHLIGHTS summaries compared to baseline summaries, and rated them as more helpful. We also explore a variant of the HIGHLIGHTS algorithm which aims to increase the diversity of states included in the summary, and show that this modification further improves people's ability to assess agents' capabilities.  </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">722</td>#}
+<td class="tg-031e">David Pynadath, Ning Wang, Ericka Rovira, Michael J. Barnes</td>
+<td class="tg-031e">Clustering Behavior to Recognize Subjective Beliefs in Human-Agent Teams</td>
+{#<td class="tg-031e"> Trust is critical to the success of human-agent teams, and one of the critical antecedents to trust is transparency. To best interact with human teammates, an agent must be able to explain itself so that they understand its decision-making process. However, individual differences among human teammates require that the agent dynamically adjust its explanation strategy based on their current unobservable subjective beliefs. We therefore need methods by which an agent can recognize its teammates' subjective beliefs relevant to trust-building . We leverage a nonparametric method to enable an agent to use its history of prior interactions as a means for recognizing and predicting a new teammate's subjective beliefs. We first gather data combining observable behavior sequences with survey-based observations of typically unobservable perceptions. We then use a nearest-neighbor approach to identify the prior teammates most similar to the new one. We use these neighbors' responses to infer the likelihood of possible beliefs, as in collaborative filtering. The results provide insights into the types of beliefs that are easy  to infer from purely behavioral observations. </td>#}
+</tr>
+<tr>
+<td class="tg-031e">Abir De, Sourangshu Bhattacharya, Niloy Ganguly </td>
+<td class="tg-031e">Shaping Opinion Dynamics in Social Networks</td>
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="4" nowrap>Session 42 (10:30-11:50)<br>Auction And Mechanism Design 4</td>
+{#<td class="tg-s6z2">206</td>#}
+<td class="tg-031e">Qingpeng Cai, Pingzhong Tang, Yulong Zeng </td>
+<td class="tg-031e">Ranking mechanism design for price-setting agents in e-commerce</td>
+{#<td class="tg-031e"> Ranking algorithms of e-commerce sites take the buyer's search query and information of the corresponding sellers' items as input, and output a ranking of sellers' items that maximizes sites' objectives. However, the conversion rate of each item  not only depends on the ranking given by the site, but also depends on the item price set by its seller. As a result, a ranking algorithm is in fact a mechanism that deals with sellers who strategically set item prices.  An interesting fact about this setting, at least   the   status     quo for the largest e-commerce sites such as Taobao, Amazon, and eBay, is that sellers are usually not given the option to report their private costs but can only communicate with the site by setting item prices. In terms of mechanism design, this is a setting where the designer is restricted to design a specific type of indirect mechanisms.  We follow the framework of implementing optimal direct mechanisms by indirect mechanisms to tackle this optimal indirect ranking mechanism design problem. We firstly define a related optimal direct ranking mechanism design setting and use Myerson's characterization to optimize in that setting. We then characterize the class of direct mechanisms which could be implemented by indirect mechanisms, and construct a mapping that maps the mechanisms designed in the previous direct setting to indirect mechanisms in the original setting where sellers are allowed only to set item prices. We show that, using this technique, one can obtain mechanisms in the indirect setting that maximize expected total trading volume. We then present the mechanism employed by Taobao currently, get a Bayesian Nash Equilibrium of it and obtain the gap of the volume of Taobao and the optimal mechanism. Given real dataset from Taobao, we also simulate our optimal mechanism and Taobao's mechanism, and it shows that our mechanism outperforms Taobao's mechanism significantly. </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">421</td>#}
+<td class="tg-031e">Yulong Zeng, Pingzhong Tang, Weiran Shen </td>
+<td class="tg-031e">Buyer-optimal distribution</td>
+{#<td class="tg-031e"> We consider the problem of how a buyer can optimize his utility if he is flexible to choose his own valuation distribution to attend a prior-dependent auction, such as the revenue-optimal auction. The problem is motivated by and equivalent to a variation of the market segmentation problem, where a principal tries to find a subset of agents  from the set of all agents, each with a constant valuation, to attend a posted price auction for selling M identical items, in order to maximize the total utilities from the agents who are selected into the segment. Our results are closed-form solutions in both the single buyer case and multi-buyer case where several buyers best response to each other. Interestingly, in the two-buyer case, essentially all commitments that satisfy a certain condition are equilibria.  </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">451</td>#}
+<td class="tg-031e">ZUN LI, Zhenzhe Zheng, Fan Wu, Guihai Chen </td>
+<td class="tg-031e">On Designing Optimal Data Purchasing Strategies for Online Ad Auctions</td>
+{#<td class="tg-031e"> In online advertising, advertisers can purchase consumer relevant data from data marketplaces with a certain expenditure, and exploit the purchased data to guide the bidding process in ad auctions. One of the pressing problem faced by advertisers is to design the optimal data purchasing strategy  in online ad auctions. In this paper, we model the data purchasing strategy design as a convex optimization problem, jointly considering the expenditure paid during data purchasing and the benefits obtained from ad auctions. Using the techniques from Baysian game theory and convex analysis, we derive the optimal purchasing strategies for advertisers in different market scenarios. We also theoretically prove that the resulting strategy profile is the unique one that achieves Nash Equilibrium. Our analysis shows that the proposed data purchasing strategy can handle diverse ad auctions and valuation learning models. Our numerical results further confirm intuitions that the advertisers would typically purchase less data to avoid the risks of wasted purchasing under fiercer competition, and purchase more to extract huger profits when the website gains more popularity.  </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">706</td>#}
+<td class="tg-031e">Weiran Shen, Pingzhong Tang, Yulong Zeng </td>
+<td class="tg-031e">A Closed-Form Characterization of Buyer Signaling Schemes in Monopoly Pricing</td>
+{#<td class="tg-031e"> We consider a setting where a revenue maximizing monopolist sells a single item to a buyer. A mediator first collects the buyer's value and can reveal extra information about the buyer's value by sending signals. Mathematically, a signal scheme can be thought of as a decomposition of the prior value distribution into a linear combination of posterior value distributions, and based on each of them, the monopolist separately posts a price. According to the theory of Bayesian persuasion, a well designed signal scheme can lead to utility improvements for both the monopolist and the buyer.  We put forward a novel technique to analyze the effects of signal schemes of the mediator. Using this technique, we are able to construct explicitly a closed-form solution, and thus characterize the set of seller-buyer utility pairs achievable by any signal scheme, for any prior type distribution. Our result generalizes a well-known result by Bergemann et. al., who derive a characterization for the same problem but only restricted to the discrete distribution case.   Similar to the result derived by Bergermann et. al., we show that the set of seller and buyer utility pairs achievable form a triangle: any point within the triangle can be achieved by an explicitly constructed signal scheme and any point outside the triangle cannot be achievable by any such scheme. Our result is obtained by establishing the endpoints of the triangle: one corresponds to the point where the buyer obtains the highest utility among all schemes, another corresponds to the point where the buyer obtains zero utility and the seller has the lowest possible revenue, and the third corresponds to the point where the buyer has zero utility while the seller extracts full social surplus. We then prove that the triangle described fully characterizes all possible&nbsp; signal schemes.  </td>#}
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="4" nowrap>Session 43 (10:30-11:50)<br>Social Choice Theory 3</td>
+{#<td class="tg-s6z2">168</td>#}
+<td class="tg-031e">Enrico Malizia </td>
+<td class="tg-031e">More complexity results about reasoning over CP-nets</td>
+{#<td class="tg-031e">  Aggregating preferences over combinatorial domains has several applications in AI. Due to the exponential nature of combinatorial preferences, compact representations are needed, and CP-nets are among the most studied formalisms. Unlike CP-nets, which received an extensive complexity analysis, mCP-nets, as mentioned several times in the literature, lacked such a thorough characterization. In fact, an initial complexity analysis for mCP-nets was carried out only recently. In this paper, we further investigate the complexity of mCP-nets. In particular, we prove the \Sigma^P_3-completeness of the existence of Max optimal outcomes. Furthermore, we prove that various tasks known to be feasible in polynomial time are actually P-complete. This shows that these problems are inherently sequential, and hence they cannot benefit from highly parallel computation.   </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">172</td>#}
+<td class="tg-031e">Dominik Peters </td>
+<td class="tg-031e">Proportionality and Strategyproofness in Multiwinner Elections</td>
+{#<td class="tg-031e"> Multiwinner voting rules can be used to select a fixed-size committee from a larger set of candidates.&nbsp;We consider approval-based committee rules, which allow voters to approve or disapprove candidates. In this setting, several voting rules such as Proportional Approval Voting  and Phragmén's rules have been shown to produce committees that are proportional, in the sense that they proportionally represent voters' preferences; all of these rules are strategically manipulable by voters. On the other hand, a generalisation of Approval Voting gives a non-proportional but strategyproof voting rule. We show that there is a fundamental tradeoff between these two properties: we prove that no multiwinner voting rule can simultaneously satisfy a weak form of proportionality  and a weak form of strategyproofness. Our impossibility is obtained using a formulation of the problem in propositional logic and applying SAT solvers; a human-readable version of the computer-generated proof is obtained by extracting a minimal unsatisfiable set . We also discuss several related axiomatic questions in the domain of committee elections.  </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">267</td>#}
+<td class="tg-031e">Zack Fitzsimmons, Edith Hemaspaandra </td>
+<td class="tg-031e">High-Multiplicity Election Problems</td>
+{#<td class="tg-031e">  The computational study of elections generally assumes that the preferences of the electorate come in as a list of votes. Depending on the context, it may be much more natural to represent the list succinctly, as the distinct votes of the electorate and their counts, i.e., high-multiplicity representation. We consider how this representation affects the complexity of election problems. High-multiplicity representation may be exponentially smaller than standard representation, and so many polynomial-time algorithms for election problems in standard representation become exponential. Surprisingly, for polynomial-time election problems, we are often able to either adapt the same approach or provide new algorithms to show that these problems remain polynomial-time in the high-multiplicity case; this is in sharp contrast to the case where each voter has a weight, where the complexity usually increases. In the process we explore the relationship between high-multiplicity scheduling and manipulation of high-multiplicity elections. And we show that for any fixed set of job lengths, high-multiplicity scheduling on uniform parallel machines is in P, which was previously known for only two job lengths. We did not find any natural case where a polynomial-time election problem does not remain in P when moving to high-multiplicity representation. However, we found one natural NP-hard election problem where the complexity does increase, namely   winner determination for Kemeny elections.   </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">510</td>#}
+<td class="tg-031e">Cynthia Maushagen, Marc Neveling, Jorg Rothe, Ann-Kathrin Selker </td>
+<td class="tg-031e">Complexity of Shift Bribery in Iterative Elections</td>
+{#<td class="tg-031e"> In iterative voting systems, candidates are eliminated in consecutive rounds until either a fixed number of rounds is reached or the set of remaining candidates does not change anymore. We focus on iterative voting systems based on the positional scoring rules plurality, veto, and Borda and study their resistance against shift bribery attacks. In constructive shift bribery, an attacker seeks to make a designated candidate win the election by bribing voters to shift this candidate in their preferences; in destructive shift bribery, the briber’s goal is to prevent this candidate’s victory. We show that many iterative voting systems, including those due to Hare, Coombs, Baldwin, and Nanson, are resistant to these types of attack.  </td>#}
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="4" nowrap>Session 44 (10:30-11:50)<br>Agent Cooperation 2</td>
+{#<td class="tg-s6z2">516</td>#}
+<td class="tg-031e">Luca Becchetti, Vincenzo Bonifaci, Emanuele Natale </td>
+<td class="tg-031e">Pooling or Sampling: Collective Dynamics for Electrical Flow Estimation</td>
+{#<td class="tg-031e"> The computation of electrical flows is a crucial primitive for many#}
+{#recently proposed optimization algorithms on weighted networks. While#}
+{#typically implemented as a centralized subroutine, the ability to#}
+{#perform this task in a fully decentralized way is implicit in a number#}
+{#of biological systems. Thus, a natural question is whether this task can#}
+{#provably be accomplished in an efficient way by a network of agents#}
+{#executing a simple protocol.#}
+{#  We provide a positive answer, proposing two distributed approaches to#}
+{#electrical flow computation on a weighted network: a deterministic#}
+{#process mimicking Jacobi's iterative method for solving linear systems,#}
+{#and a randomized token diffusion process, based on revisiting a#}
+{#classical random walk process on a graph with an absorbing node.#}
+{#We show that both processes converge to a solution of Kirchhoff's node#}
+{#potential equations, derive bounds on their convergence rates in terms#}
+{#of the weights of the network, and analyze their time and message#}
+{#complexity.&nbsp;    </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">136</td>#}
+<td class="tg-031e">Md. Mosaddek Khan, Long Tran-Thanh, Nick Jennings </td>
+<td class="tg-031e">A Generic Domain Pruning Technique for GDL-based DCOP algorithms in Cooperative Multi-Agent Systems</td>
+{#<td class="tg-031e">  Generalized Distributive Law  based message passing algorithms, such as Max-Sum and Bounded Max-Sum, are often used to solve distributed constraint optimization problems in cooperative multi-agent systems . However, scalability becomes a challenge when these algorithms have to deal with constraint functions with high arity or variables with a large domain size. In either case, the ensuing exponential growth of search space can make such algorithms computationally infeasible in practice. To address this issue, we develop a generic domain pruning technique that enables these algorithms to be effectively applied to larger and more complex problems. We theoretically prove that the pruned search space obtained by our approach does not affect the outcome of the algorithms. Moreover, our empirical evaluation illustrates a significant reduction of the search space, ranging from   33%   to   81%,  without affecting the solution quality of the algorithms, compared to the state-of-the-art. &nbsp;&nbsp;  </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">138</td>#}
+<td class="tg-031e">Md. Mosaddek Khan, Long Tran-Thanh, William Yeoh, Nick Jennings </td>
+<td class="tg-031e">A Near-Optimal Node-to-Agent Mapping Heuristic for GDL-based DCOP Algorithms in Multi-Agent Systems</td>
+{#<td class="tg-031e">Distributed Constraint Optimization Problems  can be used#}
+{#to model a number of multi-agent coordination problems. The conventional DCOP model assumes that the subproblem that each agent#}
+{#is responsible for  is part of the model description. While this assumption is#}
+{#often reasonable, there are many applications where there is some#}
+{#ﬂexibility in making this assignment. In this paper, we focus on#}
+{#this gap and make the following contributions:  We formulate#}
+{#this problem as an optimization problem, where the goal is to fnd#}
+{#an assignment that minimizes the completion time of the DCOP#}
+{#algorithm  that operates on this mapping.  We propose a novel heuristic, called MNA, that can be#}
+{#executed in a centralized or decentralized manner.  Our empirical evaluation illustrates a substantial reduction in completion time,#}
+{#ranging from 16% to 40%, without affecting the solution quality of#}
+{#the algorithms, compared to the current state-of-the-art. In addition,#}
+{#we observe empirically that the completion time obtained from our#}
+{#approach is near-optimal; it never exceeds more than 10% of what#}
+{#can be achieved from the optimal node-to-agent mapping.</td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">371</td>#}
+<td class="tg-031e">Lily Hu,Bryan Wilder, Amulya Yadav, Eric Rice, Milind Tambe </td>
+<td class="tg-031e">Activating the "Breakfast Club": Modeling Influence Spread in Natural-World Social Networks</td>
+{#<td class="tg-031e"> &nbsp; While reigning models of diffusion have privileged the structure of a given social network as the key to informational exchange, real human interactions do not appear to take place on a single graph of connections. Using data collected from a pilot study of the spread of HIV awareness in social networks of homeless youth, we show that health information did not diffuse in the field according to the processes outlined by dominant models. Since physical network diffusion scenarios often diverge from their more well-studied counterparts on digital networks, we propose an alternative Activation Jump Model  that describes information diffusion on physical networks from a multi-agent team perspective. Our model exhibits two main differentiating features from leading cascade and threshold models of influence spread: 1) The structural composition of a seed set team impacts each individual node's influencing behavior, and 2) an influencing node may spread information to non-neighbors. We show that the AJM significantly outperforms existing models in its fit to the observed node-level influence data on the youth networks. We then prove theoretical results, showing that the AJM exhibits many well-behaved properties shared by dominant models. Our results suggest that the AJM presents a flexible and more accurate model of network diffusion that may better inform influence maximization in the field. </td>#}
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="4" nowrap>Session 45 (10:30-11:50)<br>Agent-Based Simulation 3</td>
+{#<td class="tg-s6z2">542</td>#}
+<td class="tg-031e">Meghendra Singh, Achla Marathe, Samarth Swarup, Madhav Marathe </td>
+<td class="tg-031e">Behavior Model Calibration for Epidemic Simulations</td>
+{#<td class="tg-031e">   Computational epidemiologists frequently employ large-scale agent-based simulations of human populations to study disease outbreaks and assess intervention strategies. The agents used in such simulations rarely capture the real-world decision-making of human beings. An absence of realistic agent behavior can undermine the reliability of insights generated by such simulations and might make them ill-suited for informing public health policies. In this paper, we address this problem by developing a methodology to create and calibrate an agent decision making model for a large multi-agent simulation, using survey data. Our method optimizes a cost vector associated with the various behaviors to match the behavior distributions observed in a detailed survey of human behaviors during influenza outbreaks. Our approach is a data driven way of incorporating decision making for agents in large-scale epidemic simulations.    </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">604</td>#}
+<td class="tg-031e">S. S. Ravi, Daniel Rosenkrantz, Madhav Marathe, Richard Stearns </td>
+<td class="tg-031e">Testing Phase Space Properties of Synchronous Dynamical Systems with Nested Canalyzing Local Functions</td>
+{#<td class="tg-031e">  Discrete dynamical systems serve as effective formal models in many    contexts, including simulations of agent-based models, propagation    of contagions in social networks and study of biological phenomena.    A class of Boolean functions, called nested canalyzing functions ,   have been found as good models of certain biological    phenomena.&nbsp; Motivated by these biological applications, we study a    variety of analysis problems for synchronous dynamical systems     over the Boolean domain, where each local function is a    nested canalyzing function. Each analysis problem involves testing    whether the phase space of a given SyDS satisfies a certain property.    Problems considered include reachability, predecessor existence,    fixed point existence and garden of Eden existence.&nbsp; We present    computational intractability results for some problems as well as efficient    algorithms for other problems.&nbsp; In many cases, our results provide    a clear delineation between intractable and efficiently     solvable&nbsp; versions of problems. </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">494</td>#}
+<td class="tg-031e">Daniel Y. Fu, Emily S. Wang, Peter Krafft, Barbara Grosz </td>
+<td class="tg-031e">Influencing Flock Formation in Low-Density Settings</td>
+{#<td class="tg-031e"> Flocking is a coordinated collective behavior that results from local sensing between individual agents who have a tendency to orient towards each other. Flocking is common amongst animal groups and could also be useful in robotic swarms. In the interest of learning how to control flocking behavior, several pieces of recent work in the multiagent systems literature have explored the use of influencing agents for guiding flocking agents to face a target direction. However, the existing work in this domain has focused on simulation settings of small areas with toroidal shapes. In such settings, agent density is high, so interactions are common, and flock formation occurs easily. In our work, we study new environments with lower agent density, wherein interactions are more rare. We study the efficacy of placement strategies and influencing agent behaviors drawn from the literature, and find that the behaviors that have been shown to work well in high-density conditions tend to be much less effective in the environments we introduce. The source of this ineffectiveness is a tendency of influencing agents explored in prior work to face directions intended for maximal influence that actually separate the influencing agents from the flock. We find that in low-density conditions maintaining a connection to the flock is more important than rushing to orient towards the desired direction. We use these insights to propose new placement strategies and influencing agent behaviors that overcome the difficulties posed by our new environments. The best influencing agents we identify act like normal members of the flock to achieve positions that allow for control, and then exert their influence. We dub this strategy "follow-then-influence." </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">234</td>#}
+<td class="tg-031e">F. Jordan Srour, Neil Yorke-Smith </td>
+<td class="tg-031e">On Collusion and Coercion: Agent Interconnectedness and In-Group Behaviour</td>
+{#<td class="tg-031e"> The interconnectedness of actors is an antecedent for collective corruption, which in turn can lead to endemic corruption in a society. As a testbed for studying the effects of social interconnectedness on corrupt behaviours, we examine the domain of maritime customs. Taking an extant agent-based simulation, we add to the simulation a nuanced model of actor relatedness, consisting of clan, in-group, and town of origin, and encode associated behavioural norms. We examine the effects of social interconnectedness on domain performance metrics such as revenue, container outcomes, time, coercive demands, and collusion. Results confirm that, when corruption is widespread, localized punitive- or incentive-based policies are weakened, and that the effect of process re-engineering is frustrated when interconnectedness increases beyond a critical point, for two out of three forms of homophily connections. Our work connects with and provides a complementary methodology to works in the political economy literature. </td>#}
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="4" nowrap>Session 46 (10:30-11:50)<br>Socially Interactive Agents 3</td>
+{#<td class="tg-s6z2">S48</td>#}
+<td class="tg-031e">Joana Campos, James Kennedy, Jill Fain Lehman</td>
+<td class="tg-031e">Challenges in Exploiting Conversational Memory in Human-Agent Interaction</td>
+{#<td class="tg-031e">In human interactions, language is used to project and maintain a social identity over time. The way people speak with others and revisit language across repeated interactions helps to create rapport and develop a feeling of coordination between conversational partners. Memory of past conversations is the main mechanism that allows us to exploit and explore ways of speaking, given knowledge acquired in previous encounters. As such, we introduce an agent that uses its conversational memory to revisit shared history with users to maintain a coherent social relationship over time. In this paper, we describe the dialog management mechanisms to achieve these goals when applied to a robot that engages in social chit-chat. In a study lasting 14 days with 28 users, totaling 474 interactions, we find that it is difficult to leverage the shared history with individual users and to also accommodate to expected conversational coordination patterns. We discuss the implications of this finding for long-term human-agent interaction. In particular, we highlight the importance of topic modeling and signaling explicit recall of previous episodes. Moreover, the way that users contribute to interactions requires additional adaptation, indicating a significant challenge for language interaction designers.</td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">S63</td>#}
+<td class="tg-031e">Samuel Spaulding, Huili Chen, Safinah Ali, Michael Kulinski, Cynthia Breazeal</td>
+<td class="tg-031e">A Social Robot System for Modeling Children's Word Pronunciation</td>
+{#<td class="tg-031e">Autonomous educational social robots can be used to help promote literacy skills in young children. Such robots, which emulate the emotive, perceptual, and empathic abilities of human teachers, are capable of replicating some of the benefits of one-on-one tutoring from human teachers, in part by leveraging individual student's behavior and task performance data to infer sophisticated models of their knowledge. These student models are then used to provide personalized educational experiences by, for example, determining the optimal sequencing of curricular material. </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">S37</td>#}
+<td class="tg-031e">Brian Ravenet, Chloe Clavel, Catherine Pelachaud</td>
+<td class="tg-031e">Automatic Nonverbal Behavior Generation from Image Schemas</td>
+{#<td class="tg-031e">One of the main challenges when developing Embodied Conversational Agents is to give them the ability to autonomously produce meaningful and coordinated verbal and nonverbal behaviors. The relation between these means of communication is more complex than a direct mapping that has often been applied in previous models. In this paper, we propose an intermediate mapping approach we apply on metaphoric gestures first but that could be extended to other representational gestures. Leveraging from previous work in text analysis, embodied cognition and co-verbal behavior production, we introduce a framework articulating speech and metaphoric gesture invariants around a common mental representation: Image Schemas. We establish the components of our framework, detailing the different steps leading to the production of the metaphoric gestures, and we present some preliminary results and demonstrations. We end the paper by laying down the perspectives to integrate, evaluate and improve our model.</td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">S22</td>#}
+<td class="tg-031e">Shivashankar Halan, Benjamin Lok, Isaac Sia, Anna Miles, Michael Crary</td>
+<td class="tg-031e">Engineering Social Agent Creation into an Opportunity for Interviewing and Interpersonal Skills Training</td>
+{#<td class="tg-031e">The use of intelligent, interactive social agents for clinical interviewing and interpersonal skills training in healthcare education has been observed to be on the increase. However, enabling rapid and scalable creation of robust and diverse intelligent social agents that can be integrated into educational curriculum for pedagogical reasons is still a challenge. In this paper, we present a novel approach for creating virtual patients  by reusing conversational corpus information from previous student-created interactive social agents. In this approach, healthcare students as part of an interpersonal skills training exercise create their own virtual patients. These virtual patient agents created are demonstrated to be effective tools to train other students in the future with their interviewing and interpersonal skills. By integrating virtual patient creation exercises in seven health professions courses over six years, we have demonstrated that healthcare students can create robust and diverse virtual patient social agents that can be used as pedagogical tools and in the process of creation also improve their own clinical interviewing and interpersonal skills.</td>#}
+</tr>
+<tr>
+<td class="tg-s6z3" rowspan="4" nowrap>Session 47 (10:30-11:50)<br>Robotics: Planning</td>
+{#<td class="tg-s6z2">R66</td>#}
+<td class="tg-031e">Daniel Bebler, Mihai Pomarlan, Michael Beetz </td>
+<td class="tg-031e">OWL-enabled Assembly Planning for Robotic Agents</td>
+{#<td class="tg-031e">Assembly cells run by intelligent robotic agents promise highly flexible product customization without the cost implication product individualization has nowadays. One of the main questions an assembly robot has to answer is which sequence of manipulation actions it should perform to create an assembled product from scattered pieces available. We propose a novel approach to assembly planning that employs Description Logics  to describe what an assembled product should look like, and to plan the next action according to faulty and missing assertions in the robot's beliefs about an ongoing assembly task. To this end we extend the KnowRob knowledge base  with representations and inference rules that enable robots to reason about incomplete assemblies. We show that our approach performs well for large batches of assembly pieces available, as well as for varying structural complexity of assembled products.</td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">R83</td>#}
+<td class="tg-031e">Alberto Quattrini Li, Raffaele Fioratto, Francesco Amigoni, Volkan Isler </td>
+<td class="tg-031e">A Search-Based Approach to Solve Pursuit-Evasion Games with Limited Visibility in Polygonal Environments</td>
+{#<td class="tg-031e"> A pursuit-evasion game is a non-cooperative game in which a pursuer tries to detect or capture an adversarial evader. We study a pursuit-evasion game which takes place in a known polygonal environment. The goal of the pursuer is to capture the evader by moving onto its location. The players can observe each others' locations only if they can ``see'' each other -- i.e., if the line segment connecting their locations lies entirely inside the polygonal environment.&nbsp;  The complexity of representing the information available to the players at a given time makes solving pursuit-evasion games with visibility limitations difficult.   We represent the state of the game using an efficient visibility-based decomposition of the environment paired with a more classical grid-based decomposition. The optimal players' strategies are computed using a min-max search algorithm improved with some speedup techniques that preserve optimality. We show that our approach is complete for a rash evader, which hides from the pursuer and does not move from its hiding location when the pursuer is not visible. Simulations in realistic indoor environments show the viability of our approach, compared to a Monte Carlo tree search. </td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">R85</td>#}
+<td class="tg-031e">Anoop Aroor, Susan Epstein, Raj Korpan</td>
+<td class="tg-031e">Online Learning for Crowd-sensitive Path Planning</td>
+{#<td class="tg-031e">In crowded environments, the shortest path for an autonomous robot navigator may not be the best choice - another plan that avoids crowded areas might be preferable. Such a crowd-sensitive path planner, however, requires knowledge about the crowd's global behavior. This paper formulates a Bayesian approach that relies only on an onboard range scanner to learn a global crowd model online. Two new algorithms, CUSUM-A* and Risk-A*, use local observations to continuously update the crowd model. CUSUM-A* tracks the spatio-temporal changes in the crowd; Risk-A* adjusts for changes in navigation cost due to human-robot interactions. Extensive evaluation in a challenging simulated environment demonstrates that both algorithms generate plans that significantly reduce their proximity to moving obstacles, and thereby protect people from actuator error and inspire their trust in the robot.</td>#}
+</tr>
+<tr>
+{#<td class="tg-s6z2">R102</td>#}
+<td class="tg-031e">Julia Ebert, Melvin Gauci, Radhika Nagpal </td>
+<td class="tg-031e">Multi-Feature Collective Decision Making in Robot Swarms</td>
+{#<td class="tg-031e">Collective decision making has been studied extensively in the fields of multi-agent systems and swarm robotics, inspired by its pervasiveness in biological systems such as honeybee and ant colonies. However, most previous research has focused on collective decision making on a single feature. In this work, we introduce and investigate the multi-feature collective decision making problem, where a collective must decide on multiple binary features simultaneously, given no a priori information about their relative difficulties. Each agent may only estimate one feature at any given time, but the agents can locally communicate their noisy estimates to arrive at a decision.  We demonstrate a decentralized algorithm for single-feature decision making and a dynamic task allocation strategy that allows the agents to lock in decisions on multiple features in finite time. We validate our approach using simulated and physical Kilobot robots. Our results show that a collective can correctly classify a multi-feature environment, even if presented with pathological initial agent-to-feature allocations.</td>#}
+</tr>
+    </table>
+</div>
+
+{% endblock %}

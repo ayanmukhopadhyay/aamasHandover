@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+    <h3><u>Submission Instructions</u></h3>
+    <br>
+    Please use the AAMAS 2018 paper submission system to submit your paper (in PDF format).
+    The instructions for how to register and submit your paper will be provided at the submission site. In order to
+    register your paper (deadline 10th of November, 2017), you will need to provide basic information about the submission
+    including its title, abstract, keywords, and author(s). You do not need to upload the full PDF for registering a paper
+    submission, but the full PDF must be uploaded before the paper submission deadline (14th of November, 2017).
+    <br><br>
+    <ul>
+        <li><a href="https://aamas.confmaster.net/">Main Track Submissions</a></li>
+        <li><a href="https://aamas-robotics.confmaster.net/">Robotics Track Submissions</a></li>
+        <li><a href="https://siatrack-aamas2018.confmaster.net/">Socially Interactive Agents Track Submissions</a></li>
+        <li><a href="https://blueskyaamas18.confmaster.net">Blue Sky Ideas Track Submissions</a></li>
+        <li><a href="https://aamas-ind.confmaster.net">Industrial Applications Track Submissions</a></li>
+        <li><a href="https://jaamas.confmaster.net/">JAAMAS Submissions</a></li>
+        <li><a href=" https://aamas-demos.confmaster.net/">Demo Submissions</a></li>
+    </ul>
+
+    <b>Note:</b> The submission system closes for abstract and paper submission at 23:59 UTC-12 on the 10th and 14th of November,
+    respectively.
+    <br><br>
+    Authors are encouraged to reference and discuss all published literature relevant to the paper, including their own.
+    To ensure the effectiveness of the double-blind review process, authors are requested to ensure the paper registration
+    number (provided upon paper registration) is used on the front page instead of the author names. In addition, authors
+    are requested to ensure that any references to their own previous work are made in a way that does not disclose their
+    identity. For example, instead of "in previous work, we have shown X [ref]" authors are asked to consider expressions
+    such as "X was shown in [ref]". Authors are also asked to ensure that the PDF file submitted does not contain embedded
+    identifying information. Also, please make sure any references to things like project/group names or webpages do not
+    give away the authors’ identity. Identifying information can be added at the authors’ discretion in the final version
+    of the paper.
+    <br>
+    If part of the work has been previously published, authors are strongly encouraged to cite and compare/contrast the
+    new contributions with the parts that were already published before. The paper must substantially extend the
+    previously published work.
+    <br><br>
+    <u><b>Formatting Instructions</u></b>
+    <br><br>
+    The page limit for AAMAS 2018 full-paper submissions is 8 pages, except for the bibliographic references, which are
+    unlimited (i.e., if the paper is longer than 8 pages, any extra page after the 8th must only contain bibliographic
+    references).
+    <br><br>
+    Papers submitted to the Blue Sky special track must not exceed 4 pages (except for the bibliographic references,
+    which are unlimited).  Submissions to the Industrial Applications track should follow the specific submission
+    requirements for that track, as detailed in the call for papers, which require that authors submit a presentation
+    of their work in whatever electronic medium best shows the AAMAS relevant features of the application, along with a single page document briefly summarizing what interesting agent technologies are featured in the deployed system and the impacts those technologies have had. The single page document can be in any reasonable format. Optionally, the submission can be accompanied by a paper which should follow the same formatting requirements as the main track of the conference.
+    <br><br>
+    The AAMAS format follows the ACM ‘SigConf’ proceedings guidelines (<a href="http://www.acm.org/publications/proceedings-template">www.acm.org/publications/proceedings-template</a>).
+    Authors are encouraged to use the LaTeX style file (aamas.cls) provided for formatting AAMAS 2018 submissions. The
+    AAMAS style file should be used for both full papers (8 pages plus extra pages with only bibliographic references if
+    needed) as well as Blue Sky papers (4 pages plus extra pages with only bibliographic references). A sample latex
+    file is provided here: <a href={% static "files/aamas18-latex-template.zip" %}>aamas18-latex-template.zip</a>.  For special tracks, uncomment the relevant subtitle line (see
+    the sample latex file). The ACM categories, subject descriptors and keywords are not needed in the PDF.
+    <br><br>
+    There is also an <a href="http://www.acm.org/publications/proceedings-template">ACM Word template</a> but LaTeX is strongly preferred (and remember that only PDF files can be uploaded).
+    Authors who choose to prepare their paper in Word format are responsible for adapting the ACM format: the copyright
+    area should read “Proc. of the 17th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2018)
+    , M. Dastani, G. Sukthankar, E. Andre, S. Koenig (eds.), July 2018, Stockholm, Sweden. © 2018 International Foundation for Autonomous Agents and Multiagent Systems (www.ifaamas.org). All rights reserved.”
+    The ACM categories, subject descriptors and keywords are not needed in the PDF.  Questions may be addressed to the Publications Chair.
+    <br><br>
+    <b>Please do not modify the style files or any layout parameters.</b>
+    <br><br>
+    To ensure all submissions are treated fairly and equally, authors are asked to follow all the instructions above. Submitted papers might be rejected without reviewing if they do not adhere to all the above requirements.
+    <br>
+    </div>
+{% endblock %}

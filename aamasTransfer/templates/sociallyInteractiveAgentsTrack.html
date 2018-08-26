@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+        <u><b>Socially Interactive Agents (Chairs: Angelo Cafaro and Stacy Marsella)</b></u>
+        <br>
+        The Socially Interactive Agents track invites papers on research topics related to the design, implementation, evaluation and
+        application of social agents. Such agents are capable of interacting with people and each other using social communicative behaviors
+        common to human-human interaction. Example applications include social assistants on mobile devices, pedagogical agents in tutoring systems,
+        non-player characters in interactive games and multimodal interface agents for smart appliances and environments. The goal of the social
+        agents track is to provide an opportunity for continued interaction and cross-fertilization between the AAMAS community and researchers working on social agents.
+        <br>
+        We welcome papers that present novel work and contributions on social agent systems, human(s)-agent(s) interaction, applications or evaluations of such systems. Submissions can address innovative, fundamental issues such as behavioral or cognitive models for autonomous social agents, as well as new application areas.
+        <br>
+        Topics of interest include, but are not limited to:
+        <br>
+        <b>Social agent models:</b>
+        <br>
+            <ul>
+                <li>Reasoning, learning, adaptation and user modeling</li>
+                <li>Affect, personality and cultural differences</li>
+                <li>Interactive narrative and storytelling</li>
+            </ul>
+        <b>Multimodal interaction:</b>
+            <ul>
+                <li>Verbal and nonverbal perception, analysis and generation</li>
+                <li>Interpersonal coordination</li>
+            </ul>
+        <b>Social agent architectures:</b>
+            <ul>
+                <li>Tools for designing and building social agents</li>
+                <li>Ubiquitous architectures</li>
+                <li>Portability and reuse standards/measures to support interoperability</li>
+            </ul>
+        <b>Evaluation methods and studies:</b>
+            <ul>
+                <li>Empirical studies on social agents</li>
+                <li>Ethical considerations and social impact</li>
+                <li>Social agents as a means to study and model human behavior</li>
+            </ul>
+        <b>Applications:</b>
+            <ul>
+                <li>Games, education, health, art, marketing and large scale deployments</li>
+            </ul>
+    </div>
+{% endblock %}

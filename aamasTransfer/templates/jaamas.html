@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+    <u><b>JAAMAS (Chair: Natasha Alechina)</b></u>
+        <br>
+        JAAMAS Submissions
+        <br>
+        AAMAS 2018 will also accept papers for presentation that have appeared in the Journal of Autonomous Agents and
+        Multi-agent Systems (JAAMAS) in the 12 months period preceding the AAMAS notification date (January 2018).
+        These articles also have the option to publish an extended abstract (maximum
+        two pages, excluding bibliography) in the AAMAS proceedings. The articles must be original and not previously
+        published as a full paper in an archival conference. The submission process for this track is separate from the
+        main paper submission process, and is later (deadline in January). Authors of eligible JAAMAS papers will be contacted by email in the second half of November.
+        <br>
+        <br>
+        For details on JAAMAS, visit
+        <a href="http://www.springer.com/computer/ai/journal/10458">http://www.springer.com/computer/ai/journal/10458</a>
+
+
+
+    </div>
+{% endblock %}

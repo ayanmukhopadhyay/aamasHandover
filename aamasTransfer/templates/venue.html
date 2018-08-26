@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    {% load staticfiles %}
+{#    <div class="col-sm-5">#}
+{#        <h4><u><b>Conference Venue</b></u></h4>#}
+{#        <br>#}
+{#        Stockholmsmässan<br>#}
+{#        Mässvägen 1, 125 80 Älvsjö, Sweden<br>#}
+{#        <a href="www.stockholmsmassan.se">www.stockholmsmassan.se</a><br>#}
+{#        +46 8 749 41 00<br>#}
+{##}
+{#    Access the map to know more about traveling to AAMAS 2018. Click on the legend button on the top left to see a list of places relevant to the conference.#}
+{#    </div>#}
+{#    <div class="col-sm-7">#}
+{#        <iframe src="https://www.google.com/maps/d/embed?mid=1-grduo37mkzs3YlhvaNzNFtCrWq0NXrA" width="720" height="540"></iframe>#}
+{#    </div>#}
+    <div>
+        <div class="col-sm-5">
+            <h4><u>Conference Venue: <a href="http://www.stockholmsmassan.se/">Stockholmsm&auml;ssan</a></u></h4>
+
+{#        <p class=MsoNormal><img border=0 width=472 height=261 id="Picture 1"#}
+{#        src="Conference_Venue_files/venue.jpg"></p>#}
+            <p>Adress: M&auml;ssv&auml;gen 1, 125 80 &Auml;lvsj&ouml;</p>
+
+            <p>The AAMAS conference will be held within the frame of the
+            Federated Artificial Intelligence Meeting (FAIM) at Stockholmsm&auml;ssan.
+            Stockholmm&auml;ssa is the biggest convention and exhibition facility in Northern
+            Europe. They have more than 70 years of experience to arrange big events such
+            as this co-located meeting of three of the biggest International AI
+            conferences. </p>
+
+            <p>The main entrance of Stockholmsm&auml;ssan is located within a
+            few minutes walking distance from &Auml;lvsj&ouml; Station which can be reached from
+            Stockholm Centralstation within 10 minutes. Commuter trains connect the central
+            station with &Auml;lvsj&ouml; station about 8 to 14 times per hour, also until late at
+            night. In these commuter trains, announcements are in Swedish and English. </p>
+
+            <p>Although located on opposite sides of Stockholm city center,
+            there is also a direct train connection between Arlanda Airport and &Auml;lsvj&ouml;
+            Station. This connection takes ca. 50 minutes. </p>
+
+            <p>More detailed information about how to reach the convention
+            center can be found <a
+            href="http://www.stockholmsmassan.se/prior-to-your-visit/prior-your-visit/how-to-find-us">here</a>.</p>
+
+            <p>Tickets can be bought at ticket machines in the railway
+            stations. Registered conference participants will receive a public
+            transportation ticket for the conference days. These tickets are valid on all
+            public trains and busses (NOT on the trains to Arlanda Airport).</p>
+        </div>
+
+        <div class="col-sm-5">
+            <img id="aamasBanner" src="{% static "images/venue.jpg" %}">
+        </div>
+
+
+
+
+</div>
+{% endblock %}

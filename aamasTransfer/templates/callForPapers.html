@@ -1,0 +1,387 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+    <a name="importantDates"></a>
+    <h3><u>Call for Papers: AAMAS 2018</u></h3>
+    <br>
+    Seventeenth International Conference on Autonomous Agents and Multiagent Systems
+    <br>
+    July 10-15, 2018, Stockholm, Sweden
+
+
+
+    <br><br>
+    <h5><u><b>Important Dates</b></u></h5>
+            <ul>
+                <li>Abstract Submission: 10th of November 2017 (23:59 UTC-12)
+                <li>Full Paper Submission: 14th of November 2017 (23:59 UTC-12)
+                <li>Rebuttal Phase: 9th-10th of January 2018 (23:59 UTC-12)
+                <li>Author Notification: 24th of January 2018 (23:59 UTC-12)
+                <li>JAAMAS Submission: 26th of January 2018 (23:59 UTC-12)
+            </ul>
+        <h5><u><b> Conference Schedule </b></u></h5>
+            <ul>
+                <li>Tutorials/DC: 10th of July, 2018
+                <li>Main Conference: 11th-13th of July, 2018
+                <li>Workshops: 14th-15th of July, 2018
+                <li>AAMAS 2018 Conference : July 10-15, 2018
+            </ul>
+    <br>
+    <h4><u><b>Main Track and Special Tracks</b></u></h4>
+    AAMAS is the leading scientific conference for research in autonomous agents and multiagent systems. The AAMAS
+    conference series was initiated in 2002 by merging three highly respected meetings: the International Conference
+    on Multi-Agent Systems (ICMAS); the International Workshop on Agent Theories, Architectures, and Languages (ATAL);
+    and the International Conference on Autonomous Agents (AA). The aim of the joint conference is to provide a single,
+    high-profile, internationally respected archival forum for scientific research in the theory and practice of autonomous <a name="submissions"></a>
+    agents and multiagent systems. This edition will be a part of the Federated AI Meeting (FAIM) where AAMAS is co-located with several AI conferences
+    including the International Joint Conference on Artificial Intelligence (IJCAI)/European Conference on Artificial
+    Intelligence (ECAI) and the International Conference on Machine Learning (ICML).
+    <br><br>
+    <h4><u><b>Information for Authors</b></u><br></h4>
+    AAMAS 2018 encourages the submission of analytical, empirical, methodological, technological, and perspective papers.
+    Analytical and empirical papers should make clear the significance and relevance of their results to the AAMAS community.
+    Similarly, methodological and technological papers should make clear their scientific and technical contributions,
+    and are expected to demonstrate a thorough evaluation of their strengths and weaknesses in practice. It is strongly
+    encouraged that papers focusing on specific agent capabilities evaluate their techniques in the context of autonomous
+    agent architectures or multiagent systems. A thorough evaluation, conducted from a theoretical or applied basis, is
+    considered an essential component of any submission. Authors are also requested to pay particular attention to discussing
+    how their work relates to the state of the art in autonomous agents and multiagent systems research as evidenced in,
+    for example, previous AAMAS and related conferences and journals. All submissions will be rigorously peer reviewed
+    and evaluated on the basis of the overall quality of their technical contribution, including criteria such as originality,
+    soundness, relevance, significance, quality of presentation, and understanding of the state of the art.
+
+
+    <br>
+    AAMAS 2018, the seventeenth conference in the AAMAS series, seeks the submission of high-quality papers limited to
+    8 pages in length, with any additional pages containing only bibliographic references. Reviews will be double blind;
+    authors must avoid including anything that can be used to identify them. Please note that submitting an abstract is
+    required before submitting a full paper. However, the abstracts will not be reviewed, and full papers must be
+    submitted for the review process to begin.  All work must be original, i.e., it must not have appeared in a
+    conference proceedings, book, or journal and may not be under review for another archival conference. In addition to
+    submissions in the main track, AAMAS 2018 will be soliciting papers in special tracks. The review process for the
+    special tracks will be similar to the main track, but with program committee members specially selected for each track.
+    All accepted papers for the special tracks will be included in the proceedings.  At least one of the authors of
+    each paper is required to register, attend, and present the paper at the conference.
+    <br>A significant number of papers will be invited to submit extended versions to the Journal of Autonomous Agents and
+    Multi-agent Systems (JAAMAS) for fast-track review.
+    <br>
+    AUTHORS TAKE NOTE: The official publication date is the date the proceedings are made available in the ACM Digital
+    Library. This date may be up to two weeks prior to the first day of your conference. The official publication date
+    affects the deadline for any patent filings related to published work. (For those rare conferences whose proceedings
+    are published in the ACM Digital Library after the conference is over, the official publication date remains the first day of the conference.)
+    <br><br>
+    <a name="mainTrack"></a>
+     <h4><u><b>Topics of Interest</b></u></h4>
+        The conference solicits papers addressing original research on autonomous agents and their interaction. Topics of interest include (but are not limited to) the following: <br>
+        <b>Agent Theories and Models:</b>
+                <ul>
+                    <li>Logic and game theory</li>
+                    <li>Logics for agents and multi-agent systems</li>
+                    <li>Formal models of agency</li>
+                    <li>Belief-Desire-Intention theories and models</li>
+                    <li>Cognitive models</li>
+                    <li>Models of emotions</li>
+                    <li>Logics for norms and normative systems</li>
+                </ul>
+
+        <b>Communication and Argumentation:</b>
+                <ul>
+                    <li>Commitments</li>
+                    <li>Communication languages and protocols</li>
+                    <li>Speech act theory</li>
+                    <li>Deductive, rule-based and logic-based argumentation</li>
+                    <li>Argumentation-based dialogue and protocols</li>
+                </ul>
+        <b>Agent Cooperation:</b>
+                <ul>
+                    <li>Biologically-inspired approaches and methods</li>
+                    <li>Collective intelligence</li>
+                    <li>Distributed problem solving</li>
+                    <li>Teamwork, team formation, teamwork analysis</li>
+                    <li>Coalition formation (non-strategic)</li>
+                    <li>Multi-user/multi-virtual-agent interaction</li>
+                    <li>Multi-robot systems</li>
+                </ul>
+        <b>Knowledge Representation and Reasoning:</b>
+                <ul>
+                    <li>Ontologies for agents</li>
+                    <li>Reasoning in agent-based systems</li>
+                    <li>Single and multi-agent planning and scheduling</li>
+                    <li>Reasoning about action, plans and change in multi-agent systems</li>
+                    <li>Reasoning about knowledge, beliefs, goals and norms in multiagent systems</li>
+                </ul>
+        <b>Agent Societies and Societal issues:</b>
+                <ul>
+                    <li>Organizations and institutions</li>
+                    <li>Social networks</li>
+                    <li>Socio-technical systems</li>
+                    <li>Normative systems</li>
+                    <li>Values in MAS (privacy, safety, security, transparency,…)</li>
+                    <li>Monitoring agent societies</li>
+                    <li>Coordination and control models for multiagent systems</li>
+                    <li>Architectures for social reasoning</li>
+                    <li>Trust and reputation</li>
+                    <li>Policy, regulation and legislation</li>
+                    <li>Self-organization</li>
+                </ul>
+        <b>Humans and Agents:</b>
+                <ul>
+                    <li>Human-robot/agent interaction</li>
+                    <li>Multi-user/multi-virtual-agent interaction</li>
+                    <li>Agents competing against humans</li>
+                    <li>Agent-based analysis of human interactions</li>
+                    <li>Agents for improving human cooperative activities</li>
+                </ul>
+        <b>Learning and Adaptation:</b>
+                <ul>
+                    <li>Reward structures for learning</li>
+                    <li>Evolutionary algorithms</li>
+                    <li>Co-evolutionary algorithms</li>
+                    <li>Multiagent learning</li>
+                    <li>Deep learning</li>
+                    <li>Adversarial machine learning</li>
+                    <li>Learning agent capabilities (agent models, communication, observation)</li>
+                    <li>Learning agent-to-agent interactions (negotiation, trust, coordination)</li>
+                </ul>
+        <b>Agents & Mainstream Computing:</b>
+                <ul>
+                    <li>Service-oriented architectures</li>
+                    <li>Mobile agents</li>
+                    <li>Autonomic computing</li>
+                    <li>P2P, web services, grid computing, IoT, HPC</li>
+                </ul>
+        <b>Agent-based Simulation:</b>
+                <ul>
+                    <li>Social simulation</li>
+                    <li>Simulation techniques, tools and platforms</li>
+                    <li>Simulation of complex systems</li>
+                    <li>Validation of simulation systems</li>
+                    <li>Modelling for agent-based simulation</li>
+                    <li>Interactive simulation</li>
+                    <li>Emergent behaviour</li>
+                    <li>Analysis of agent-based simulations</li>
+                </ul>
+        <b>Engineering Multiagent Systems:</b>
+                <ul>
+                    <li>Modelling and specification languages</li>
+                    <li>Programming languages and frameworks for agents and multiagent systems</li>
+                    <li>Development techniques, tools, and platforms</li>
+                    <li>Methodologies for agent-based systems</li>
+                    <li>Innovative agents and multiagent applications</li>
+                </ul>
+        <b>Verification and Validation of Agent-based Systems:</b>
+                <ul>
+                    <li>Testing of agent-based systems, including model-based testing</li>
+                    <li>Verification techniques for multiagent systems, including model checking</li>
+                    <li>Synthesis of agent-based systems</li>
+                    <li>Fault tolerance and resilience of multi-agent systems</li>
+                    <li>Testing and debugging multiagent programs</li>
+                </ul>
+        <b>Economic Paradigms:</b>
+                <ul>
+                    <li>Auctions and mechanism design</li>
+                    <li>Bargaining and negotiation</li>
+                    <li>Behavioral game theory</li>
+                    <li>Cooperative games: theory & analysis</li>
+                    <li>Cooperative games: computation</li>
+                    <li>Noncooperative games: theory & analysis</li>
+                    <li>Noncooperative games: computation</li>
+                    <li>Social choice theory</li>
+                    <li>Game theory for practical applications</li><a name="jaamas"></a>
+                </ul>
+    <br>
+
+    <b>General Chairs:</b><br>
+    Elisabeth André (Universität Augsburg, Germany)<br>
+    Sven Koenig (University of Southern California, USA)<br>
+    <br>
+    <b>Program Chairs:</b><br>
+    Mehdi Dastani (University of Utrecht, Netherlands)<br>
+    Gita Sukthankar (University of Central Florida, USA)<br><a name="robotics"></a>
+
+    <br>
+    <h4><u><b>Special Tracks</b></u></h4>
+    As mentioned above, AAMAS 2018 will feature the following special tracks. These are: <br>
+    <br>
+
+    <b>JAAMAS (Chair: Natasha Alechina)</b>
+        <br>
+        JAAMAS Submissions
+        <br>
+        AAMAS 2018 will also accept papers for presentation that have appeared in the Journal of Autonomous Agents and
+        Multi-agent Systems (JAAMAS) in the 12 months period preceding the AAMAS notification date (January 2018).
+        These articles also have the option to publish an extended abstract (maximum
+        two pages, excluding bibliography) in the AAMAS proceedings. The articles must be original and not previously
+        published as a full paper in an archival conference. The submission process for this track is separate from the
+        main paper submission process, and is later (deadline in January). Authors of eligible JAAMAS papers will be
+        contacted by email in the second half of November.
+        <br>
+        For details on JAAMAS, visit
+        <a href="http://www.springer.com/computer/ai/journal/10458">http://www.springer.com/computer/ai/journal/10458</a>
+     <br><br>
+
+    <b>Robotics (Chairs: Sonia Chernova and Maria Gini)</b>
+        <br><a name="sociallyInteractiveAgents"></a>
+        We invite papers that advance theory and application of single and multiple robots. Papers on the interaction between robots and agents (broadly defined) are particularly welcome, but all papers at the intersection of artificial intelligence and robotics are welcome.
+        Papers are solicited in all areas, including, but not restricted to:
+        <br>
+        <ul>
+            <li>Human-robot interaction
+            <li>Robot communication and teamwork</li>
+            <li>Machine learning for robotics</li>
+            <li>Mapping, localization and exploration</li>
+            <li>Architectures for teams of robots</li>
+            <li>Networked robot/sensor systems, distributed robotics</li>
+            <li>Robot planning and plan execution (including action and motion planning)</li>
+            <li>Robot teams, multi-robot systems, robot coordination</li>
+            <li>Robotic agent languages and middleware for robot systems</li>
+            <li>Swarms and collective behaviour</li>
+            <li>Modular robotics</li>
+        </ul>
+    <br>
+
+    <b>Socially Interactive Agents (Chairs: Angelo Cafaro and Stacy Marsella)</b>
+        <br>
+        The Socially Interactive Agents track invites papers on research topics related to the design, implementation, evaluation and
+        application of social agents. Such agents are capable of interacting with people and each other using social communicative behaviors
+        common to human-human interaction. Example applications include social assistants on mobile devices, pedagogical agents in tutoring systems,
+        non-player characters in interactive games and multimodal interface agents for smart appliances and environments. The goal of the social
+        agents track is to provide an opportunity for continued interaction and cross-fertilization between the AAMAS community and researchers working on social agents.
+        <br>
+        We welcome papers that present novel work and contributions on social agent systems, human(s)-agent(s) interaction, applications or evaluations of such systems. Submissions can address innovative, fundamental issues such as behavioral or cognitive models for autonomous social agents, as well as new application areas.
+        <br>
+        Topics of interest include, but are not limited to:
+        <br>
+        <b>Social agent models:</b>
+        <br>
+            <ul>
+                <li>Reasoning, learning, adaptation and user modeling</li>
+                <li>Affect, personality and cultural differences</li><a name="blueSkyIdeas"></a>
+                <li>Interactive narrative and storytelling</li>
+            </ul>
+        <b>Multimodal interaction:</b>
+            <ul>
+                <li>Verbal and nonverbal perception, analysis and generation</li>
+                <li>Interpersonal coordination</li>
+            </ul>
+        <b>Social agent architectures:</b>
+            <ul>
+                <li>Tools for designing and building social agents</li>
+                <li>Ubiquitous architectures</li>
+                <li>Portability and reuse standards/measures to support interoperability</li>
+            </ul>
+        <b>Evaluation methods and studies:</b>
+            <ul>
+                <li>Empirical studies on social agents</li>
+                <li>Ethical considerations and social impact</li><a name="industrialApplications"></a>
+                <li>Social agents as a means to study and model human behavior</li>
+            </ul>
+        <b>Applications:</b>
+            <ul>
+                <li>Games, education, health, art, marketing and large scale deployments</li>
+            </ul>
+
+    <br>
+    <b>Blue Sky Ideas (Chairs: Michael Rovatsos and Carles Sierra)</b>
+        <br>
+        The emphasis of this track is on visionary ideas, long-term challenges, new research opportunities, and controversial debate.
+        It serves as an incubator for innovative, risky, and provocative ideas, and aims to provide a forum for publishing and
+        presenting these without being constrained by the result-oriented standards followed in the review process of other tracks
+        of the conference. We encourage papers to reflect on: the use of agents and multiagent systems in emergent computing technologies;
+        novel, overlooked, or underrepresented methodologies and application areas; their potential promises and risks; and on the future
+        of the research area and its community within the broader AI and computing landscape. Importantly, this track is not the right
+        place for preliminary work, or for papers reporting on existing approaches. Reviewers will assess papers based on the novelty
+        of the ideas presented, the rigor with which they are developed, and the level of critical reflection applied in the exploration
+        of these ideas.
+
+    <br><br>
+
+
+    <b>Industrial Applications (Chairs: Nils Bulling and Ann Nowé)</b>
+        <br>
+        We invite industry practitioners and researchers to present application work that is deployed or on the verge of being deployed and uses agents/multi-agent systems technology in practice. Research from, and relevant to, the AAMAS community has permeated a variety of domains and applications, both as central to the application and in key supportive roles. For example, the community pursues research in topics including optimization, resource allocation, cognitive intelligence, learning, agent-based simulation, and game-theoretic equilibrium computation, and applies them in domains such as traffic routing, automotive systems, security, biomedicine, robotics, financial management, and internet market design. Ideas and technologies from this research are responsible for significant revenue-generation and cost-saving, as well as for supporting important public policy and business strategy decision-making.
+        We are interested in hearing about how agent and multi-agent approaches transition into practice and what the current problems of interest are. This special track provides the ideal forum to present, discuss, and demonstrate compelling applications, agent system deployment experiences, and new business ideas. The goal is to promote the fostering of mutually-beneficial relationships between those doing foundational scientific research and those using autonomous agents and multi-agent systems in real-world commercial, non-profit, or government applications.
+        <br>
+        Submitted material will be evaluated based on the use of agent/multi-agent systems technology for real problems over a reasonable duration, evidence of impact, and lessons for the agents/multi-agents community about  what worked and what did not.
+        Contributors will be given the opportunity to present their application at the conference. In addition to this, the track will offer the following features:
+        <br>
+        <ul>
+            <li> There will be a special award for the best industrial application contribution. </li>
+            <li> Attendees will be offered the opportunity to participate in special events (e.g. "company academia speed dating” and a demo session) bringing industrial partners, students and academics in contact. </li>
+            <li> There will be joint panel session with practitioners and academics to discuss current trends in academia and industry and how to establish beneficial collaborations between industry and academia. </li>
+        </ul>
+        <br>
+        Submission Instructions for Industrial Applications (NOW CLOSED, but participation to the industrial applications track especially the Speed dating are still welcome, see below):
+        <br><br>
+        <ul>
+        <li>Authors should submit a presentation of their work in whatever electronic medium best shows the AAMAS relevant features of the application, whether a video, PPT, deployment, webpage or software. Acceptance to the track will be determined based on both the degree to which interesting agent technologies feature in and improve the deployed system, as well as the benefit to the community to understanding the challenges and solutions in the application.</li>
+        <br>
+        <li>Authors must submit a one page document accompanying the primary submission, briefly summarizing what interesting agent technologies are featured in the deployed system and the impacts those technologies have had.</li>
+        <br>
+        <li>Optionally, authors can submit an extended abstract (2 pages) or a full paper (8 pages), following the standard AAMAS submission instructions, describing the application at a more scientific level. Such papers will undergo a regular reviewing process and if accepted will be included in the AAMAS proceedings.</li>
+        </ul>
+        <br>
+        The "Speed dating" event would take place on Tuesday, July 10th, in the afternoon.
+        <br>
+        We invite companies who are looking for AI talent to pitch their company in 1 minute (and 2 slides). After the pitches a speed dating will be organized with interested researchers. Moreover, you are welcome to attend interesting tutorials and presentations submitted to the industrial applications track.
+<br><br>
+        Registration option: We are happy to offer a special registration option for the industrial application track only (incl. speed dating,  tutorials, presentations and invited talk) for a reduced fee on request.
+<br><br>
+        Interested in attending? Please send an e-mail to <a href="mailto:bulling@in.tu-clausthal.de?Subject=AAMAS 2018 Industrial Track">bulling@in.tu-clausthal.de</a> and <a href="mailto:Ann.Nowe@vub.be?Subject=AAMAS 2018 Industrial Track">Ann.Nowe@vub.be</a> before May 31st expressing your interest in participating in the speed dating (not yet binding). Furthermore, registration for the speed dating is required by June 30th. Prior to registration please send us your 2 slides pitch by June 30th.
+<br><br>
+        Note: regular AAMAS registration is available here: <a href="http://www.delegia.com/aamas2018/Start-your-registration-here">http://www.delegia.com/aamas2018/Start-your-registration-here</a> with a reduced fee of 1300 SEK (before May 31st) or 1700 SEK (late registration). Early registration ends May 31st.
+<br><br>
+        Revised submission dates for the Industrial Applications Track are:
+        <br>
+        <ul>
+            <li>Abstract Submission: 25th of November 2017 (23:59 UTC-12)
+            <li>Short/Full Paper Submission: 25th of November 2017 (23:59 UTC-12) (Optional)
+            <li>Presentation and one page summary: 10th of January 2018 (23:59 UTC-12)
+            <li>Rebuttal Phase (short/full paper): 9th-10th of January 2018 (23:59 UTC-12)
+            <li>Author Notification: 24th of January 2018 (23:59 UTC-12)
+        </ul>
+    <br>
+
+    <h4><u><b>General Information</b></u></h4>
+    All full papers accepted to the main track and the special tracks will be presented in parallel technical sessions. All
+    the papers will be published in the conference proceedings and will be permanently available after the conference
+    at <a href="http://www.ifaamas.org/proceedings.html">www.ifaamas.org/proceedings.html</a>. In addition, AAMAS 2018 will include:
+    <ul>
+        <li>Workshops</li>
+        <li>Tutorials</li>
+        <li>System demonstrations</li>
+        <li>Poster presentations for full papers and extended abstracts</li>
+        <li>Invited talks and panel discussions</li>
+    </ul>
+
+    The submission processes for the workshops and system demonstrations are separate from the main paper submission process.
+    Information will be posted on the relevant pages.
+    <br><br>
+    <h4><u><b>Policies</b></u></h4>
+
+    <b>Policy on multiple and previous submissions</b>
+    <br>
+    Authors may not submit any paper to AAMAS 2018 that has already appeared in an archival forum. Authors must ensure
+    that no submission to AAMAS 2018 is under review for another archival forum between the AAMAS 2018 submission and decision dates.
+    <br><br>
+    <b>Policy on harassment at the conference environment</b>
+    <br>
+    IFAAMAS is committed to organising the AAMAS conference and its affiliated events in an environment that is free of
+    harassment for everyone involved: delegates, organisers, conference workers, and reviewers. All participants in
+    IFAAMAS events are asked to embrace our intention to foster a harassment-free scientific community, and to understand
+    that IFAAMAS will respond appropriately to incidents of harassment if they occur. The complete IFAAMAS harassment
+    policy is available at <a href="http://www.ifaamas.org/harassment.html">www.ifaamas.org/harassment.html</a>
+    <br><br>
+    For further details about AAMAS 2018, please visit the website at <a href="http://aamas18.ifaamas.org">aamas18.ifaamas.org</a>
+
+    <br><br>
+
+    </div>
+{% endblock %}

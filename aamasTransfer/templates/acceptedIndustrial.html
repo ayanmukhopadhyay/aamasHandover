@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h3><u>Accepted Papers : Industrial Track</u></h3>
+        <br>
+        <h4><u>Full Papers</u></h4>
+            <b>COBOTS - A Cognitive Multi-Bot Conversational Framework for Technical Support</b> <br>
+            Sethuramalingam Subramaniam, Pooja Aggarwal, Gargi B Dasgupta, Amit Paradkar<br>
+            <hr>
+            <b>Taxis Strike Back: A Field Trial of the Driver Guidance System</b> <br>
+            Shih-Fen Cheng, Shashi Shekhar Jha, Rishikeshan Rajendram<br>
+            <hr>
+            <b>A Decision Theoretic Framework for Emergency Responder Dispatch</b> <br>
+            Ayan Mukhopadhyay, Zilin Wang, Yevgeniy Vorobeychik<br>
+            <hr>
+            <br>
+
+        <h4><u>Extended Abstracts</u></h4>
+            <b>Valuing knowledge, information and agency in Multi-agent Reinforcement Learning: a case study in smart buildings</b> <br>
+            Hussain Kazmi, Johan Suykens, Johan Driesen<br>
+            <hr>
+
+        <h4><u>Presentation</u></h4>
+            <b>Multiagent Simulation of Adversarial Socio-Technical Systems</b> <br>
+            Michael Papasimeon, Lyndon Benke, Richard Brain, Lily Finkelshtein<br>
+            <hr>
+            <b>A Multi-agent Based Scheme for Unlicensed Spectrum Access in Railway Wireless Communication</b> <br>
+            Cheng Wu<br>
+            <hr>
+            <b>On a Multi-Agent Robotic System for Space Missions</b> <br>
+            Miguel Nunes<br>
+            <hr>
+    </div>
+{% endblock %}

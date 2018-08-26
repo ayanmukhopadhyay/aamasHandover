@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+        <u><b>Industrial Applications (Chairs: Nils Bulling and Ann Nowé)</b></u>
+        <br>
+        We invite industry practitioners and researchers to present application work that is commercially deployed or on the verge of being deployed and uses agents/multi-agent systems technology in practice. Research from, and relevant to, the AAMAS community has permeated a variety of domains and applications, both as central to the application and in key supportive roles. For example, the community pursues research in topics including optimization, resource allocation, cognitive intelligence, learning, agent-based simulation, and game-theoretic equilibrium computation, and applies them in domains such as traffic routing, automotive systems, security, biomedicine, robotics, financial management, and internet market design. Ideas and technologies from this research are responsible for significant revenue-generation and cost-saving, as well as for supporting important public policy and business strategy decision-making.
+        We are interested in hearing about how agent and multi-agent approaches transition into practice and what the current problems of interest are. This special track provides the ideal forum to present, discuss, and demonstrate compelling applications, agent system deployment experiences, and new business ideas. The goal is to promote the fostering of mutually-beneficial relationships between those doing foundational scientific research and those using autonomous agents and multi-agent systems in real-world commercial, non-profit, or government applications.
+        <br>
+        Submitted material will be evaluated based on the use of agent/multi-agent systems technology for real problems over a reasonable duration, evidence of impact, and lessons for the agents/multi-agents community about  what worked and what did not.
+        Contributors will be given the opportunity to present their application at the conference. In addition to this, the track will offer the following features:
+        <br>
+        <ul>
+            <li> There will be a special award for the best industrial application contribution. </li>
+            <li> Attendees will be offered the opportunity to participate in special events (e.g. "company academia speed dating” and a demo session) bringing industrial partners, students and academics in contact. </li>
+            <li> There will be joint panel session with practitioners and academics to discuss current trends in academia and industry and how to establish beneficial collaborations between industry and academia. </li>
+        </ul>
+        <br>
+        Submission Instructions:
+        <br>
+        <ul>
+        <li>Authors should submit a presentation of their work in whatever electronic medium best shows the AAMAS relevant features of the application, whether a video, PPT, deployment, webpage or software. Acceptance to the track will be determined based on both the degree to which interesting agent technologies feature in and improve the deployed system, as well as the benefit to the community to understanding the challenges and solutions in the application.</li>
+        <br>
+        <li>Authors must submit a one page document accompanying the primary submission, briefly summarizing what interesting agent technologies are featured in the deployed system and the impacts those technologies have had.</li>
+        <br>
+        <li>Optionally, authors can submit an extended abstract (2 pages) or a full paper (8 pages), following the standard AAMAS submission instructions, describing the application at a more scientific level. Such papers will undergo a regular reviewing process and if accepted will be included in the AAMAS proceedings.</li>
+        </ul>
+
+    </div>
+{% endblock %}

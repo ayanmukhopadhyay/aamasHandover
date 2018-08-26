@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+    <u><b>Robotics (Chairs: Sonia Chernova and Maria Gini)</b></u>
+        <br>
+        We invite papers that advance theory and application of single and multiple robots. Papers on the interaction between robots and agents (broadly defined) are particularly welcome, but all papers at the intersection of artificial intelligence and robotics are welcome.
+        Papers are solicited in all areas, including, but not restricted to:
+        <br>
+        <ul>
+            <li>Human-robot interaction
+            <li>Robot communication and teamwork</li>
+            <li>Machine learning for robotics</li>
+            <li>Mapping, localization and exploration</li>
+            <li>Architectures for teams of robots</li>
+            <li>Networked robot/sensor systems, distributed robotics</li>
+            <li>Robot planning and plan execution (including action and motion planning)</li>
+            <li>Robot teams, multi-robot systems, robot coordination</li>
+            <li>Robotic agent languages and middleware for robot systems</li>
+            <li>Swarms and collective behaviour</li>
+            <li>Modular robotics</li>
+        </ul>
+
+    </div>
+{% endblock %}

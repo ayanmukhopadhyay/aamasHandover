@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-obcv{border-color:#000000;text-align:center}
+</style>
+
+    <br><h5><u><b>List of Tutorials</b></u></h5>
+    <br>
+    <div>
+        <ul>
+            <li>Title: AI for Social Good: A Multiagent Systems Perspective<br>
+            Presenters: Milind Tambe, Fei Fang, Bryan Wilder, Eugene Vorobeychik<br>
+            Website: <a href="http://teamcore.usc.edu/people/bryanwilder/aamas_social_good.htm">http://teamcore.usc.edu/people/bryanwilder/aamas_social_good.htm</a><br><br>
+
+            <li>Title: Multi-Agent Pathfinding<br>
+            Presenters: Roman Barták, Roni Stern<br>
+            Website: <a href="http://ktiml.mff.cuni.cz/~bartak/AAMAS2018/">http://ktiml.mff.cuni.cz/~bartak/AAMAS2018/</a><br><br>
+
+            <li>Title: Multi-objective Planning and Reinforcement Learning<br>
+            Presenters: Shimon Whiteson, Diederik M. Roijers<br>
+            Website: <a href="http://roijers.info/motutorial.html">http://roijers.info/motutorial.html</a><br><br>
+
+            <li>Title: Distributed Constraint Optimization for the Internet-of-Things (DCOP for IoT)<br>
+            Presenters: Gauthier Picard,  Pierre Rust<br>
+            Website: <a href="http://www.emse.fr/~picard/dcop4iot/">http://www.emse.fr/~picard/dcop4iot/</a> <br><br>
+
+            <li>Title: Universal Reinforcement Learning<br>
+            Presenters: Tom Everitt, Marcus Hutter<br>
+            Website: <a href="http://www.tomeveritt.se/tutorial/2018/03/08/aamas-18-tutorial-on-universal-rl.html"> http://www.tomeveritt.se/tutorial/2018/03/08/aamas-18-tutorial-on-universal-rl.html</a><br><br>
+
+            <li>Title: Multi-agent Systems and Social Influence<br>
+            Presenters: Truls Pedersen, Marija Slavkovik <br>
+            Website: <a href="http://slavkovik.com/aamastutorial.html">http://slavkovik.com/aamastutorial.html</a><br><br>
+
+            <li>Title: From Game Theory to AI in Games<br>
+            Presenters: Georgios Chalkiadakis, Georgios N. Yannakakis<br>
+            Website:<a href="http://www.gameai.institutedigitalgames.com/aamas/">http://www.gameai.institutedigitalgames.com/aamas/</a><br><br>
+
+            <li>Title: Multi-agent (Deep) Learning<br>
+            Presenters: D. Balduzzi, T. Graepel. J. Perolat, K. Tuyls<br>
+            Website: <a href="https://sites.google.com/site/maltutorial2018/">https://sites.google.com/site/maltutorial2018/</a><br><br>
+
+            <li>Title: Combinatorial Optimization for Graphical Models<br>
+            Presenters: Rina Dechter, Alexander Ihler, Radu Marinescu<br>
+            Website: <a href="https://sites.google.com/view/tutorial-aamas-2018/home">https://sites.google.com/view/tutorial-aamas-2018/home</a><br><br>
+        </ul>
+    </div>
+    <br><h5><u><b>Schedule</b></u></h5>
+    <br>
+<table class="tg" align="center">
+  <tr>
+    <th class="tg-obcv">Room Number (Time)</th>
+    <th class="tg-obcv">Tutorial</th>
+  </tr>
+  <tr>
+    <td class="tg-obcv">K11 (14:00-18:00)</td>
+    <td class="tg-obcv">AI for Social Good: A Multiagent Systems Perspective</td>
+  </tr>
+  <tr>
+    <td class="tg-obcv">K23 (14:00-18:00)</td>
+    <td class="tg-obcv">Combinatorial Optimization for Graphical Models</td>
+  </tr>
+  <tr>
+    <td class="tg-obcv">K24 (14:00-18:00)</td>
+    <td class="tg-obcv">Distributed Constraint Optimization for theInternet-of-Things (DCOP for IoT)</td>
+  </tr>
+  <tr>
+    <td class="tg-obcv">K22 (8:30-12:30)</td>
+    <td class="tg-obcv">From Game Theory to AI in Games</td>
+  </tr>
+  <tr>
+    <td class="tg-obcv">K23 (8:30-12:30)</td>
+    <td class="tg-obcv">Multi-Agent Pathfinding</td>
+  </tr>
+  <tr>
+    <td class="tg-obcv">K24 (8:30-12:30)</td>
+    <td class="tg-obcv">Multi-agent systems and social influence</td>
+  </tr>
+  <tr>
+    <td class="tg-obcv">K11 (8:30-12:30)</td>
+    <td class="tg-obcv">Multi-objective planning and reinforcement learning</td>
+  </tr>
+  <tr>
+    <td class="tg-obcv">K22 (14:00-18:00)</td>
+    <td class="tg-obcv">Universal Reinforcement Learning</td>
+  </tr>
+  <tr>
+    <td class="tg-obcv">K21 (8:30-12:30; 14:00-18:00)</td>
+    <td class="tg-obcv">Multi-agent Learning</td>
+  </tr>
+</table>
+<br>
+All tutorials include (as applicable according to time) coffee breaks from 10:00-10:30 and 15:30-16:00 and a lunch break from 12:30-14:00.
+<br><br>
+{% endblock %}

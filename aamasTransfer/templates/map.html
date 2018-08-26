@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <h4><u>Stockholm : Places of Interest</u></h4>
+        <div class="col-sm-4">
+            Click on the legend button at the top left of the map to know more about places of interest for AAMAS 18.
+        </div>
+        <div class="col-sm-8">
+                <iframe id="gmapFrame" src="https://www.google.com/maps/d/embed?mid=1-grduo37mkzs3YlhvaNzNFtCrWq0NXrA" position="absolute" width="720" height="540"></iframe>
+        </div>
+    </div>
+{% endblock %}

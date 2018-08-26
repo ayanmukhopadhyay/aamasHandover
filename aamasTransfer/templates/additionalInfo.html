@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    {% load staticfiles %}
+    <h4><u>Good to Know/Map</u></h4>
+
+    <div class="col-sm-6">
+        <p>Life in Sweden is almost cashless. There are shops or restaurants that just accept
+        card payment. Swish becomes more and more widespread. It is possible to pay in
+        taxis, busses even in small bakeries by card.</p>
+
+        <p>In every railway station and airport, Eduroam is available. In most long-distance busses (e.g. Flygbussarna from the airport) and trains (e.g. Arlanda Express) there is free internet. </p>
+
+        <p>Sweden is part of the Schengen area.</p>
+
+        <p>Click on the legend button at the top left of the map to know more about places of interest for AAMAS 18.<p>
+    </div>
+
+    <div class="col-sm-6">
+        <iframe id="gmapFrame" src="https://www.google.com/maps/d/embed?mid=1-grduo37mkzs3YlhvaNzNFtCrWq0NXrA" position="absolute" width="640" height="480"></iframe>
+    </div>
+
+{% endblock %}

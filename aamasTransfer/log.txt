@@ -1,0 +1,2 @@
+3.3.5 |Anaconda 2.3.0 (x86_64)| (default, Sep  2 2014, 13:57:31) 
+[GCC 4.2.1 (Apple Inc. build 5577)]

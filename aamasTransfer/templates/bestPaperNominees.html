@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+{#    {% load staticfiles %}#}
+    <div>
+        <h3><u>Best Paper Award Nominations</u></h3>
+        <br><br>
+        <h5><u>Best Paper Nominees</u></h5>
+        <ul>
+            <li> Siddharth Barman, Sanath Kumar Krishnamurthy, Rohit Vaish.
+                <br>Greedy Algorithms for Maximizing Nash Social Welfare
+
+            <li> Mohammad Irfan, Tucker Gordon
+                <br>The Power of Context in Networks: Ideal Point Models with Social Interactions
+
+            <li> Wojciech Jamroga, Wojciech Penczek, Piotr Dembiński, Antoni Mazurkiewicz
+                <br>Towards Partial Order Reductions for Strategic Ability
+        </ul>
+
+        <h5><u>Best Student Paper Nominees</u></h5>
+        <ul>
+            <li> Melrose Roderick, Christopher Grimm, Stefanie Tellex
+                <br>Deep Abstract Q-Networks
+
+            <li> Raquel Rosés, Cristina Kadar, Charlotte Gerritsen, Chris Ovi Rouly
+                <br>Agent-Based Simulation of Offender Mobility: Integrating Activity Nodes from Location-Based Social Networks
+
+            <li> Bryan Wilder; Laura Onasch-Vera, Juliana Hudson, Jose Luna; Nicole Wilson, Robin Petering, Darlene Woo, Milind Tambe, Eric Rice
+                <br>End-to-End Influence Maximization in the Field
+        </ul>
+
+        <h5><u>Best Robotics Paper Nominees</u></h5>
+        <ul>
+            <li> Daniel Beßler, Mihai Pomarlan, Michael Beetz
+            <br> OWL-enabled Assembly Planning for Robotic Agents
+
+            <li> Shih-Yun Lo, Shiqi Zhang, Peter Stone
+            <br> PETLON: Planning Efficiently for Task-Level-Optimal Navigation
+
+            <li> Anoop Aroor, Susan Epstein
+            <br> Online learning for crowd-sensitive path planning
+        </ul>
+
+        <h5><u>Best Socially Interactive Agents Paper Nominees</u></h5>
+        <ul>
+            <li> Hendrik Buschmeier, Stefan Kopp
+            <br> Communicative Listener Feedback in Human–Agent Interaction: Artificial Speakers Need to Be Attentive and Adaptive
+
+            <li> Johnathan Mell, Gale Lucas, Jonathan Gratch
+            <br> Welcome to the Real World: How Agent Strategy Increases Human Willingness to Deceive
+
+            <li> Jan Pöppel, Stefan Kopp
+            <br> Satisficing Models of Bayesian Theory of Mind to Explain the Behavior of Differently Uncertain Agents
+        </ul>
+
+
+    </div>
+{% endblock %}

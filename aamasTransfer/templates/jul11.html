@@ -1,0 +1,609 @@
+{% extends 'base.html' %}
+
+{% block includes %}
+    {% load staticfiles %}
+    <link href="{% static "css/specific_elements.css" %}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block content %}
+
+{#<style type="text/css">#}
+{#    .tg  {border-collapse:collapse;border-spacing:0;}#}
+{#    .tg td{font-family:Arial, sans-serif;font-size:12px;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:break-all;border-color:black;white-space: nowrap}#}
+{#    .tg th{font-family:Arial, sans-serif;font-size:12px;font-weight:normal;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:break-all;border-color:black;white-space: nowrap}#}
+{#    .tg .tg-s6z2{border-color:inherit;text-align:center;vertical-align:top}#}
+{#    .tg .tg-uys7{border-color:inherit;text-align:center}#}
+{#    .tg .tg-us36{border-color:inherit;vertical-align:top}#}
+{#    .tg .tg-y2k2{font-weight:bold;text-decoration:underline;border-color:inherit;text-align:center}#}
+{#    .tg .tg-yw4l{vertical-align:top}#}
+{#    .tg .tg-9353{font-weight:bold;text-decoration:underline;border-color:inherit;text-align:center;vertical-align:top}#}
+{#    .tg .tg-s6z2{text-align:center}#}
+{#    .tg .tg-hgcj{font-weight:bold;text-align:center}#}
+{#    .tg .tg-yw4l{vertical-align:top}#}
+{#    .tg .tg-031e{vertical-align:top}#}
+{#</style>#}
+
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:12px;padding:5px 5px;border-style:solid;border-width:1px;text-align:center}
+    .tg th{font-family:Arial, sans-serif;font-size:12px;font-weight:normal;padding:5px 5px;border-style:solid;border-width:1px;text-align:center}
+    .tg .tg-s6z2{border-color:inherit;text-align:center;vertical-align:middle}
+    .tg .tg-s6z2{text-align:center}
+    .tg .tg-031e{vertical-align:top}
+    .tg .tg-s6z3{vertical-align:middle;text-align:center;word-wrap:normal}
+</style>
+
+<div>
+    <table class="tg">
+                <tr>
+<td class="tg-s6z3">Session<br></td>
+{#<td class="tg-s6z2">Paper ID</td>#}
+<td class="tg-031e">Authors</td>
+<td class="tg-031e">Title</td>
+{#<td class="tg-031e"> Abstract</td>#}
+</tr>
+      <tr>
+        <td class="tg-s6z3" rowspan="4" nowrap>Session 1 (10:30-11:50) <br> Social Choice Theory 1</td>
+{#        <td class="tg-s6z2">92</td>#}
+        <td class="tg-031e">Siddharth Barman, Sanath Kumar Krishnamurthy, Rohit Vaish </td>
+        <td class="tg-031e">Greedy Algorithms for Maximizing Nash Social Welfare</td>
+{#        <td class="tg-031e"> We study the problem of fairly allocating a set of indivisible goods among agents with additive valuations. The extent of fairness of an allocation is measured by its Nash social welfare, which is the geometric mean of the valuations of the agents for their bundles. While the problem of maximizing Nash social welfare is known to be APX-hard in general, we study the effectiveness of  simple,   greedy  algorithms in solving this problem in two interesting special cases.  First, we show that a simple, greedy algorithm provides a 1.061-approximation guarantee when agents have  identical  valuations, even though the problem of maximizing Nash social welfare remains NP-hard for this setting. Second, we show that when agents have  binary  valuations over the goods, an exact solution  can be found in polynomial time via a greedy algorithm. Our results in the binary setting extend to provide novel, exact algorithms for optimizing Nash social welfare under  concave  valuations. Notably, for the above mentioned scenarios, our techniques provide a  simple  alternative to several of the existing, more sophisticated techniques for this problem such as constructing equilibria of Fisher markets or using real stable polynomials. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">130</td>#}
+        <td class="tg-031e">Piotr Faliszewski, Nimrod Talmon </td>
+        <td class="tg-031e">Between Proportionality and Diversity: Balancing District Sizes under the Chamberlin--Courant Rule</td>
+{#        <td class="tg-031e"> The Monroe and Chamberlin–Courant  multiwinner rules pro ceed by partitioning the voters into virtual districts and assigning a&nbsp;  unique committee member to each district, so that the voters are as&nbsp;  satisfied with the assignment as possible. The difference between&nbsp;  Monroe and CC is that the former creates equal-sized districts, and&nbsp;  the latter has no constraints. We generalize these rules by requir  ing that the largest district can be at most X times larger than the&nbsp;  smallest one . We show that our new rules&nbsp;  inherit worst-case computational properties from their ancestors,&nbsp;  evaluate the rules experimentally,  and we analyze their approximability.   </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">131</td>#}
+        <td class="tg-031e">Haris Aziz, Barton Lee, Nimrod Talmon </td>
+        <td class="tg-031e">Proportionally Representative Participatory Budgeting: Axioms and Algorithms</td>
+{#        <td class="tg-031e"> Participatory budgeting is one of the exciting developments in deliberative grassroots democracy. We concentrate on approval elections and propose proportional representation axioms in participatory budgeting, by generalizing relevant axioms for approval-based multi-winner elections. We observe a rich landscape with respect to the computational complexity of identifying proportional budgets and computing such, and present budgeting methods that satisfy these axioms by identifying budgets that are representative to the demands of vast segments of the voters.&nbsp; </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">135</td>#}
+        <td class="tg-031e">Piotr Faliszewski, Stanislaw Szufa, Nimrod Talmon </td>
+        <td class="tg-031e">Optimization-Based Voting Rule Design: The Closer to Utopia the Better</td>
+{#        <td class="tg-031e"> In certain situations, such as elections in the Euclidean domain, it is possible to specify clear requirements for the operation of a multiwinner voting rule, for it to provide committees that correspond to some desirable intuitive notions . We formally describe several such requirements, which we refer to as ``utopias''. Supplied with such utopias, we develop an optimization-based mechanism for constructing committee scoring rules that provide results as close to these utopias as possible; we test our mechanism on weakly separable and OWA-based rules. Using our method we recovered some believed connections between known multiwinner voting rules and certain applications and got other interesting insights. </td>#}
+        </tr>
+
+        <tr>
+            <td class="tg-s6z3" rowspan="4" nowrap>Session 2 (10:30-11:50)<br> Mechanism Design 1</td>
+{#        <td class="tg-s6z2">124</td>#}
+        <td class="tg-031e">Hao Cheng, Lei Zhang, Yi Zhang, Jun Wu, Chongjun Wang </td>
+        <td class="tg-031e">Optimal Constraint Collection for Core-selecting Path Mechanism</td>
+{#        <td class="tg-031e">#}
+{#            In path auctions, strategic bidders make bids for commodities. Each#}
+{#        edge of the graph stands for a commodity and the weight on the#}
+{#        edge represents the prime cost. Auctioneer needs to purchase a#}
+{#        sequence of edges in order to get a path from one vertex to another at a low cost. Path auctions can be considered as a kind of#}
+{#        combinatorial reverse-auctions. Computing prices in core-selecting#}
+{#        combinatorial auctions is a computationally hard problem, the same#}
+{#        is true in core-selecting path auctions. This problem can be solved#}
+{#        by core constraint generation algorithm. However, we  nd#}
+{#        that there are many redundant constraints and the constraint col-#}
+{#        lection can be conciser in core-selecting path mechanism. In this#}
+{#        paper,   1  )   we put forward a new approach to get the constraint collection, and reduce the constraint number from exponential   O   #}
+{#          to polynomial   O   ,  where   n   is the network diameter;   2  )   we prove#}
+{#        that the new constraint collection is not only equivalent to the original collection, but also has no redundant constraint in the worst#}
+{#        case;   3  )   we validate our approach on real-world datasets and obtain#}
+{#        excellent results. Furthermore, we provide new insights to think#}
+{#        over the core-selecting mechanism in combinatorial auctions.#}
+{#                </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">196</td>#}
+        <td class="tg-031e">Makoto Yokoo, Takamasa Suzuki, Akihisa Tamura </td>
+        <td class="tg-031e">Efficient allocation mechanism with endowments and distributional constraints</td>
+{#        <td class="tg-031e"> We consider an allocation problem of multiple types objects to agents, where each type of an object has multiple copies,  each agent is endowed with an object, and some distributional constraints are imposed on the allocation . We develop a mechanism that is based on the Top Trading Cycles mechanism, which is strategy-proof, feasible,  Pareto efficient, and individually rational, assuming the distributional constraints are represented as an M-convex set.&nbsp; The class of distributional constraints we consider contains many situations raised from realistic matching problems, including individual minimum/maximum quotas, regional maximum quotas, type-specific maximum quotas, and distance constraints.&nbsp; To the best of our knowledge, we are the first to develop a mechanism with these desirable properties.   </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">416</td>#}
+        <td class="tg-031e">Kentaro Yahiro, Yuzhe Zhang, Nathanael Barrot, Makoto Yokoo </td>
+        <td class="tg-031e">Strategyproof and fair matching mechanism for ratio constraints</td>
+{#        <td class="tg-031e"> We introduce a new type of distributional constraints called ratio  constraints, which explicitly specify the required balance among schools in  two-sided matching.&nbsp;  Since ratio constraints do not belong to the known well-behaved class of&nbsp;  constraints called M-convex set, developing a fair and strategyproof  mechanism that can handle them is challenging.&nbsp;  We develop a novel mechanism called  Quota Reduction Deferred Acceptance, &nbsp;  which repeatedly applies the standard DA&nbsp;  by sequentially reducing artificially introduced maximum  quotas. As well as being fair and strategyproof,  QRDA always obtains a weakly better matching for  students compared to a baseline mechanism called&nbsp;  Artificial Cap Deferred Acceptance,  which&nbsp;  uses predetermined artificial maximum quotas.&nbsp;  Experimentally, QRDA performs better in terms of student welfare  and nonwastefulness than ACDA and another fair and strategyproof  mechanism called Extended Seat Deferred Acceptance,  in which&nbsp;  ratio constraints are transformed into minimum/maximum quotas. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">771</td>#}
+        <td class="tg-031e">Dengji Zhao, Bin Li, Junping Xu, Dong Hao,  Nicholas R. Jennings</td>
+        <td class="tg-031e">Selling Multiple Items via Social Networks</td>
+{#        <td class="tg-031e">#}
+{#          We consider a market where a seller sells multiple units of a commodity in a social network. Each node/buyer in the social network can only directly communicate with her neighbours, i.e. the seller can only directly sell the commodity to her neighbours without any advertising. In this paper, we design a cost-free advertising mechanism that   incentivizes   all buyers, who are aware of the sale, to invite all their neighbours to join the sale, even though there is no guarantee that their effort will be paid. While traditional prepaid sale promotions such as sponsored search auction cannot guarantee a positive return for the advertisers, our mechanism guarantees that the seller's revenue is greatly improved compared with   VCG   without advertising, and the seller does not need to pay if the advertising is not beneficial to the seller.  </td>#}
+        </tr>
+
+        <tr>
+{#        <td class="tg-s6z2">476</td>#}
+            <td class="tg-s6z3" rowspan="4" nowrap>Session 3 (10:30-11:50)<br> Game Theory 1</td>
+        <td class="tg-031e">Karl Tuyls, Julien Perolat, Marc Lanctot, Joel Leibo, Thore Graepel </td>
+        <td class="tg-031e">A Generalised Method for Empirical Game Theoretic Analysis</td>
+{#        <td class="tg-031e"> This paper provides theoretical bounds for empirical game theoretical analysis of complex multi-agent interactions. More precisely, we provide insights on the empirical, or meta game, showing that a Nash equilibrium of the meta-game is an approximate Nash equilibrium of the true underlying game. We provide insights on how many data samples are required to obtain a close enough approximation of the underlying game. Additionally, we extend the meta-game analysis methodology to asymmetric games. The state-of-the-art has only considered empirical games in which agents have access to the same strategy sets and the payoff structure is symmetric, implying that agents are interchangeable. Finally, we carry out an empirical illustration of the generalised method in several domains, illustrating the theory and evolutionary dynamics of several versions of the \textit{AlphaGo} algorithm,  the dynamics of the Colonel Blotto game played by human players on Facebook,  and an example of a meta-game in Leduc Poker,  generated by the PSRO multi-agent learning algorithm.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">218</td>#}
+        <td class="tg-031e">Reshef Meir, David Parkes </td>
+        <td class="tg-031e">Playing the Wrong Game: Bounding Externalities in Diverse Populations of Agents</td>
+{#        <td class="tg-031e">  	 The robustness of multiagent systems can be affected by mistakes or behavioral biases,  with some agents playing the ``wrong game.'' This can change the set of equilibria, and may in turn harm or improve the social welfare of agents in the system. We are interested in bounding what we call the {\em biased price of anarchy}  in populations with diverse agent behaviors, which is the ratio between welfare in the ``wrong'' equilibrium and optimal welfare.&nbsp;&nbsp;   	 We study nonatomic routing games, and derive an externality bound that depends on a key topological parameter of the underlying network.&nbsp;   	 We then prove two general BPoA bounds for games with diverse populations: one that relies on the network structure and the \emph{average bias} of all agents in the population, and one that is independent of the structure but depends on the \emph{maximal bias}. Both types of bounds can be combined with known results to derive concrete BPoA bounds for a variety of specific behaviors .&nbsp;  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">258</td>#}
+        <td class="tg-031e">Ganesh Ghalme, SUJIT GUJAR, Amleshwar Kumar, Shweta Jain, Yadati Narahari </td>
+        <td class="tg-031e">Design of Coalition Resistant Credit Score Functions for Online Discussion Forums</td>
+{#        <td class="tg-031e"> Motivated by the need to design robust, trustworthy online discussion forums,  we design a manipulation resistant credit scoring function to assign scores to agents interacting on a typical ODF. The setting we consider is that of an ODF where the agent utilities are determined by credit scores obtained by the agents in the form of popularity indicators such as upvotes, ratings, shares, and likes. Agents can potentially manipulate the credit scores by strategically awarding the popularity indicators to other agents in order to maximize their own credit score. We focus on a specific but very common form of manipulation, namely, coalition formation. We propose a credit function that discourages formation of coalition by the agents. Our idea is to design such a credit function with the use of community detection algorithms that find an agent set partition by maximizing a community detection metric. Our contribution is to find a characterization for coalition identifying community detection metrics and to show that one can design coalition resistant credit functions with such a metric. In particular, we investigate the modularity metric and show that it is coalition identifying, and show that the proposed credit function with modularity metric is coalition resistant. We validate our theoretical findings with simulations on illustrative datasets.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">513</td>#}
+        <td class="tg-031e">Shibashis Guha, Orna Kupferman, Gal Vardi </td>
+        <td class="tg-031e">Multi-player Flow Games</td>
+{#        <td class="tg-031e">#}
+{##}
+{#        p, li { white-space: pre-wrap; }#}
+{##}
+{#          In the traditional maximum-flow problem, the goal is to transfer maximum flow in a network by directing, in each vertex in the network, incoming flow into outgoing edges. The problem corresponds to settings in which a central authority has control on all   vertices   of the network. Today's computing environment, however, involves systems with no central authority. In particular, in many applications of flow networks, the   vertices   correspond to decision-points controlled by different and selfish entities. For example, in communication networks, routers may belong to different companies, with different destination objectives. This suggests that the maximum-flow problem should be revisited, and redefined as a game.#}
+{##}
+{#          We introduce and study {  \em     multi  -player flow games  \/  } . Essentially, the   vertices   of an MFG are partitioned among the players, and a player that owns a vertex directs the flow that reaches it. Each player has a different target vertex, and the objective of each player is to maximize the flow that reaches her target vertex. We study the stability of   MFGs   and show that, unfortunately, an MFG need not have a Nash Equilibrium. Moreover, the Price of Anarchy and even the Price of Stability of   MFGs   are unbounded. That is, the reduction in the flow due to selfish behavior is unbounded. We also study the problem of deciding whether a given MFG has a Nash Equilibrium and show that it is   $\Sigma_2^P$  -complete, as well as the problem of finding optimal strategies for the players, which we show to be NP-complete. We continue with some good news and consider a variant of   MFGs   in which flow may be swallowed. For example, when routers in a communication network may drop messages.​ We show that, surprisingly, while this model seems to   incentivize   selfish behavior, a Nash Equilibrium that achieves the maximum flow always exists, and can be found in polynomial time. Finally, we consider   MFGs   in which the strategies of the players may use non-integral flows, which we show to be stronger. </td>#}
+        </tr>
+
+        <tr>
+            <td class="tg-s6z3" rowspan="4" nowrap>Session 4 (10:30-11:50)<br> Learning and Adaptation 1</td>
+{#        <td class="tg-s6z2">226</td>#}
+        <td class="tg-031e">Tharindu Fernando, Simon Denman, Sridha Sridharan, Clinton Fookes </td>
+        <td class="tg-031e">Learning Temporal Strategic Relationships using Generative Adversarial Imitation Learning</td>
+{#        <td class="tg-031e">#}
+{##}
+{##}
+{##}
+{##}
+{##}
+{##}
+{#                              This paper presents a novel framework for automatic learning of#}
+{#        complex strategies in human decision making. We observe temporal#}
+{#        relationships at the subtask level of expert demonstrations, and#}
+{#        determine the different strategies employed in order to successfully#}
+{#        complete a task. To capture the relationship between the subtasks#}
+{#        and the overall goal, we utilise two external memory modules, one#}
+{#        for capturing dependencies within a single expert demonstration,#}
+{#        such as the sequential relationship among different sub tasks, and#}
+{#        a global memory module for modelling task level characteristics#}
+{#        such as best practice employed by different humans based on their#}
+{#        domain expertise. Furthermore, we demonstrate how the hidden#}
+{#        state representation of the memory can be used as a reward signal#}
+{#        to smooth the state transitions, eradicating subtle changes. We#}
+{#        evaluate the effectiveness of the proposed model for an autonomous#}
+{#        highway driving application, where we demonstrate its capability#}
+{#        to learn different expert policies and outperform state-of-the-art#}
+{#        methods.&nbsp;#}
+{##}
+{##}
+{#                </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">551</td>#}
+        <td class="tg-031e">Jakob Foerster, Richard Chen, Maruan Al-Shedivat, Shimon Whiteson, Pieter Abbeel, Igor Mordatch </td>
+        <td class="tg-031e">Learning with Opponent-Learning Awareness</td>
+{#        <td class="tg-031e"> Multi-agent settings are quickly gathering importance in machine learning. Beyond a plethora of recent work on deep multi-agent reinforcement learning, hierarchical reinforcement learning, generative adversarial networks and decentralized optimization can all be seen as instances of this setting. However, the presence of multiple learning agents in these settings renders the training problem non-stationary and often leads to unstable training or undesired final results. We present Learning with Opponent-Learning Awareness,  a method that reasons about the anticipated learning of the other agents. The LOLA learning rule includes an additional term that accounts for the impact of the agent's policy on the anticipated parameter update of the other agents. We show that the LOLA update rule can be efficiently calculated using an extension of the likelihood ratio policy gradient update, making the method suitable for model-free reinforcement learning. This method thus scales to large parameter and input spaces and nonlinear function approximators. Preliminary results show that the encounter of two LOLA agents leads to the emergence of tit-for-tat and therefore cooperation in the infinitely iterated prisoners' dilemma, while independent learning does not. In this domain, LOLA also receives higher payouts compared to a naive learner, and is robust against exploitation by higher order gradient-based methods. Applied to infinitely repeated matching pennies, LOLA agents converge to the Nash equilibrium. In a round robin tournament we show that LOLA agents can successfully shape the learning of a range of multi-agent learning algorithms from literature, resulting in the highest average returns on the IPD. We also apply LOLA to a grid world task with an embedded social dilemma using deep recurrent policies. Again, by considering the learning of the other agent, LOLA agents learn to cooperate out of selfish interests.&nbsp;  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">595</td>#}
+        <td class="tg-031e">Melrose Roderick, Christopher Grimm, Stefanie Tellex </td>
+        <td class="tg-031e">Deep Abstract Q-Networks</td>
+{#        <td class="tg-031e"> We examine the problem of learning and planning on high-dimensional domains with long horizons and sparse rewards. Recent approaches have shown great successes in many Atari 2600 domains. However, domains with long horizons and sparse rewards, such as Montezuma’s Revenge and Venture, remain challenging for existing methods. Methods using abstraction  have shown to be useful in tackling long-horizon problems. We combine recent techniques of deep reinforcement learning with existing model-based approaches using an expert-provided state abstraction. We construct toy domains that elucidate the problem of long horizons, sparse rewards and high-dimensional inputs, and show that our algorithm significantly outperforms previous methods on these domains. Our abstraction-based approach outperforms Deep Q-Networks  on Montezuma’s Revenge and Venture, and exhibits backtracking behavior that is absent from previous methods. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">687</td>#}
+        <td class="tg-031e">Shayegan Omidshafiei, Dong-Ki Kim, Jason Pazis, Jonathan How </td>
+        <td class="tg-031e">Crossmodal Attentive Skill Learner</td>
+{#        <td class="tg-031e"> This paper introduces the Crossmodal Attentive Skill Learner,  integrated with the recently-introduced Asynchronous Advantage Option-Critic  architecture to enable hierarchical reinforcement learning across multiple sensory inputs. We provide concrete examples where the approach not only improves performance in a single task, but accelerates transfer to new tasks. We demonstrate the attention mechanism anticipates and identifies useful latent features, while filtering irrelevant sensor modalities during execution. We modify the Arcade Learning Environment to support audio queries, and conduct evaluations of crossmodal learning in the Atari games H.E.R.O. and Amidar. Finally, building on the recent work of Babaeizadeh et al.,  we open-source a fast hybrid CPU-GPU implementation of CASL.  </td>#}
+        </tr>
+
+        <tr>
+            <td class="tg-s6z3" rowspan="4" nowrap>Session 5 (10:30-11:50)<br> Logic for Multiagent Systems 1</td>
+{#        <td class="tg-s6z2">608</td>#}
+        <td class="tg-031e">Fiona Berreby, Gauvain Bourgne, Jean-Gabriel Ganascia </td>
+        <td class="tg-031e">Event-Based and Scenario-Based Causality for Computational Ethics</td>
+{#        <td class="tg-031e"> This paper makes use of high-level action languages to investigate aspects of causality that are central to ethical reasoning. We identify properties that causal relations assume and that determine how, as well as to what extent, we may ascribe ethical responsibility on their basis. The paper is structured in three parts. First, we present an extension of the Event Calculus that enables the agent to generate plans of actions, with the particularity that they integrate both actions and omissions. Second, we present an account of \textit{event-based} causality that is grounded in the architecture of event preconditions and effects, and that distinguishes four types of causal relations contingent on the nature of the entities that compose them. Namely, it discriminates actions and omissions from automatic events, and produced outcomes from avoided ones. Third, we examine notions of \textit{scenario-based} causality whose role it is to scrutinise and buttress the causal relations previously identified. Inquiring into the other possible versions of modelled scenarios, we account for simple counter-factual validity,  criticality,  extrinsic necessity,  and elicited necessity . The model is implemented in Answer Set Programming.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">125</td>#}
+        <td class="tg-031e">Wojciech Jamroga, Wojciech Penczek, Piotr Dembinski, Antoni Mazurkiewicz </td>
+        <td class="tg-031e">Towards Partial Order Reductions for Strategic Ability</td>
+{#        <td class="tg-031e"> We propose a general semantics for strategic abilities of agents in asynchronous systems, with and without perfect information. Based on the semantics, we show some general complexity results for verification of strategic abilities in asynchronous interaction. More importantly, we develop a methodology for partial order reduction in verification of agents with imperfect information, based on the notion of traces. We show that the reduction preserves an important subset of strategic properties, both with and without the fairness assumption. Interestingly, the reduction does not work for strategic abilities under perfect information.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">231</td>#}
+        <td class="tg-031e">Jeremy Kong, Alessio Lomuscio </td>
+        <td class="tg-031e">Model Checking Multi-Agent Systems against LDLK Specifications on Finite Traces</td>
+{#        <td class="tg-031e"> We introduce the logic LDL f K, a variant of the epistemic logic LDLK, interpreted on finite traces of multi-agent systems. We explore the verification problem of multi-agent systems against LDL f K specifications and give algorithms for the reduction of LDL f K model checking to LDLK verification on a different model and different specification. We analyse the resulting complexity and show it to be PSPACE-complete. We report on a full implementation of the algorithm and assess its performance on a number of examples.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">243</td>#}
+        <td class="tg-031e">Christopher Leturc, Gregory Bonnet </td>
+        <td class="tg-031e">A normal modal logic for trust in the sincerity</td>
+{#        <td class="tg-031e"> In the field of multi-agent systems, as some agents may be not reliable or honest, a particular attention is paid to the notion of trust. There are two main approaches for trust: trust assessment and trust reasoning. Trust assessment is often realized with fuzzy logic and reputation systems which aggregate testimonies -- individual agents' assessments -- to evaluate the agents' global reliability. In the domain of trust reasoning, a large set of works focus also on trust in the reliability as for instance Liau's BIT modal logic where trusting a statement means the truster can believe it. However, very few works focus on trust in the sincerity of a statement -- meaning the truster can believe the trustee believes it. Consequently, we propose in this article a modal logic to reason about an agent's trust in the sincerity towards a statement formulated by another agent. We firstly introduce a new modality of trust in sincerity and then we prove that our system is sound and complete. Finally, we extend our notion of individual trust about the sincerity to shared trust and we show that it behaves like a KD system.    </td>#}
+        </tr>
+
+        <tr>
+            <td class="tg-s6z3" rowspan="4" nowrap>Session 6 (10:30-11:50)<br> Social Networks</td>
+{#        <td class="tg-s6z2">491</td>#}
+        <td class="tg-031e">Sandipan Sikdar, Tanmoy Chakraborty, Soumya Sarkar, Niloy Ganguly, Animesh Mukherjee </td>
+        <td class="tg-031e">ComPAS: Community Preserving Sampling for Streaming Graphs</td>
+{#        <td class="tg-031e"> In the era of big data, graph sampling is indispensable in many&nbsp; settings. Existing sampling methods are mostly designed for static&nbsp;  graphs, and aim to preserve basic structural properties of the original&nbsp;  graph  in the&nbsp;  sample. We argue that for any sampling method it is impossible to&nbsp;  produce an universal representative sample which can preserve all&nbsp;  the properties of the original graph; rather sampling should be ap  plication specific . Here we consider community detection as an application&nbsp;  scenario. We propose ComPAS, a novel sampling strategy that un  like previous methods, is not only designed for streaming graphs&nbsp;   but&nbsp;  also preserves the community structure of the original graph in the&nbsp;  sample. Empirical results on both synthetic and different real-world&nbsp;  graphs show that ComPAS is the best to preserve the underlying&nbsp;  community structure with average performance reaching 73.2% of&nbsp;  the most informed algorithm for static graphs.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">212</td>#}
+        <td class="tg-031e">Yijin Cai, Hong Zheng, Jiamou Liu, Bo Yan,  Hongyi  Su,  Yiping Liu </td>
+        <td class="tg-031e">Balancing the Pain and Gain of Hobnobbing</td>
+{#        <td class="tg-031e">  The establishment of interpersonal ties is a pivotal problem in the structural analysis of social networks. In particular, link recommendation problem asks for valuable future links to establish by an individual. Existing methods for this problem rely on link prediction that evaluates the likelihood of successful tie creation between two individuals. Such methods do not consider the social capital gained by agents, nor do they concern with the required cost of&nbsp;this process. In light of this limitation, we propose a utility-based network building problem, with an aim to strike a balance between the gained social capital – in the form of closeness centrality – and the cost of establishing ties. We propose algorithms to solve this problem over networks whose nodes may or may not be labelled with attributes, and test their performance on a range of synthesized and real-world social networks. By having multiple agents adopting utility-based network building strategies, we propose a suite of models of&nbsp; network formation and demonstrate empirically that the they capture important structural properties. In particular, we investigate the emergence of a core/periphery structure as a joint result of preferential attachment and network building strategies &nbsp;.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">577</td>#}
+        <td class="tg-031e">Chenxi Qiu, Anna Squicciarini, Christopher Griffin, Prasanna Umar </td>
+        <td class="tg-031e">Combating Behavioral Deviance via User Behavior Control</td>
+{#        <td class="tg-031e"> Compared to traditional behavioral deviance, online deviant behavior  is more likely to spread over online social communities since it is not restricted by time and space, and can occur more frequently and intensely. To control risks associated with the spread of deviant and anti-normative behavior, it is essential to understand online users’ reaction when they interact with other users. In this paper, we model online users’ behavior interaction as an evolutionary game on a graph and analyze users’ behavior dynamics under different network conditions. Based on this theoretical framework, we then investigate behavior control strategies that aim to eliminate behavioral deviance. Finally, we use a real world dataset from a social network to verify the accuracy of our model’s hypothesis.We also and test the performance of our behavior control strategy through simulations based on both real and synthetically generated data. The experimental results demonstrate that our behavior control methods can effectively eliminate the impact of bullying behavior even when the proportion of bullying messages is higher than 60%. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">570</td>#}
+        <td class="tg-031e">Sixie Yu, Yevgeniy Vorobeychik, Scott Alfeld </td>
+        <td class="tg-031e">Adversarial Classification on Social Networks</td>
+{#        <td class="tg-031e"> The spread of unwanted or malicious content through social me- dia has become a major challenge. Traditional examples of this include social network spam, but an important new concern is the propagation of fake news through social media. A common ap- proach for mitigating this problem is by using standard statistical classification to distinguish malicious  instances from benign . However, such an approach ignores the fact that malicious instances propagate through the network, which is consequential both in quantifying consequences,  and capturing de- tection redundancy . An additional concern is evasion attacks, whereby the generators of malicious instances modify the nature of these to escape detection. We model this problem as a Stackelberg game between the defender who is choosing parameters of the detection model, and an attacker, who is choosing both the node at which to initiate malicious spread, and the nature of malicious entities. We develop a novel bi-level programming approach for this problem, as well as a novel solution approach based on implicit function gradients, and experimentally demonstrate the advantage of our approach over alternatives which ignore network structure.  </td>#}
+        </tr>
+
+        <tr>
+            <td class="tg-s6z3" rowspan="4" nowrap>Session 7 (10:30-11:50)<br> Robotics: Planning</td>
+{#        <td class="tg-s6z2">R40</td>#}
+        <td class="tg-031e">Shih-Yun Lo, Shiqi Zhang, Peter Stone </td>
+        <td class="tg-031e">PETLON: Planning Efficiently for Task-Level-Optimal Navigation</td>
+{#        <td class="tg-031e"> Intelligent mobile robots have recently become able to operate&nbsp; autonomously in large-scale indoor environments for&nbsp;  extended periods of time. Task planning in such environments&nbsp;  involves sequencing the robot’s high-level goals and&nbsp;  subgoals, and typically requires reasoning about the locations&nbsp;  of people, rooms, and objects in the environment, and&nbsp;  their interactions to achieve a goal. One of the prerequisites&nbsp;  for optimal task planning that is often overlooked is having&nbsp;  an accurate estimate of the actual distance  a&nbsp;  robot needs to navigate from one location to another. State-of-the-  art motion planners, though often computationally complex,&nbsp;  are designed exactly for this purpose of finding routes&nbsp;  through constrained spaces. In this work, we focus on integrating   task and motion planning  to achieve task-level&nbsp; optimal planning for robot navigation while maintaining&nbsp;  manageable computational efficiency. To this end, we introduce&nbsp;  TMP algorithm PETLON  for everyday service tasks&nbsp;  using a mobile robot. PETLON is more efficient than planning&nbsp;  approaches that pre-compute motion costs of all possible&nbsp;  navigation actions, while still producing plans that are optimal&nbsp;  at the task level.#}
+{#        p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Helvetica}#}
+{#         </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">R47</td>#}
+        <td class="tg-031e">Alessandro Riva, Jacopo Banfi, Carlo Fanton, Nicola Basilico, Francesco Amigoni</td>
+        <td class="tg-031e">A Journey Among Pairs of Vertices: Computing Robots' Paths for Performing Joint Measurements</td>
+{#        <td class="tg-031e"> The problem of performing joint measurements recurs in many robotic applications, like constructing communication maps from signal strength samples gathered on the field. In spite of this, a theory supporting efficient algorithms has not been yet developed and ad hoc methods are usually employed. In this paper, we consider an environment represented by a metric graph and prove that the problem of jointly performing measurements from given vertices is NP-hard when either the total traveled distance or the task completion time have to be minimized. Given the difficulty of finding optimal paths in an efficient way, we propose a greedy randomized approach able to cope with both the optimization objectives. In settings for which joint measurements must be taken for all pairs of vertices, we prove that a deterministic greedy algorithm achieves an O approximation factor for the traveled distance objective, where m is the number of robots and n the number of vertices, and an O approximation factor for the completion time. Experiments in simulation show that our algorithms perform well in practice, also when compared to an ad hoc method taken from the literature.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">R55</td>#}
+        <td class="tg-031e">Yue Wang, Swarat Chaudhuri, Lydia Kavraki </td>
+        <td class="tg-031e">Bounded Policy Synthesis for POMDPs with Safe-Reachability Objectives</td>
+{#        <td class="tg-031e">Planning robust executions under uncertainty is a fundamental challenge for building autonomous robots. Partially Observable Markov Decision Processes  provide a standard framework for modeling uncertainty in many applications. In this work, we study POMDPs with safe-reachability objectives, which require that with a probability above some threshold, a goal state is eventually reached while keeping the probability of visiting unsafe states below some threshold. This POMDP formulation is different from the traditional POMDP models with optimality objectives and we show that in some cases, POMDPs with safe-reachability objectives can provide a better guarantee of both safety and reachability than the existing POMDP models through an example. A key algorithmic problem for POMDPs is policy synthesis, which requires reasoning over a vast space of beliefs . To address this challenge, we introduce the notion of a goal-constrained belief space, which only contains beliefs reachable from the initial belief under desired executions that can achieve the given safe-reachability objective. Our method compactly represents this space over a bounded horizon using symbolic constraints, and employs an incremental Satisfiability Modulo Theories  solver to efficiently search for a valid policy over it. We evaluate our method using a case study involving a partially observable robotic domain with uncertain obstacles. The results show that our method can synthesize policies over large belief spaces with a small number of SMT solver calls by focusing on the goal-constrained belief space.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">R84</td>#}
+        <td class="tg-031e">Sarra Alqahtani, Ian Riley, Samuel Taylor, Rose Gamble, Roger Mailler </td>
+        <td class="tg-031e">MTL Robustness for Path Planning with A*</td>
+{#        <td class="tg-031e">Maintaining the safety of an autonomous drone while it executes a mission is a primary concern in presence of fixed and mobile enemies.  Path planning using A* fails to deliver a feasible, safe plan when a drone has resource limitations in such environments. Enhancing A* with constraint optimization techniques may improve outcomes, but significantly increases path determination time. We define Robust A*  that introduces the use of a safety margin to maximize the robustness of the drone to meet mission requirements while managing resource restrictions. We rely on a theory of robustness based on Metric Temporal Logic  as applied to offline verification and online control of hybrid systems. By satisfying the predefined MTL constraints, RA* dynamically defines a safety margin between the drone and an enemy, while constraining the margin size given the droneâ€™s resources. The safety margin creates a robust neighborhood around the dynamically generated path. The robust neighborhood holds all valid trajectories within the current world state. When the world state changes, RA* first examines the robust neighborhood to find a valid trajectory before initiating the path re-planning. We evaluate RA* using the Rassim simulator. The results show that the algorithm generates faster and safer paths than the classical A* in the presence of moving enemies. .</td>#}
+        </tr>
+
+        <tr>
+        <td class="tg-s6z3" rowspan="6" nowrap>Session 8 (13:30-15:30)<br> Social Choice on Networks</td>
+{#        <td class="tg-s6z2">390</td>#}
+        <td class="tg-031e">Matthias Mnich, Martin Koutecky, Dusan Knop </td>
+        <td class="tg-031e">A Unifying Framework for Manipulation Problems</td>
+{#        <td class="tg-031e"> <p>Manipulation models for electoral systems are a coreresearch theme in socialchoice theory;they&nbsp;include bribery,  control,  lobbying in referenda and others. We develop a unifying framework for manipulation models with few types of people, one of the most commonly studied scenarios. A critical insight of our framework is to separate the descriptive complexity of the voting rule R from the number of types of people. This allows us to finally settle the computational complexity of R-Swap Bribery, one of the most fundamental manipulation problems. In particular, we prove that R-Swap Bribery is fixed-parameter tractable when R is Dodgson’s rule and Young’s rule, when parameterized by the number of candidates. This way, we resolve a long-standing open question from 2007 which was explicitly asked by Faliszewski et al. [JAIR 40, 2011]. Our algorithms reveal that the true hardness of bribery problems often stems from the complexity of the voting rules. On one hand, we give a fixed-parameter algorithm parameterized by number of types of people for complex voting rules. Thus, we reveal that R-Swap Bribery with Dodgson’s rule is much harder than with Condorcet’s rule, which can be expressed by a conjunction of linear inequalities, while Dodson’s rule requires quantifier alternation and a bounded number of disjunctions of linear systems. On the other hand, we give an algorithm for quantifier-free voting rules which is parameterized only by the number of conjunctions of the voting rule and runs in time polynomial in the number of types of people. This way, our framework explains why Shift Bribery is polynomial-time solvable for the plurality voting rule, making explicit that the rule is simple in that it can be expressed with a single linear inequality, and that the number of voter types is polynomial.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">108</td>#}
+        <td class="tg-031e">Bryan Wilder, Yevgeniy Vorobeychik </td>
+        <td class="tg-031e">Controlling Elections through Social Influence</td>
+{#        <td class="tg-031e"> Election control considers the problem of an adversary who attempts to tamper with a voting process, in order to either ensure that their favored candidate wins  or another candidate loses . As online social networks have become significant sources of information for potential voters, a new tool in an attacker's arsenal is to effect control by harnessing social influence, for example, by spreading fake news and other forms of misinformation through online social media.  We consider the computational problem of election control via social influence, studying the conditions under which finding good adversarial strategies is computationally feasible. We consider two objectives for the adversary in both the constructive and destructive control settings: probability and margin of victory . We present several strong negative results, showing, for example, that the problem of maximizing POV is inapproximable for any constant factor. On the other hand, we present approximation algorithms which provide somewhat weaker approximation guarantees, such as bicriteria approximations for the POV objective and constant-factor approximations for MOV. Finally, we present mixed integer programming formulations for these problems. Experimental results show that our approximation algorithms often find near-optimal control strategies, indicating that election control through social influence is a salient threat to election integrity. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">128</td>#}
+        <td class="tg-031e">Amittai Cohen-Zemach, Yoad Lewenberg, Jeffrey Rosenschein </td>
+        <td class="tg-031e">Gerrymandering Over Graphs</td>
+{#        <td class="tg-031e"> In many real-life scenarios, voting problems consist of several phases: an overall set of voters is partitioned into subgroups, each subgroup chooses a preferred candidate, and the final winner is selected from among those candidates. The attempt to skew the outcome of such a voting system through strategic partitioning of the overall set of voters into subgroups is known as ``gerrymandering''. We investigate the problem of gerrymandering over a network structure; the voters are embedded in a social network, and the task is to divide the network into connected components such that a target candidate will win in a plurality of the components. We first show that the problem is NP-complete in the worst case. We then perform a series of simulations, using random graph models incorporating a homophily factor. In these simulations we show that a simple greedy algorithm can be quite successful in finding a partition in favor of a specific candidate.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">463</td>#}
+        <td class="tg-031e">Robert Bredereck, Andrzej Kaczmarczyk, Rolf Niedermeier </td>
+        <td class="tg-031e">Envy-Free Allocations Respecting Social Networks</td>
+{#        <td class="tg-031e"> Finding an envy-free allocation of indivisible resources to agents is a central task in many multiagent systems. Often, non-trivial envy-free allocations do not exist, and finding them can be a computationally hard task. Classic envy-freeness requires that every agent likes the resources allocated to it at least as much as the resources allocated to any other agent. In many situations this assumption can be relaxed since agents often do not even know each other. We enrich the envy-freeness concept by taking into account  social networks of the agents. Thus, we compare every agent’s resources with those of its neighbors. This leads to a “more local” concept of envy-freeness. We also consider a strong variant where every agent must like its own allocations more than those of all its neighbors.  We analyze the classic and the parameterized complexity of finding allocations that are envy-free with respect to one of the variants of our new concept, and that either are complete, are Pareto-efficient, or optimize the utilitarian social welfare. To this end, we study different restrictions of the agents’ preferences and of the social network structure. We identify cases that become easier  and cases that become harder  when comparing classic envy-freeness with our graph-based envy-freeness. Furthermore, we spot cases where graph envy-freeness is easier to decide than strong graph envy-freeness, and vice versa.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">479</td>#}
+        <td class="tg-031e">Aureacutelie Beynier, Laurent Gourves, Julien Lesca, Nicolas Maudet, Yann Chevaleyre, Anaëlle Wilczynski </td>
+        <td class="tg-031e">Local Envy-Freeness in House Allocation Problems</td>
+{#        <td class="tg-031e"> We study the fair division problem consisting in &nbsp;allocating one item per agent so as to avoid  envy, in a setting where only agents connected in a given social network may experience envy. In a variant of the problem, agents themselves can be located on the network by the central authority. These problems turn out to be difficult even on very simple graph structures, but we identify several tractable cases. We further provide practical algorithms and experimental insights.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">173</td>#}
+        <td class="tg-031e">Alan Tsang, Amirali Salehi-Abari, Kate Larson </td>
+        <td class="tg-031e">Boundedly Rational Voters in Large Networks</td>
+{#        <td class="tg-031e"> In Iterative Voting, voters first cast their ballots but may change their minds upon observing the ballots of others.&nbsp; Previous models have extended Iterative Voting to the incomplete information domain of social networks, where voters only observe the ballots of their friends.&nbsp; However, these models are based on computationally-intensive calculations of expected utilities.&nbsp; We propose a framework of bounded rationality for voters situated in social networks.&nbsp; Using this framework, we propose and test a number of heuristics that reduce the computation required for optimal strategic reasoning by several orders of magnitude compared to previous work, while retaining similar qualitative behaviors.&nbsp; These heuristics enable us to conduct simulations on how the size of the voting population affects strategic behavior.&nbsp; To illustrate the effectiveness of our approach, we apply our heuristics to explore the Micromega rule –-- an observation in political science that large political parties favor small assemblies.&nbsp; We find that the size of electoral districts is a contributing factor to the Micromega rule in some networks. Fringe candidates retain more support in smaller districts, while larger parties dominate in larger districts. </td>#}
+        </tr>
+
+        <tr>
+                    <td class="tg-s6z3" rowspan="6" nowrap>Session 9 (13:30-15:30)<br> Auctions and Mechanism Design 2</td>
+{#        <td class="tg-s6z2">115</td>#}
+        <td class="tg-031e">Keiichiro Hayakawa, Enrico Gerding, Sebastian Stein, Takahiro Shiga </td>
+        <td class="tg-031e">Price-based Online Mechanisms for Settings with Uncertain Future Procurement Costs and Multi-Unit Demand</td>
+{#        <td class="tg-031e"> We examine the use of online mechanism design in settings where consumers have multi-unit demand, goods are procured and allocated over time, and future procurement costs are uncertain and only become known at the time of allocation. An important application with such characteristics is demand response, where electricity wholesale prices depend on overall demand and the availability of renewables. We formulate this as a mechanism design problem and focus specifically on the property that the mechanism does not revoke any allocated items. For this setting, we characterise a class of price-based mechanisms that guarantee dominant-strategy incentive compatibility, individual rationality, and no cancellation. We present three specific such mechanisms in this domain and evaluate them in an electric vehicle charging setting. Using extensive numerical simulations, we show that a mechanism based on the first-come first-serve principle performs well in settings where future procurement costs can be estimated reliably or supply is very tight, while a responsive mechanism performs very well when the estimated procurement costs are highly uncertain and supply is not as tight. We moreover show that a well-defined price-based mechanism can lead to high profits for the operator of the mechanism in many real-world situations. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">141</td>#}
+        <td class="tg-031e">John P. Dickerson, Karthik Abinav Sankararaman, Aravind Srinivasan, Pan Xu </td>
+        <td class="tg-031e">Assigning Tasks to Workers based on Historical Data: Online Task Assignment with Two-sided Arrivals</td>
+{#        <td class="tg-031e"> Efficient allocation of tasks to workers is a central problem in crowdsourcing. In this paper, we consider a special setting inspired from spatial crowdsourcing platforms where both workers and tasks arrive dynamically. Additionally, we assume all tasks are&nbsp; heterogeneous&nbsp; and each worker-task assignment brings a distinct reward. The natural challenge lies in how to incorporate the uncertainty in the arrivals from both workers and tasks into our online allocation policy such that the total expected rewards are maximized. To attack this challenge,&nbsp; we assume the arrival patterns of worker "types" and task "types" are not erratic and can be predicted from historical data. To be more specific, we consider a finite time horizon T and assume in each time-step, a single worker and task are sampled  from two respective distributions independently, and this sampling process repeats identically and independently for the entire T online time-steps.     Our model, called Online Task Assignment Problem with Two-Sided Arrival,  is a significant generalization of the classical online task assignment problem where the set of tasks is assumed to be available offline.&nbsp; For the general version of OTAP-TSA, we present an optimal non-adaptive algorithm which achieves an online competitive ratio of 0.295. For the special case of OTAP-TSA&nbsp;where the reward is a function of just the worker type, we present an improved algorithm  and achieves a competitive ratio of at least 0.345. On the hardness side, along with showing that the ratio obtained by our non-adaptive algorithm is the best possible among all non-adaptive algorithms, we further show that no  algorithm can achieve a ratio better than 0.581,  even for the special case of OTAP-TSA&nbsp;with homogenous tasks . At the heart of our analysis lies a new technical tool,  called the two-stage birth-death process, which may be of independent interest. Finally, we perform numerical experiments on two real-world datasets obtained from crowdsourcing platforms to complement our theoretical results. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">363</td>#}
+        <td class="tg-031e">Chaolun Xia, Shan Muthukrishnan </td>
+        <td class="tg-031e">Arbitrage-free Pricing in User-based Markets</td>
+{#        <td class="tg-031e">#}
+{#            Users have various attributes, and in user-based markets there are buyers who wish to#}
+{#        buy a target set of users with specific sets of attributes. The problem we address is that, given a set#}
+{#        of demand from the buyers, how to allocate users to buyers, and how to price the transactions. This#}
+{#        problem arises in online advertising, and is particularly relevant in advertising in social platforms like#}
+{#        Facebook, LinkedIn and others where users are represented with many attributes, and advertisers are#}
+{#        buyers with specific targets. This problem also arises more generally in selling data about online users,#}
+{#        in a variety of data markets.#}
+{##}
+{#                              We introduce   arbitrage-free   pricing, that is, pricing that prevents buyers from acquiring a lower unit#}
+{#        price for their true target by strategically choosing substitute targets and combining them suitably.#}
+{#        We show that   uniform   pricing – pricing where all the targets have identical price – can be computed in#}
+{#        polynomial time, and while this is arbitrage-free, it is also a logarithmic approximation to the maximum#}
+{#        revenue arbitrage-free pricing solution. We also design a different arbitrage-free non-uniform pricing#}
+{#        – pricing where different targets have different prices – solution which has the same guarantee as the#}
+{#        arbitrage-free uniform pricing but is empirically more effective as we show through experiments. We#}
+{#        also study more general versions of this problem and present hardness and approximation results.&nbsp;#}
+{##}
+{##}
+{#                </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">360</td>#}
+        <td class="tg-031e">Yuho Wada, Tomohiro Ono, Taiki Todo, Makoto Yokoo </td>
+        <td class="tg-031e">Facility Location with Variable and Dynamic Populations</td>
+{#        <td class="tg-031e">   Facility location is a well-studied problem in social choice literature, where agents' preferences are restricted to be singlepeaked. When the number of agents is considered as a variable,  a social choice function must be defined so that it can take any possible number of preferences as input. Furthermore, there exist cases where multiple choices must be made continuously while agents dynamically dynamically arrive/leave. Under such variable/ dynamic populations, a social choice function needs to give each agent an incentive to sincerely report her existence . In this paper we consider facility location models with variable/dynamic populations. For a static,  variable population model, we provide a necessary and sufficient condition for a social choice function to satisfy participation, as well as truthfulness, anonymity, and Pareto efficiency. It is considered as a further restriction of median voter schemes. For a dynamic model, we first propose an online social choice function, which is optimal for the total sum of the distances between the choices in previous and current periods, among any Pareto efficient functions.We then define a generalized class of online social choice functions and compare their performance in both theoretical and experimental way.&nbsp;      </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">278</td>#}
+        <td class="tg-031e">Manisha Padala, Cv Jawahar, SUJIT GUJAR </td>
+        <td class="tg-031e">Learning Optimal Redistribution Mechanisms Through Neural Networks</td>
+{#        <td class="tg-031e"> We consider a social setting where $p$ public resources/objects are to be allocated among $n$ competing and strategic agents so as to maximize social welfare . This is called allocative efficiency . We need the agents to report their valuations&nbsp; for obtaining these resources, truthfully. This is called dominant strategy incentive compatibility . Typically, we use auction based mechanisms to achieve AE and DSIC. However, due to Green-Laffont Impossibility Theorem, we cannot ensure budget balance in the system while ensuring AE and DSIC. That is, the net transfer of money cannot be zero. This problem has been addressed by designing a redistribution mechanism so as to ensure minimum surplus of money as well as AE and DSIC. The objective could be to minimize surplus in expectation or in worst case and these objects could be homogeneous or heterogeneous. The designing of such mechanisms is non-trivial and especially designing redistribution mechanisms which perform well in expectation becomes analytically challenging for heterogeneous settings.&nbsp;     In this paper, we take a completely different, data-driven approach. We train a neural network to determine an optimal redistribution mechanism based on given settings with both the objectives,&nbsp; optimal in expectation and optimal in worst case. We also propose a loss function to train neural network to optimize worst case. We design&nbsp; neural networks with underlying rebate functions to be linear as well as nonlinear in terms of bids of the agents. Our networks achieve the theoretical guarantees for the cases where it has been solved. We observe that a neural network based redistribution mechanism for homogeneous settings which uses nonlinear rebate functions, outperforms linear rebate functions when the objective is optimal in expectation. Our approach also yields an optimal in expectation redistribution mechanism for heterogeneous settings. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">599</td>#}
+        <td class="tg-031e">Zhe Feng, Harikrishna Narasimhan, David Parkes </td>
+        <td class="tg-031e">Deep Learning for Revenue-Optimal Auctions with Budgets</td>
+{#        <td class="tg-031e"> The design of revenue-maximizing auctions for settings with private budgets is a hard task. Even the single-item case is not fully understood, and there are no known optimal auctions, or even characterization results, for multi-item settings. In this work, we model a mechanism as a neural network, and use machine learning for the automated design of optimal auctions.&nbsp; We extend the {\em RegretNet} framework~\cite{deep-auction} to handle private budget constraints and&nbsp; Bayesian incentive compatibility.&nbsp; We discover new auctions with very close approximations to incentive-compatibility and high revenue for multi-unit auctions with private budgets, including problems with unit-demand bidders. For benchmarking purposes, we also illustrate that {\em RegretNet} can obtain essentially optimal designs for simpler settings where analytical solutions are available~\cite{CHE2000,Malakhov2008,PAI2014}. </td>#}
+        </tr>
+
+        <tr>
+            <td class="tg-s6z3" rowspan="6" nowrap>Session 10 (13:30-15:30)<br> Logic and Games</td>
+{#        <td class="tg-s6z2">566</td>#}
+        <td class="tg-031e">Lavindra de Silva </td>
+        <td class="tg-031e">HTN Acting: A Formalism and an Algorithm</td>
+{#        <td class="tg-031e"> Hierarchical Task Network  planning is a practical and efficient#}
+{#        approach to planning when 'standard operating procedures' for a domain are available. Like Belief-Desire-Intention  agent#}
+{#        reasoning, HTN planning performs hierarchical and context-based#}
+{#        refinement of goals into subgoals and basic actions. However, while#}
+{#        HTN planners 'lookahead' over the consequences of choosing one#}
+{#        refinement over another, BDI agents interleave refinement with acting#}
+{#        in the real world. There has been a renewed interest in making#}
+{#        HTN planners behave more like BDI agent systems, e.g. to have a#}
+{#        unified representation for acting and planning. However, past work#}
+{#        on the subject has remained informal or implementation-focused.#}
+{#        Thus, this paper is a formal account of HTN acting, which supports#}
+{#        interleaved deliberation, action, and failure recovery. To this end,#}
+{#        we use the syntax of the most general HTN planning formalism and#}
+{#        build on its core machinery, and we provide an algorithm which#}
+{#        combines our new formalism with the continual processing of exogenous#}
+{#        events. We also study the properties of HTN acting and#}
+{#        its relation to HTN planning.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">100</td>#}
+        <td class="tg-031e">Valentin Goranko, Sebastian Enqvist </td>
+        <td class="tg-031e">Socially Friendly and Group Protecting Coalition Logics</td>
+{#        <td class="tg-031e"> We consider extensions of Coalition Logic  which can express statements about inter-related powers of coalitions to achieve their respective goals. In particular, we introduce and study two new extensions of CL. One of them is the ``Socially Friendly Coalition Logic'' SFCL, which is also a multi-agent extension of the recently introduced ``Instantial Neighborhood Logic'' INL. The logic SFCL can express the claim that a coalition has a collective strategy to guarantee achieving its explicitly stated goal while acting in a `socially friendly way', by enabling the remaining agents to achieve other  goals of their choice. The other new extension is the ``Group Protecting Coalition Logic'' GPCL which enables reasoning about entire coalitional goal assignments, in which every group of agents has its own specified goal. &nbsp;GPCL can express &nbsp;claims to the effect that there is an action profile of the grand coalition such that, by playing it, every sub-coalition of agents can guarantee satisfaction of its own private goal  while acting towards achievement of the common goal of the grand coalition. For each of these logics, we discuss its expressiveness, introduce the respective notion of bisimulation and prove bisimulation invariance and Hennessy-Milner property. We then also present sound and complete axiomatic systems and prove decidability for both logics.&nbsp;  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">229</td>#}
+        <td class="tg-031e">Joseph Boudou, Emiliano Lorini </td>
+        <td class="tg-031e">Concurrent Game Structures for Temporal STIT Logic</td>
+{#        <td class="tg-031e">  The paper introduces a new semantics for STIT logic    based on concurrent game structures,  thereby strengthening the connection   between STIT and existing logics for MAS including coalition logic, alternating-time   temporal logic and strategy logic, whose languages are usually interpreted over CGSs. Moreover, it   provides a complexity result for a rich temporal STIT language interpreted over these structures.   The language extends that of full computation tree logic CTL* by individual agency operators,   allowing to express sentences of the form ``agent i sees to it that phi is true, as a consequence her choice''.   </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">47</td>#}
+        <td class="tg-031e">Pavel Naumov, Jia Tao </td>
+        <td class="tg-031e">Second-Order Know-How Strategies</td>
+{#        <td class="tg-031e"> The fact that a coalition has a strategy does not mean that the coalition knows what the strategy is. If the coalition knows the strategy, then such a strategy is called a know-how strategy of the coalition. The paper proposes the notion of a second-order know-how strategy for the case when one coalition knows what the strategy of another coalition is. The main technical result is a sound and complete logical system describing the interplay between the distributed knowledge modality and the second-order coalition know-how modality.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">483</td>#}
+        <td class="tg-031e">Julian Gutierrez, Paul Harrenstein, Thomas Steeples, Michael Wooldridge </td>
+        <td class="tg-031e">Local Equilibria in Logic-Based Multi-Player Games</td>
+{#        <td class="tg-031e"> Game theory provides a well-established framework for the analysis and verification of concurrent and multi-agent systems. In such a framework, typically, the analysis of a multi-agent system involves computing the set of equilibria in the associated multi-player game representing the behaviour of the system. In this setting, as systems grow larger, it becomes harder to find equilibria in the game -- which represent the rationally stable behaviours of the multi-agent system . To address this issue, in this paper, we study the concept of local equilibria in which we are interested in  stable coalitions of agents with respect to which an equilibrium can be found. We focus on solutions given by Nash equilibria, and base our study in Boolean games and iterated Boolean games, two logic-based models of concurrent and multi-agent systems where players' goals are given by formulae in, respectively, propositional logic and LTL.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">481</td>#}
+        <td class="tg-031e">Maria-Florina Balcan, Avrim Blum, Shang-Tse Chen </td>
+        <td class="tg-031e">Diversified Strategies for Mitigating Adversarial Attacks in Multiagent Systems</td>
+{#        <td class="tg-031e">  In this work we consider online decision-making settings in which players have an additional constraint that at each time step they must play a diversified mixed strategy: one that does not put too much weight on any one action. This constraint is motivated by applications such as finance, routing, and resource allocation, in which one would like to limit the chance of catastrophic failure while still performing well in typical cases. We explore properties of diversified strategies in both zero-sum and general-sum games, and provide algorithms for minimizing regret within the family of diversified strategies as well as methods for using taxes or fees to guide standard regret-minimizing players towards diversified strategies. We also analyze equilibria produced by diversified strategies in general-sum games. We show that surprisingly, requiring diversification can actually lead to higher-quality equilibria, and give strong guarantees on both price of anarchy and the social welfare produced by regret-minimizing diversified agents. We additionally give algorithms for finding optimal diversified strategies in distributed settings where one must limit communication overhead.   </td>#}
+        </tr>
+
+        <tr>
+            <td class="tg-s6z3" rowspan="6" nowrap>Session 11 (13:30-15:30)<br> Learning and Adaptation 2</td>
+{#        <td class="tg-s6z2">630</td>#}
+        <td class="tg-031e">Frits de Nijs, Georgios Theocharous, Nikos Vlassis, Mathijs de Weerdt, Matthijs Spaan </td>
+        <td class="tg-031e">Capacity-aware Sequential Recommendations</td>
+{#        <td class="tg-031e"> Personalized recommendations are increasingly important to engage users and guide them through large systems, for example when recommending points of interest to tourists visiting a popular city. To maximize long-term user experience it is imperative to consider issuing a sequence of recommendations, given that by observing the user's response to a recommendation, the recommender system can update its estimate of the user's  interests. However, when considering a large number of users and capacity limits,  the recommender system should not only consider the users' interests, but also the effect of recommendations on the available capacity.  The structure in such a constrained, multi-agent, partially observable decision problem can be exploited by a novel belief-space sampling algorithm which bounds the size of the state space by a limit on regret. This algorithm is significantly more scalable than state-of-the-art approximate POMDP planners. Moreover, by explicitly considering the information value of actions, this algorithm significantly improves the quality of recommendations over an extension of Thompson sampling to the multi-agent, constrained case. We show how&nbsp; constraint satisfaction can be decoupled from sequential recommendation policies, resulting in algorithms that compute recommendations for thousands of agents while respecting capacity limits.   </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">592</td>#}
+        <td class="tg-031e">Ashiqur KhudaBukhsh, Jaime Carbonell </td>
+        <td class="tg-031e">Expertise Drift in Referral Networks</td>
+{#        <td class="tg-031e"> Learning-to-refer is a challenge in expert referral networks, wherein Active Learning helps experts  estimate the skills of other connected experts for different categories of tasks that the initial expert cannot solve and therefore must seek referral to experts with more appropriate expertise. Prior research has investigated different reinforcement action selection algorithms to assess viability of the learning setting both with uninformative priors and with partially available noisy priors, where experts are allowed to advertise a subset of their skills to their colleagues. Prior to this work, time-varying expertise drift  has not been considered though it is an aspect that may often arise in practice. This paper addresses the challenge of referral learning with time-varying expertise, proposing&nbsp; Hybrid, a novel combination of Optimistic Thompson Sampling, Pessimistic Thompson Sampling and Distributed Interval Estimation Learning . In our extensive empirical evaluation, considering both biased and unbiased drift, the proposed algorithm outperforms the previous state-of-the-art  and approaches the drift-aware oracle upper bound.&nbsp;  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">565</td>#}
+        <td class="tg-031e">Thomas Spooner, John Fearnley, Rahul Savani, Andreas Koukorinis </td>
+        <td class="tg-031e">Market making via reinforcement learning</td>
+{#        <td class="tg-031e">Market making is a fundamental trading problem in which an agent provides liquidity by continually offering to buy and sell a security. The problem is challenging due to inventory risk, the risk of accumulating an unfavourable position and ultimately losing money. In this paper, we develop a high-fidelity simulation of limit order book markets, and use it to design a market making agent using temporal-difference reinforcement learning. We use a linear combination of tile codings as a value function approximator, and design a custom reward function that controls inventory risk. We demonstrate the effectiveness of our approach by showing that our agent outperforms both simple benchmark strategies and a recent online learning approach from the literature. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">485</td>#}
+        <td class="tg-031e">Gregory Palmer, Karl Tuyls, Rahul Savani, Daan Bloembergen </td>
+        <td class="tg-031e">Lenient Multi-Agent Deep Reinforcement Learning</td>
+{#        <td class="tg-031e">Much of the success of single agent deep reinforcement learning  in recent years can be attributed to the use of experience replay memories,  which allow Deep Q-Networks  to be trained efficiently through sampling stored state transitions. However, care is required when using ERMs for multi-agent deep reinforcement learning,  as stored transitions can become outdated because agents update their policies in parallel . In this work we apply leniency   to MA-DRL. Lenient agents map state-action pairs to decaying temperature values that control the amount of leniency applied towards negative policy updates that are sampled from the ERM. This introduces optimism in the value-function update, and has been shown to facilitate cooperation in tabular fully-cooperative multi-agent reinforcement learning problems. We evaluate our Lenient-DQN  empirically against the related Hysteretic-DQN  algorithm  as well as a modified version we call scheduled-HDQN, that uses average reward learning near terminal states. Evaluations take place in extended variations of the Coordinated Multi-Agent Object Transportation Problem   which include fully-cooperative sub-tasks and stochastic rewards. We find that LDQN agents are more likely to converge on the optimal policy in a stochastic reward CMOTP compared to standard and scheduled-HDQN agents. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">659</td>#}
+        <td class="tg-031e">Rodrigo Toro Icarte, Toryn Klassen, Richard Valenzano, Sheila McIlraith </td>
+        <td class="tg-031e">Teaching Multiple Tasks to an RL Agent using LTL</td>
+{#        <td class="tg-031e"> This paper examines the problem of how to teach multiple tasks to an agent that learns using Reinforcement Learning . To this end, we propose the use of Linear Temporal Logic  as a compelling language for teaching multiple tasks to an RL agent in a manner that supports composition of learned skills. We also propose a novel algorithm that exploits LTL progression and off-policy RL to speed up learning without compromising convergence guarantees. Experiments over randomly generated Minecraft-like grids illustrate our superior performance relative to the state of the art.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">713</td>#}
+        <td class="tg-031e">Maxime Bouton, Kyle Julian, Alireza Nakhaei, Kikuo Fujimura, Mykel Kochenderfer </td>
+        <td class="tg-031e">Utility Decomposition with Deep Corrections for Scalable Planning under Uncertainty</td>
+{#        <td class="tg-031e"> Decomposition methods have been proposed in the past to approximate solutions to large sequential decision making problems. In contexts where an agent interacts with multiple entities, utility decomposition can be used where each individual entity is considered independently. The individual utility functions are then combined in real time to solve the global problem. Although these techniques can perform well empirically, they sacrifice optimality. This paper proposes an approach inspired from multi-fidelity optimization to learn a correction term with a neural network representation. Learning this correction can significantly improve performance. We demonstrate this approach on a pedestrian avoidance problem for autonomous driving. By leveraging strategies to avoid a single pedestrian, the decomposition method can scale to avoid multiple pedestrians. We verify empirically that the proposed correction method leads to a significant improvement over the decomposition method alone and outperforms a policy trained on the full scale problem without utility decomposition.  </td>#}
+        </tr>
+
+        <tr>
+            <td class="tg-s6z3" rowspan="6" nowrap>Session 12 (13:30-15:30)<br> Socially Interactive Agents 1</td>
+{#        <td class="tg-s6z2">S43</td>#}
+        <td class="tg-031e">Jan Poppel; Stefan Kopp</td>
+        <td class="tg-031e">Satisficing Models of Bayesian Theory of Mind for Explaining Behavior of Differently Uncertain Agents</td>
+{#        <td class="tg-031e">The Bayesian Theory of Mind  framework has become a common approach to model reasoning about other agents' desires and beliefs based on their actions. Such models can get very complex when being used to explain the behavior of agents with different uncertainties, giving rise to the question if simpler models can also be satisficing, i.e. sufficing and satisfying, in different uncertainty conditions. In this paper we present a method to simplify inference in complex ToM models by switching between discrete assumptions about certain belief states  based on the resulting surprisal. We report on a study to evaluate a complex full model, simplified versions, and a switching model on human behavioral data in a navigation task under specific uncertainties. Results show that the switching model achieves inference results better than the full Bayesian ToM model and with higher efficiency, providing a basis for attaining the ability for "satisficing mentalizing" in social agents. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">S55</td>#}
+        <td class="tg-031e">Abdelwahab Bourai; Jaime Carbonell</td>
+        <td class="tg-031e">I Know What You Don't Know: Proactive Learning through Targeted Human Interaction</td>
+{#        <td class="tg-031e">Humans communicate extensively through "meta-information" encoded in emitted non-verbal signals. This meta-information not only allows us to analyze an individual's external emotional state but also certain internal states. For example, humans are able to learn from others thanks to their ability to determine their most knowledgeable peers in a given domain through their interactions with these individuals. As autonomous agents expand into more socially oriented tasks, they must capture and reason through these emitted cues to better understand their human counterparts. In this work, we conduct two experiments. First, we train a model to predict the knowledgeability of speakers using non-verbal features. Next we simulate the process of selecting the most knowledgeable person in a given domain using a proactive learning approach. The results indicate our agent is capable of observing human behavior and using this information to select a specific human for aid on a given question. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">S10</td>#}
+        <td class="tg-031e">Tim Miller; Ronal Singh; Joshua Newn; Liz Sonenberg; Eduardo Velloso; Frank Vetere</td>
+        <td class="tg-031e">Combining Planning with Gaze for Online Human Intention Recognition</td>
+{#        <td class="tg-031e">Intention recognition is the process of using behavioural cues to infer an agent's goals or future behaviour. People use many behavioural cues to infer others' intentions, such as deliberative actions, facial expressions, eye gaze, and gestures. In artificial intelligence, two approaches for intention recognition, among others, are gaze-based and model-based intention recognition. Approaches in the former class use gaze to determine which parts of a space a person looks at more often to infer a person's intention. Approaches in the latter use models of possible future behaviour to rate intentions as more likely if they are a better `fit' to observed actions. In this paper, we propose a novel model of human intention recognition that combines gaze and model-based approaches for online human intention recognition. Gaze data is used to build probability distributions over a set of possible intentions, which are then used as priors in a model-based intention recognition algorithm. In human-behavioural experiments  involving a multi-player board game, we found that adding gaze-based priors to model-based intention recognition more accurately determined intentions,  determined those intentions earlier,  and at no additional cost; all compared to a model-based-only approach.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">S33</td>#}
+        <td class="tg-031e">Patrick Gebhard; Tanja Schneeberger; Tobias Baur; Elisabeth Andre</td>
+        <td class="tg-031e">MARSSI: Model of Appraisal, Regulation, and Social Signal Interpretation</td>
+{#        <td class="tg-031e">Understanding emotions of others requires a theory of mind approach providing knowledge of internal appraisal and regulation processes of emotions. Multi-modal social signal classification is insufficient for understanding emotional expressions. Mainly, because many communicative, emotional expressions are not directly related to internal emotional states. Moreover, the recognition of the expression's direction is neglected so far. Even if social signals reveal emotional aspects, the recognition with signal classifiers cannot explain internal appraisal or regulation processes. Using that information is one approach for building cognitive empathic agents with the ability to address observations and motives in an empathic dialogue. In this paper, we introduce a computational model of user emotions for empathic agents. It combines a simulation of appraisal and regulation processes with a social signal interpretation taking directions of expressions into account. Our evaluation shows that social signal sequences can be related to emotion regulation processes. Their recognition and using appraisal and regulation knowledge enables our agent to react empathically.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">S14</td>#}
+        <td class="tg-031e">Filipa Correia; Carla Guerra; Samuel Mascarenhas; Francisco S. Melo; Ana Paiva</td>
+        <td class="tg-031e">Exploring the impact of fault justification in human-robot trust</td>
+{#        <td class="tg-031e">With the growing interest on human-robot collaboration, the development of robotic partners that we can trust has to consider the impact of error situations. In particular, human-robot trust has been pointed as mainly affected by the performance of the robot and as such, we believe that in a collaborative setting, trust towards a robotic partner may be compromised after a faulty behaviour. This paper contributes to a user study exploring how a technical failure of an autonomous social robot affects trust during a collaborative scenario, where participants play the Tangram game in turns with the robot. More precisely, in a 2x2  experiment we investigated 2 different recovery strategies, justify the failure or ignore the failure, after 2 different consequences of the failure, compromising or not the collaborative task. Overall, the results indicate that a faulty robot is perceived significantly less trustworthy. However, the recovery strategy of justifying the failure was able to mitigate the negative impact of the failure when the consequence was less severe. We also found an interaction effect between the two factors considered. These findings raise new implications for the development of reliable and trustworthy robots in human-robot collaboration.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">S19</td>#}
+        <td class="tg-031e">Feyza Hafizoglu; Sandip Sen</td>
+        <td class="tg-031e">The Effects of Past Experience on Trust in Repeated Human-Agent Teamwork</td>
+{#        <td class="tg-031e">For human-agent virtual ad hoc teams to be effective, humans must be able to trust their agent counterparts. To earn the human's trust, agents need to quickly develop an understanding of the expectation of human team members and adapt accordingly. This study empirically investigates the impact of past experience on human trust in and behavior towards agent teammates. To do so, we developed a repeated team coordination game, the Game of Trust,  in which two players repeatedly cooperate to complete team tasks without prior assignment of subtasks. The effects of past experience on human trust are evaluated by performing an extensive set of controlled experiments with participants recruited from Amazon Mechanical Turk, a crowdsourcing marketplace. We collect both teamwork performance data as well as surveys to gauge participants' trust in their agent teammates. The results show that positive  past experience increases  human trust in agent teammates and past experience can affect three antecedents of trust: emotional state, game expertise, and expectation. These findings provide clear and significant evidence of the influence of key factors on human trust in virtual agent teammates and enhance our understanding of the changes in human trust in peer-level agent teammates with respect to past experience.</td>#}
+        </tr>
+
+        <tr>
+            <td class="tg-s6z3" rowspan="6" nowrap>Session 13 (13:30-15:30)<br> Robotics: Multi-Robot Coordination</td>
+{#        <td class="tg-s6z2">R33</td>#}
+        <td class="tg-031e">Dario Albani, Tiziano Manoni, Daniele Nardi, Vito Trianni </td>
+        <td class="tg-031e">Dynamic UAV Swarm Deployment for Non-Uniform Coverage</td>
+{#        <td class="tg-031e">In many monitoring and mapping applications, high-resolution data are required only in certain areas while others can receive lower attention. To this end, unmanned aerial vehicles  can adjust the flight altitude to increase the resolution only where needed, making non-uniform coverage strategies efficient both in time and energy expenditure.  In a multi-UAV monitoring context, it is necessary to deploy UAVs to inspect in parallel those areas where a higher resolution is required. To address this problem, we propose a decentralised deployment strategy inspired by the collective behaviour of honeybees. This strategy dynamically assigns UAVs to different areas to be monitored, and suitably re-assigns them to other areas when needed. We introduce an analytical macroscopic model of area monitoring from UAVs, and we propose a parameterisation that leads to an efficient allocation of UAVs to the areas to be monitored. We exploit abstract multi-agent simulations to study the dynamics of the deployment of UAVs to multiple areas, and we present results with simulations of a UAV swarm engaged in a weed monitoring and mapping task.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">R34</td>#}
+        <td class="tg-031e">Erez Hartuv, Noa Agmon, Sarit Kraus </td>
+        <td class="tg-031e">Scheduling Spare Drones for Persistent Task Performance under Energy Constraints</td>
+{#        <td class="tg-031e">This paper considers the problem of enabling persistent execution of a multi-drone task under energy limitations. The drones are given a set of locations and their task is to ensure that at least one drone will be present, for example for monitoring, over each location at any given time. Because of energy limitations, drones must be replaced from time to time, and fly back home where their batteries can be replaced. Our goals are to identify the minimum number of spare drones needed to accomplish the task while no drone battery drains, and to provide a drone replacement strategy. We present an efficient procedure for calculating whether one spare drone is enough for a given task and provide an optimal replacement strategy. If more than one drone is needed, we aim at finding the minimum number of spare drones required, and extend the replacement strategy to multiple spare drones by introducing a new Bin-Packing variant, named Bin Maximum  Item Double Packing . Since the problem is presumably computationally hard, we provide a first fit greedy approximation algorithm for efficiently solving the $\bmidp$ problem. For the offline version, in which all locations are known in advance, we prove an approximation factor upper bound of 1.5, and for the online version, in which locations are given one by one, we show via extensive simulations, that the approximation yields an average factor of 1.7.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">R63</td>#}
+        <td class="tg-031e">Volker Strobel, Eduardo Castello Ferrer, Marco Dorigo</td>
+        <td class="tg-031e">Managing Byzantine Robots via Blockchain Technology in a Swarm Robotics Collective Decision Making Scenario</td>
+        <tr>
+{#        <td class="tg-s6z2">R64</td>#}
+        <td class="tg-031e">Thadeu Tucci, Benoit Piranda, Julien Bourgeois </td>
+        <td class="tg-031e">A Distributed Self-Assembly Planning Algorithm for Modular Robots</td>
+{#        <td class="tg-031e"> A distributed modular robot is composed of many autonomous modules, capable of organizing the overall robot into a specific goal structure. There are two possibilities to change the morphology of such a robot. The first one, self-reconfiguration, moves each module to the right place, whereas the second one, self-assembly docks the modules at the right place.&nbsp;  Self-assembly is composed of two steps,  identifying the free positions that are available for docking and  docking the modules to these positions. This work focuses on the first step.  This paper presents a distributed planning algorithm that can decide which positions can be filled and can create any 3D shape, including shapes with internal holes and concavities. Our algorithm consider kinematic constraints and prevents positions from being blocked.  Each module embeds the same algorithm and coordinates with the others by means of neighbor-to-neighbor communication. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">R77</td>#}
+        <td class="tg-031e">Laetitia Matignon, Olivier Simonin </td>
+        <td class="tg-031e">Multi-Robot Simultaneous Coverage and Mapping of Complex Scene - Comparison of Different Strategies</td>
+{#        <td class="tg-031e">This paper addresses the problem of optimizing the observation of a human scene using several mobile robots. Mobile robots have to cooperate to find a position around the scene maximizing its coverage. The scene coverage is defined as the observation of the human pose skeleton. It is assumed that the robots can communicate but have no map of the environment. Thus the robots have to simultaneously cover and map the scene and the environment. We consider an incremental approach to master state-space complexity. Robots build an hybrid metric-topological map while evaluating the observation of the human pose skeleton. To this end we propose and evaluate different online optimization strategies exploiting local versus global information. We discuss the difference of the performance and cost. Experiments are performed both in simulation and with real robots.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">R78</td>#}
+        <td class="tg-031e">Ji Chen, Salar Moarref, Hadas Kress-Gazit </td>
+        <td class="tg-031e">Verifiable Control of Robotic Swarm from High-level Specifications</td>
+{#        <td class="tg-031e">Designing controllers for safe, scalable and flexible collective behaviors of large numbers of robots is an important and challenging problem in swarm robotics. In this paper, we focus on provably-correct controller synthesis from high-level specifications and demonstrate the approach on several physical swarms. To this end, we first automatically synthesize discrete controllers  from high-level task specifications expressed in temporal logic. Then, we automatically synthesize continuous controllers that implement the symbolic plans while ensuring collision avoidance and describe methods for mitigating deadlocks that might occur. In addition, centralized and decentralized continuous controller design are compared and analyzed. Finally, we demonstrate the flexibility and versatility of the control paradigm by applying it to three different examples of swarm systems with two different types of robots.</td>#}
+        </tr>
+
+        <tr>
+            <td class="tg-s6z3" rowspan="5" nowrap>Session 14 (13:30-15:30)<br> Industrial Applications</td>
+{#        <td class="tg-s6z2">I22</td>#}
+        <td class="tg-031e">Shih-Fen Cheng, Shashi Shekhar Jha, Rishikeshan Rajendram </td>
+        <td class="tg-031e">Taxis Strike Back: A Field Trial of the Driver Guidance System</td>
+{#        <td class="tg-031e">Traditional taxi fleet operators world-over have been facing intense competitions from various ride-hailing services such as Uber and Grab . Based on our studies on the taxi industry in Singapore, we see that the emergence of Uber and Grab in the ride-hailing market has greatly impacted the taxi industry: the average daily taxi ridership for the past two years has been falling continuously, by close to 20% in total. In this work, we discuss how efficient real-time data analytics and large-scale multi-agent optimization technology could potentially help taxi drivers compete against more technologically advanced service platforms.#}
+{##}
+{#        Our technology is based on an earlier theoretical work proven to work in a series of simulation studies. Our major contribution in this paper is the demonstration that the proposed design, when coupled with a real-time data feed of close to 20,000 taxis around Singapore, can indeed help drivers to improve their performances. To provide concrete real-world evidence that such technology can indeed benefit taxi drivers, we have tested the driver guidance system  operationally since September 2017. With 57 recruited drivers and 2 months of operational data, we have demonstrated that when drivers actively follow our guidance during their roaming,  their expected roaming times can be reduced by 23% when compared to the cases where guidances are not followed. By further breaking down the analysis by time periods, workdays, and areas, we point out the spatial-temporal combinations in which the DGS is most useful.</td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">I19</td>#}
+        <td class="tg-031e">Hussain Kazmi, Johan Suykens, Johan Driesen </td>
+        <td class="tg-031e">Valuing knowledge, information and agency in Multi-agent Reinforcement Learning: a case study in smart buildings</td>
+{#        <td class="tg-031e"> Increasing energy efficiency in buildings can reduce costs and emissions substantially. Historically, this has been treated as a local, or single-agent, optimization problem. However, many buildings utilize the same types of thermal equipment e.g. electric heaters and hot water vessels. During operation, occupants in these buildings interact with the equipment differently thereby driving them to diverse regions in the state-space. Reinforcement learning agents can learn from these interactions, recorded as sensor data, to optimize the overall energy efficiency. However, if these agents operate individually at a household level, they can not exploit the replicated structure in the problem. In this paper, we demonstrate that this problem can indeed benefit from multi-agent collaboration by making use of targeted exploration of the state-space allowing for better generalization. We also investigate trade-offs between integrating human knowledge and additional sensors. Results show that savings of over 40% are possible with collaborative multi-agent systems making use of either expert knowledge or additional sensors with no loss of occupant comfort. We find that such multi-agent systems comfortably outperform comparable single agent systems.  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">I25</td>#}
+        <td class="tg-031e">Ayan Mukhopadhyay, Zilin Wang, Yevgeniy Vorobeychik </td>
+        <td class="tg-031e">A Decision Theoretic Framework for Emergency Responder Dispatch</td>
+{#        <td class="tg-031e"> Efficient emergency response is a major concern in urban areas across the globe. The problem of predicting incidents and subsequently allocating responders spatially has been studied extensively. The problem of dynamically deploying responders, however, has received considerably less attention and has been noted as a difficult problem in prior literature due to inherent complexities in the environment in which such problems evolve. We formulate a decision-theoretic framework for the emergency responder problem, which effectively leverages state-of-the-art methods for continuous-time spatio-temporal incident forecasting.&nbsp;  We formulate the responder dispatch problem as a Semi-Markov Decision Process  that evolves in continuous time, and efficiently engineer its representation leveraging structural insights of the problem space. We then propose a novel approach to solve the problem based on policy iteration. First, we transform the SMDP into a discrete-time MDP . Then, we simulate our system to estimate value of states as well as learn the state transition probabilities of the transformed DTMDP. We also design heuristic policies with which our algorithm can be seeded. We validate the efficacy of our approach on real traffic and assault data from a major metropolitan area in USA, as well as synthetic data, and highlight that our approach outperforms the state of the art emergency responder dispatch system. </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">I20</td>#}
+        <td class="tg-031e">Michael Papasimeon </td>
+        <td class="tg-031e">Multiagent Simulation of Adversarial Socio-Technical Systems</td>
+{#        <td class="tg-031e">  We present and describe#}
+{#        the Air Combat Environment ; a next generation industrial multiagent#}
+{#        simulation environment for modelling adversarial socio-technical systems for#}
+{#        computational operations research. Although ACE was designed to model domains#}
+{#        such as air combat, the architectural framework is generic enough to model a#}
+{#        wide range of complex adversarial socio-technical environments and scenarios. The#}
+{#        paper begins by describing the legacy multiagent simulation environments that had#}
+{#        a significant impact on the design of ACE.&nbsp;#}
+{#        A motivating adversarial socio-technical scenario is presented followed#}
+{#        by an overview of the key motivators that drove ACE's development. This leads#}
+{#        into a high level, conceptual description of the key constructs which make up#}
+{#        the core ACE software architecture. The paper then presents the three key ways#}
+{#        ACE is used; as an agent-oriented software engineering platform, as an operations#}
+{#        research platform and as a platform for conducting AI research. The paper#}
+{#        concludes with a brief overview of the planned future directions for ACE as a#}
+{#        platform for research into machine discovered behaviour in the context of#}
+{#        modelling complex warfighting for force design.&nbsp;  </td>#}
+        </tr>
+        <tr>
+{#        <td class="tg-s6z2">I21</td>#}
+        <td class="tg-031e">Sethuramalingam Subramaniam, Pooja Aggarwal, Gargi B Dasgupta, Amit Paradkar </td>
+        <td class="tg-031e">COBOTS - A Cognitive Multi-Bot Conversational Framework for Technical Support</td>
+{#        <td class="tg-031e"> Human technical support agents spend significant time interacting with customers via various channels of voice, email and chat. There is a massive incentive to automate support with autonomous agents with the goal of reducing manual effort and time taken for problem resolution. As technical support questions are complex and diverse, building a generic agent capable of solving multiple domains is implausible. In this paper, we describe a scalable conversational framework that automates the process of guided troubleshooting called COBOTS . Our underlying premise is that scalability in such frameworks can be achieved by control and co-ordination across multiple domain expert bots. These bots co-ordinate to  understand user problems from natural language queries  engage in conversation&nbsp; and  provide assistance with troubleshooting. All of the above is done with minimum human assistance.&nbsp;&nbsp; COBOTS framework comprises of User Bots that monitor customer infrastructure for issues, the Orchestrator bot which co-ordinates and controls various request-response pairs and Domain Expert bots which handle issues pertaining to their domains, respectively. In a real environment, we have deployed an implementation of our COBOTS framework which can co-ordinate and control user queries across 11 different technical support domains. When evaluated by two different teams of expert support users, it was observed that more than 75% of the time our application was able to provide relevant solutions for their queries.  </td>#}
+        </tr>
+{#        <tr>#}
+{#        <td class="tg-s6z2">I27</td>#}
+{#        <td class="tg-031e">Cheng Wu </td>#}
+{#        <td class="tg-031e">A Multi-agent Based Scheme for Unlicensed Spectrum Access in Railway Wireless Communication</td>#}
+{#        <td class="tg-031e"> The rapid movement characteristics of the train in railway industry bring about a significant dynamic change in the communication network topology, resulting in unpredictable high volatility of the available spectrum. Such the uncertainty, coupled with the inherent spectrum of scarcity, is causing low efficiency. With this article, we first formulate spectrum management of railway cognitive radio as the distributed cooperative decision problem. By using reinforcement learning and agent theory, we propose the cognitive base station model. Furthermore, a multi-cognitive-base-station cascade collaboration algorithm is described according to the characteristics of the chain distribution and cascade operation of base stations along the track. Finally, this article evaluates the communication performance of test scenarios and proves that the system can significantly improve the probability of successful transmission and greatly reduce the number of wireless channel switching. This cognitive base station multi-agent system scheme provides a new idea for realizing the cognitive radio of railway industry and comprehensively solving the problem of low efficiency of the wireless spectrum. The article is also a typical case of artificial intelligence applied in the field of communication and signal processing.  </td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#        <td class="tg-s6z2">I29</td>#}
+{#        <td class="tg-031e">Miguel Nunes </td>#}
+{#        <td class="tg-031e">On a Multi-Agent Robotic System for Space Missions</td>#}
+{#        <td class="tg-031e"> A revolution in the space sector is happening. It is expected that in the next decade there will be more satellites launched than in the previous sixty years of space exploration. Major challenges are associated with this growth of space assets such as the autonomy and management of large groups of satellites, in particular with small satellites. We present a flexible and distributed multiagent software architecture to expand the possibilities of spacecraft autonomy and we focus in particular on the autonomous motion. The approach taken is based on the concept of distributed software agents, also referred to as multi-agent robotic system. Agents are defined in this context as software programs that are social, reactive and proactive to autonomously maximize the chances of achieving the set goals. Part of the work is to demonstrate that a multi-agent robotic system is a feasible approach for different problems of autonomy such as satellite attitude determination and control and autonomous rendezvous and docking.&nbsp;  </td>#}
+{#        </tr>#}
+    </table>
+</div>
+
+{% endblock %}
